@@ -53,7 +53,7 @@ ls -d /lustre/scratch116/tol/projects/darwin/data/vascular-plants/*/genomic_data
 ls -d /lustre/scratch116/tol/projects/darwin/data/vascular-plants/*/genomic_data/*/*/ | awk '{print $11}' | cut -d/ -f12 | sort | uniq -c
 ```
 
-# Bryophytes
+## Bryophytes
 
 ```bash
 # public releases
