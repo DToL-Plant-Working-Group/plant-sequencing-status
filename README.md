@@ -1,71 +1,21 @@
-# Sequencing data progress for plants
+# DToL Plant Sequencing Status
 
-The below information will soon be written into a pipeline, and maybe a visualisation.
+Two summary tables are presented here. The first is the number of assemblies in the pipelines at the moment.
 
-## Eudicots
+| Plant Group | Stage | Number |
+| --- | --- | --- |
+| dicots | released | 2 |
+| dicots | curated | 8 |
+| dicots | draft | 23 |
+| non-vascular-plants | draft | 2 |
 
-```bash
-# public releases
-ls /lustre/scratch116/tol/projects/darwin/data/dicots/*/assembly/release/reference -ld
-# curated
-ls /lustre/scratch116/tol/projects/darwin/data/dicots/*/assembly/curated/* -ld
-# draft
-ls /lustre/scratch116/tol/projects/darwin/data/dicots/*/assembly/draft/* -ld
-# species with genomic data
-ls -d /lustre/scratch116/tol/projects/darwin/data/dicots/*/genomic_data/
-# samples with genomic data 
-ls -d /lustre/scratch116/tol/projects/darwin/data/dicots/*/genomic_data/*/
-# sequencing types
-ls -d /lustre/scratch116/tol/projects/darwin/data/dicots/*/genomic_data/*/*/ | awk '{print $11}' | cut -d/ -f12 | sort | uniq -c
-```
+The second is the number of data types per species.
 
-## Monocots
-
-```bash
-# public releases
-ls /lustre/scratch116/tol/projects/darwin/data/monocots/*/assembly/release/reference -ld
-# curated
-ls /lustre/scratch116/tol/projects/darwin/data/monocots/*/assembly/curated/* -ld
-# draft
-ls /lustre/scratch116/tol/projects/darwin/data/monocots/*/assembly/draft/* -ld
-# species with genomic data
-ls -d /lustre/scratch116/tol/projects/darwin/data/monocots/*/genomic_data/
-# samples with genomic data 
-ls -d /lustre/scratch116/tol/projects/darwin/data/monocots/*/genomic_data/*/
-# sequencing types
-ls -d /lustre/scratch116/tol/projects/darwin/data/monocots/*/genomic_data/*/*/ | awk '{print $11}' | cut -d/ -f12 | sort | uniq -c
-```
-
-## Other vascular plants
-
-```bash
-# public releases
-ls /lustre/scratch116/tol/projects/darwin/data/vascular-plants/*/assembly/release/reference -ld
-# curated
-ls /lustre/scratch116/tol/projects/darwin/data/vascular-plants/*/assembly/curated/* -ld
-# draft
-ls /lustre/scratch116/tol/projects/darwin/data/vascular-plants/*/assembly/draft/* -ld
-# species with genomic data
-ls -d /lustre/scratch116/tol/projects/darwin/data/vascular-plants/*/genomic_data/
-# samples with genomic data 
-ls -d /lustre/scratch116/tol/projects/darwin/data/vascular-plants/*/genomic_data/*/
-# sequencing types
-ls -d /lustre/scratch116/tol/projects/darwin/data/vascular-plants/*/genomic_data/*/*/ | awk '{print $11}' | cut -d/ -f12 | sort | uniq -c
-```
-
-## Bryophytes
-
-```bash
-# public releases
-ls /lustre/scratch116/tol/projects/darwin/data/non-vascular-plants/*/assembly/release/reference -ld
-# curated
-ls /lustre/scratch116/tol/projects/darwin/data/non-vascular-plants/*/assembly/curated/* -ld
-# draft
-ls /lustre/scratch116/tol/projects/darwin/data/non-vascular-plants/*/assembly/draft/* -ld
-# species with genomic data
-ls -d /lustre/scratch116/tol/projects/darwin/data/non-vascular-plants/*/genomic_data/
-# samples with genomic data 
-ls -d /lustre/scratch116/tol/projects/darwin/data/non-vascular-plants/*/genomic_data/*/
-# sequencing types
-ls -d /lustre/scratch116/tol/projects/darwin/data/non-vascular-plants/*/genomic_data/*/*/ | awk '{print $11}' | cut -d/ -f12 | sort | uniq -c
-```
+| Data type | Number |
+| --- | --- |
+| hic-arima2 | 163 |
+| pacbio | 179 |
+| 10x | 101 |
+| hic-dnazoo | 1 |
+| htag | 2 |
+| illumina | 3 |
