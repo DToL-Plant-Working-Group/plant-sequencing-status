@@ -387,6 +387,7 @@ dicots 	 Ulex_europaeus 	 genomic_data 	 drUleEuro1 	 10x
 dicots 	 Ulex_europaeus 	 genomic_data 	 drUleEuro1 	 hic-arima2
 dicots 	 Ulex_europaeus 	 genomic_data 	 drUleEuro1 	 pacbio
 dicots 	 Ulex_minor 	 genomic_data 	 drUleMino1 	 hic-arima2
+dicots 	 Ulmus_minor 	 genomic_data 	 drUlmMino1 	 hic-arima2
 dicots 	 Urtica_dioica 	 genomic_data 	 drUrtDioi1 	 pacbio
 dicots 	 Urtica_urens 	 genomic_data 	 drUrtUren1 	 10x
 dicots 	 Urtica_urens 	 genomic_data 	 drUrtUren1 	 hic-arima2
