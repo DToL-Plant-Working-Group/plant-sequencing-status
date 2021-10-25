@@ -117,6 +117,7 @@ dicots 	 Euphorbia_peplus 	 genomic_data 	 ddEupPepu3 	 10x
 dicots 	 Euphorbia_peplus 	 genomic_data 	 ddEupPepu3 	 hic-arima2
 dicots 	 Euphorbia_peplus 	 genomic_data 	 ddEupPepu3 	 pacbio
 dicots 	 Euphrasia_foulaensis 	 genomic_data 	 daEupFoul1 	 pacbio
+dicots 	 Fagus_sylvatica 	 genomic_data 	 dhFagSylv1 	 hic-arima2
 dicots 	 Fallopia_convolvulus 	 genomic_data 	 dcFalConv1 	 10x
 dicots 	 Fallopia_convolvulus 	 genomic_data 	 dcFalConv1 	 hic-arima2
 dicots 	 Filipendula_ulmaria 	 genomic_data 	 drFilUlma1 	 10x
@@ -131,6 +132,7 @@ dicots 	 Geranium_dissectum 	 genomic_data 	 drGerDiss1 	 pacbio
 dicots 	 Geranium_lucidum 	 genomic_data 	 drGerLuci1 	 pacbio
 dicots 	 Geranium_robertianum 	 genomic_data 	 drGerRobe1 	 hic-arima2
 dicots 	 Geranium_robertianum 	 genomic_data 	 drGerRobe1 	 pacbio
+dicots 	 Geranium_rotundifolium 	 genomic_data 	 drGerRotu1 	 hic-arima2
 dicots 	 Geranium_sylvaticum 	 genomic_data 	 drGerSylv1 	 hic-arima2
 dicots 	 Geranium_sylvaticum 	 genomic_data 	 drGerSylv1 	 pacbio
 dicots 	 Geum_rivale 	 genomic_data 	 drGeuRiva1 	 hic-arima2
@@ -336,6 +338,7 @@ dicots 	 Reseda_luteola 	 genomic_data 	 ddResLuto1 	 hic-arima2
 dicots 	 Reynoutria_japonica 	 genomic_data 	 dcReyJapo1 	 10x
 dicots 	 Reynoutria_japonica 	 genomic_data 	 dcReyJapo1 	 pacbio
 dicots 	 Rhamnus_cathartica 	 genomic_data 	 drRhaCath1 	 pacbio
+dicots 	 Ribes_rubrum 	 genomic_data 	 drRibRubr1 	 hic-arima2
 dicots 	 Rumex_acetosa 	 genomic_data 	 dcRumAcet1 	 hic-arima2
 dicots 	 Rumex_hydrolapathum 	 genomic_data 	 dcRumHydr1 	 10x
 dicots 	 Rumex_hydrolapathum 	 genomic_data 	 dcRumHydr1 	 hic-arima2
@@ -463,6 +466,7 @@ monocots 	 Luzula_sylvatica 	 genomic_data 	 lpLuzSylv1 	 pacbio
 monocots 	 Narcissus_pseudonarcissus 	 genomic_data 	 lsNarPseu1 	 hic-arima2
 monocots 	 Narcissus_pseudonarcissus 	 genomic_data 	 lsNarPseu1 	 pacbio
 monocots 	 Oreojuncus_trifidus 	 genomic_data 	 lpOreTrif1 	 pacbio
+monocots 	 Oreojuncus_trifidus 	 genomic_data 	 lpOreTrif5 	 hic-arima2
 monocots 	 Pontederia_cordata 	 genomic_data 	 lcPonCord1 	 hic-arima2
 monocots 	 Schoenoplectus_lacustris 	 genomic_data 	 lpSchLacu1 	 hic-arima2
 monocots 	 Schoenoplectus_lacustris 	 genomic_data 	 lpSchLacu1 	 pacbio
@@ -477,6 +481,7 @@ non-vascular-plants 	 Hylocomiadelphus_triquetrus 	 genomic_data 	 cbHylTriq8 	 
 non-vascular-plants 	 Hylocomiadelphus_triquetrus 	 genomic_data 	 cbHylTriq9 	 pacbio
 non-vascular-plants 	 Isothecium_myosuroides 	 genomic_data 	 cbIsoMyos1 	 10x
 non-vascular-plants 	 Isothecium_myosuroides 	 genomic_data 	 cbIsoMyos1 	 pacbio
+non-vascular-plants 	 Lunularia_cruciata 	 genomic_data 	 cmLunCruc6 	 hic-arima2
 non-vascular-plants 	 Lunularia_cruciata 	 genomic_data 	 cmLunCruc9 	 10x
 non-vascular-plants 	 Lunularia_cruciata 	 genomic_data 	 cmLunCruc9 	 pacbio
 non-vascular-plants 	 Neckera_pumila 	 genomic_data 	 cbNecPumi1 	 10x
