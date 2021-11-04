@@ -5,7 +5,7 @@ Two summary tables are presented here. The first is the number of assemblies in 
 | Plant Group | Stage | Number |
 | --- | --- | --- |
 | dicots | released | 2 |
-| dicots | curated | 8 |
+| dicots | curated | 10 |
 | dicots | draft | 24 |
 | non-vascular-plants | draft | 2 |
 
