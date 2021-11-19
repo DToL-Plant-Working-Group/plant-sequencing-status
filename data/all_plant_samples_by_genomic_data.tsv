@@ -123,6 +123,7 @@ dicots 	 Fallopia_convolvulus 	 genomic_data 	 dcFalConv1 	 hic-arima2
 dicots 	 Filipendula_ulmaria 	 genomic_data 	 drFilUlma1 	 10x
 dicots 	 Filipendula_ulmaria 	 genomic_data 	 drFilUlma1 	 hic-arima2
 dicots 	 Filipendula_ulmaria 	 genomic_data 	 drFilUlma1 	 pacbio
+dicots 	 Fumaria_muralis 	 genomic_data 	 dmFumMura1 	 hic-arima2
 dicots 	 Fumaria_officinalis 	 genomic_data 	 dmFumOffi1 	 10x
 dicots 	 Fumaria_officinalis 	 genomic_data 	 dmFumOffi1 	 hic-arima2
 dicots 	 Fumaria_officinalis 	 genomic_data 	 dmFumOffi1 	 pacbio
@@ -445,6 +446,7 @@ monocots 	 Colchicum_autumnale 	 genomic_data 	 llColAutu1 	 pacbio
 monocots 	 Dactylis_glomerata 	 genomic_data 	 lpDacGlom1 	 hic-arima2
 monocots 	 Dactylorhiza_fuchsii 	 genomic_data 	 lsDacFuch1 	 hic-arima2
 monocots 	 Danthonia_decumbens 	 genomic_data 	 lpDanDecu1 	 10x
+monocots 	 Danthonia_decumbens 	 genomic_data 	 lpDanDecu1 	 hic-arima2
 monocots 	 Danthonia_decumbens 	 genomic_data 	 lpDanDecu1 	 pacbio
 monocots 	 Dioscorea_communis 	 genomic_data 	 ldDioComm1 	 10x
 monocots 	 Dioscorea_communis 	 genomic_data 	 ldDioComm2 	 hic-arima2
@@ -475,6 +477,7 @@ monocots 	 Sparganium_erectum 	 genomic_data 	 lpSpaErec1 	 hic-arima2
 monocots 	 Typha_latifolia 	 genomic_data 	 lpTypLati1 	 10x
 monocots 	 Typha_latifolia 	 genomic_data 	 lpTypLati1 	 hic-arima2
 monocots 	 Typha_latifolia 	 genomic_data 	 lpTypLati1 	 pacbio
+monocots 	 Zostera_marina 	 genomic_data 	 laZosMari1 	 hic-arima2
 non-vascular-plants 	 Hylocomiadelphus_triquetrus 	 genomic_data 	 cbHylTriq10 	 hic-arima2
 non-vascular-plants 	 Hylocomiadelphus_triquetrus 	 genomic_data 	 cbHylTriq8 	 10x
 non-vascular-plants 	 Hylocomiadelphus_triquetrus 	 genomic_data 	 cbHylTriq8 	 pacbio
