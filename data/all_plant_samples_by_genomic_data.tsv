@@ -446,13 +446,13 @@ monocots 	 Colchicum_autumnale 	 genomic_data 	 llColAutu1 	 pacbio
 monocots 	 Dactylis_glomerata 	 genomic_data 	 lpDacGlom1 	 hic-arima2
 monocots 	 Dactylorhiza_fuchsii 	 genomic_data 	 lsDacFuch1 	 hic-arima2
 monocots 	 Danthonia_decumbens 	 genomic_data 	 lpDanDecu1 	 10x
-monocots 	 Danthonia_decumbens 	 genomic_data 	 lpDanDecu1 	 hic-arima2
 monocots 	 Danthonia_decumbens 	 genomic_data 	 lpDanDecu1 	 pacbio
 monocots 	 Dioscorea_communis 	 genomic_data 	 ldDioComm1 	 10x
 monocots 	 Dioscorea_communis 	 genomic_data 	 ldDioComm2 	 hic-arima2
 monocots 	 Hierochloe_odorata 	 genomic_data 	 lpHieOdor1 	 pacbio
 monocots 	 Holcus_lanatus 	 genomic_data 	 lpHolLana1 	 hic-arima2
 monocots 	 Holcus_mollis 	 genomic_data 	 lpHolMoll1 	 10x
+monocots 	 Holcus_mollis 	 genomic_data 	 lpHolMoll1 	 hic-arima2
 monocots 	 Holcus_mollis 	 genomic_data 	 lpHolMoll1 	 pacbio
 monocots 	 Hordeum_murinum 	 genomic_data 	 lpHorMuri1 	 hic-arima2
 monocots 	 Iris_pseudacorus 	 genomic_data 	 lsIriPseu5 	 10x
