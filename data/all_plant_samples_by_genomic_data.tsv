@@ -8,6 +8,7 @@ dicots 	 Ailanthus_altissima 	 genomic_data 	 drAilAlti1 	 hic-arima2
 dicots 	 Ailanthus_altissima 	 genomic_data 	 drAilAlti1 	 pacbio
 dicots 	 Alchemilla_alpina 	 genomic_data 	 drAlcAlpi1 	 hic-arima2
 dicots 	 Alchemilla_alpina 	 genomic_data 	 drAlcAlpi1 	 pacbio
+dicots 	 Alchemilla_arvensis 	 genomic_data 	 drAlcArve10 	 hic-arima2
 dicots 	 Alchemilla_arvensis 	 genomic_data 	 drAlcArve9 	 pacbio
 dicots 	 Alnus_glutinosa 	 genomic_data 	 dhAlnGlut1 	 10x
 dicots 	 Alnus_glutinosa 	 genomic_data 	 dhAlnGlut1 	 hic-arima2
@@ -61,6 +62,7 @@ dicots 	 Cakile_maritima 	 genomic_data 	 ddCakMari1 	 pacbio
 dicots 	 Calystegia_sepium 	 genomic_data 	 daCalSepi1 	 10x
 dicots 	 Calystegia_sepium 	 genomic_data 	 daCalSepi1 	 pacbio
 dicots 	 Campanula_rotundifolia 	 genomic_data 	 daCamRotu1 	 hic-arima2
+dicots 	 Capsella_bursa-pastoris 	 genomic_data 	 ddCapBurs3 	 hic-arima2
 dicots 	 Carpinus_betulus 	 genomic_data 	 dhCarBetu1 	 pacbio
 dicots 	 Cerastium_fontanum 	 genomic_data 	 dcCerFont2 	 hic-arima2
 dicots 	 Cerastium_fontanum 	 genomic_data 	 dcCerFont2 	 pacbio
@@ -84,6 +86,7 @@ dicots 	 Cichorium_intybus 	 genomic_data 	 daCicInty1 	 hic-arima2
 dicots 	 Clematis_vitalba 	 genomic_data 	 dmCleVita1 	 10x
 dicots 	 Clematis_vitalba 	 genomic_data 	 dmCleVita1 	 pacbio
 dicots 	 Coincya_wrightii 	 genomic_data 	 ddCoiWrig1 	 hic-arima2
+dicots 	 Comarum_palustre 	 genomic_data 	 drComPalu1 	 hic-arima2
 dicots 	 Convolvulus_arvensis 	 genomic_data 	 daConArve2 	 10x
 dicots 	 Convolvulus_arvensis 	 genomic_data 	 daConArve2 	 hic-arima2
 dicots 	 Convolvulus_arvensis 	 genomic_data 	 daConArve2 	 pacbio
@@ -104,6 +107,7 @@ dicots 	 Dryas_octopetala 	 genomic_data 	 drDryOcto1 	 hic-arima2
 dicots 	 Erica_ciliaris 	 genomic_data 	 ddEriCili1 	 hic-arima2
 dicots 	 Erodium_maritimum 	 genomic_data 	 drEroMari1 	 10x
 dicots 	 Erodium_maritimum 	 genomic_data 	 drEroMari1 	 pacbio
+dicots 	 Erodium_moschatum 	 genomic_data 	 drEroMosc1 	 hic-arima2
 dicots 	 Erodium_moschatum 	 genomic_data 	 drEroMosc1 	 pacbio
 dicots 	 Eryngium_campestre 	 genomic_data 	 drEryCamp1 	 hic-arima2
 dicots 	 Euonymus_europaeus 	 genomic_data 	 drEuoEuro1 	 hic-arima2
@@ -324,6 +328,7 @@ dicots 	 Populus_tremula 	 genomic_data 	 ddPopTrem1 	 pacbio
 dicots 	 Potentilla_anserina 	 genomic_data 	 drPotAnse1 	 10x
 dicots 	 Potentilla_anserina 	 genomic_data 	 drPotAnse1 	 hic-arima2
 dicots 	 Potentilla_anserina 	 genomic_data 	 drPotAnse1 	 pacbio
+dicots 	 Primula_vulgaris 	 genomic_data 	 ddPriVulg1 	 hic-arima2
 dicots 	 Pulicaria_dysenterica 	 genomic_data 	 daPulDyse1 	 10x
 dicots 	 Pulicaria_dysenterica 	 genomic_data 	 daPulDyse1 	 hic-arima2
 dicots 	 Pulicaria_dysenterica 	 genomic_data 	 daPulDyse1 	 pacbio
@@ -384,6 +389,7 @@ dicots 	 Thymus_serpyllum 	 genomic_data 	 daThySerp1 	 10x
 dicots 	 Thymus_serpyllum 	 genomic_data 	 daThySerp1 	 pacbio
 dicots 	 Tilia_cordata 	 genomic_data 	 ddTilCord1 	 hic-arima2
 dicots 	 Trifolium_pratense 	 genomic_data 	 drTriPrat1 	 pacbio
+dicots 	 Trifolium_pratense 	 genomic_data 	 drTriPrat2 	 hic-arima2
 dicots 	 Trollius_europaeus 	 genomic_data 	 dmTroEuro1 	 10x
 dicots 	 Trollius_europaeus 	 genomic_data 	 dmTroEuro1 	 pacbio
 dicots 	 Tussilago_farfara 	 genomic_data 	 daTusFarf1 	 pacbio
@@ -446,6 +452,7 @@ monocots 	 Colchicum_autumnale 	 genomic_data 	 llColAutu1 	 pacbio
 monocots 	 Dactylis_glomerata 	 genomic_data 	 lpDacGlom1 	 hic-arima2
 monocots 	 Dactylorhiza_fuchsii 	 genomic_data 	 lsDacFuch1 	 hic-arima2
 monocots 	 Danthonia_decumbens 	 genomic_data 	 lpDanDecu1 	 10x
+monocots 	 Danthonia_decumbens 	 genomic_data 	 lpDanDecu1 	 hic-arima2
 monocots 	 Danthonia_decumbens 	 genomic_data 	 lpDanDecu1 	 pacbio
 monocots 	 Dioscorea_communis 	 genomic_data 	 ldDioComm1 	 10x
 monocots 	 Dioscorea_communis 	 genomic_data 	 ldDioComm2 	 hic-arima2
