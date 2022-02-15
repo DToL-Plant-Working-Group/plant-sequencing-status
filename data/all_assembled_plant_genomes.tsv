@@ -2,6 +2,7 @@ dicots 	 Impatiens_glandulifera 	 released
 dicots 	 Malus_sylvestris 	 released
 dicots 	 Ailanthus_altissima 	 curated
 dicots 	 Alnus_glutinosa 	 curated
+dicots 	 Ballota_nigra 	 curated
 dicots 	 Filipendula_ulmaria 	 curated
 dicots 	 Impatiens_glandulifera 	 curated
 dicots 	 Lycopus_europaeus 	 curated
@@ -9,10 +10,15 @@ dicots 	 Malus_domestica 	 curated
 dicots 	 Malus_domestica 	 curated
 dicots 	 Malus_domestica 	 curated
 dicots 	 Malus_domestica 	 curated
+dicots 	 Malus_domestica 	 curated
+dicots 	 Malus_domestica 	 curated
+dicots 	 Malus_sylvestris 	 curated
 dicots 	 Malus_sylvestris 	 curated
 dicots 	 Medicago_arabica 	 curated
+dicots 	 Polygonum_aviculare 	 curated
 dicots 	 Potentilla_anserina 	 curated
 dicots 	 Quercus_robur 	 curated
+non-vascular-plants 	 Rhytidiadelphus_loreus 	 curated
 dicots 	 Geum_urbanum 	 draft
 dicots 	 Geum_urbanum 	 draft
 dicots 	 Polygonum_aviculare 	 draft
@@ -40,5 +46,6 @@ dicots 	 Potentilla_anserina 	 draft
 dicots 	 Quercus_robur 	 draft
 dicots 	 Solanum_dulcamara 	 draft
 dicots 	 Urtica_urens 	 draft
+monocots 	 Juncus_effusus 	 draft
 non-vascular-plants 	 Rhytidiadelphus_loreus 	 draft
 non-vascular-plants 	 Thuidium_tamariscinum 	 draft

@@ -92,6 +92,7 @@ dicots 	 Cornus_suecica 	 genomic_data 	 drCorSuec1 	 hic-arima2
 dicots 	 Cornus_suecica 	 genomic_data 	 drCorSuec1 	 pacbio
 dicots 	 Corylus_avellana 	 genomic_data 	 dhCorAvel1 	 hic-arima2
 dicots 	 Crataegus_laevigata 	 genomic_data 	 drCraLaev2 	 pacbio
+dicots 	 Crataegus_monogyna 	 genomic_data 	 drCraMono1 	 hic-arima2
 dicots 	 Crataegus_monogyna 	 genomic_data 	 drCraMono1 	 pacbio
 dicots 	 Crithmum_maritimum 	 genomic_data 	 drCriMari1 	 10x
 dicots 	 Crithmum_maritimum 	 genomic_data 	 drCriMari1 	 hic-arima2
@@ -318,6 +319,7 @@ dicots 	 Persicaria_maculosa 	 genomic_data 	 dcPerMacu1 	 10x
 dicots 	 Persicaria_maculosa 	 genomic_data 	 dcPerMacu1 	 hic-arima2
 dicots 	 Persicaria_maculosa 	 genomic_data 	 dcPerMacu1 	 pacbio
 dicots 	 Phyteuma_spicatum 	 genomic_data 	 daPhySpic1 	 hic-arima2
+dicots 	 Plantago_coronopus 	 genomic_data 	 daPlaCoro1 	 hic-arima2
 dicots 	 Plantago_coronopus 	 genomic_data 	 daPlaCoro1 	 pacbio
 dicots 	 Plantago_lanceolata 	 genomic_data 	 daPlaLanc1 	 hic-arima2
 dicots 	 Plantago_lanceolata 	 genomic_data 	 daPlaLanc3 	 pacbio
@@ -354,6 +356,7 @@ dicots 	 Rumex_sanguineus 	 genomic_data 	 dcRumSang1 	 10x
 dicots 	 Rumex_sanguineus 	 genomic_data 	 dcRumSang1 	 pacbio
 dicots 	 Salix_herbacea 	 genomic_data 	 ddSalHerb1 	 hic-arima2
 dicots 	 Salix_reticulata 	 genomic_data 	 ddSalReti1 	 hic-arima2
+dicots 	 Salvia_verbenaca 	 genomic_data 	 daSalVerb1 	 hic-arima2
 dicots 	 Salvia_verbenaca 	 genomic_data 	 daSalVerb1 	 pacbio
 dicots 	 Sambucus_nigra 	 genomic_data 	 daSamNigr1 	 10x
 dicots 	 Sambucus_nigra 	 genomic_data 	 daSamNigr1 	 pacbio
@@ -364,9 +367,11 @@ dicots 	 Scutellaria_galericulata 	 genomic_data 	 daScuGale1 	 hic-arima2
 dicots 	 Scutellaria_galericulata 	 genomic_data 	 daScuGale1 	 pacbio
 dicots 	 Scutellaria_minor 	 genomic_data 	 daScuMino1 	 pacbio
 dicots 	 Senecio_vulgaris 	 genomic_data 	 daSenVulg1 	 pacbio
+dicots 	 Sherardia_arvensis 	 genomic_data 	 daSheArve1 	 hic-arima2
 dicots 	 Sherardia_arvensis 	 genomic_data 	 daSheArve1 	 pacbio
 dicots 	 Silene_acaulis 	 genomic_data 	 dcSilAcau1 	 hic-arima2
 dicots 	 Silene_acaulis 	 genomic_data 	 dcSilAcau1 	 pacbio
+dicots 	 Silene_dioica 	 genomic_data 	 dcSilDioi1 	 hic-arima2
 dicots 	 Silene_dioica 	 genomic_data 	 dcSilDioi1 	 pacbio
 dicots 	 Silene_latifolia 	 genomic_data 	 dcSilLati1 	 pacbio
 dicots 	 Smyrnium_perfoliatum 	 genomic_data 	 drSmyPerf1 	 pacbio
@@ -415,6 +420,7 @@ dicots 	 Veronica_chamaedrys 	 genomic_data 	 daVerCham1 	 pacbio
 dicots 	 Veronica_hederifolia 	 genomic_data 	 daVerHede4 	 pacbio
 dicots 	 Veronica_spicata 	 genomic_data 	 daVerSpic1 	 hic-arima2
 dicots 	 Veronica_spicata 	 genomic_data 	 daVerSpic1 	 pacbio
+dicots 	 Viburnum_lantana 	 genomic_data 	 daVibLant1 	 hic-arima2
 dicots 	 Viburnum_lantana 	 genomic_data 	 daVibLant1 	 pacbio
 dicots 	 Vicia_cracca 	 genomic_data 	 drVicCrac1 	 10x
 dicots 	 Vicia_cracca 	 genomic_data 	 drVicCrac1 	 hic-arima2
