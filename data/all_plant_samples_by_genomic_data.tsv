@@ -18,6 +18,7 @@ dicots 	 Alnus_glutinosa 	 genomic_data 	 dhAlnGlut1 	 10x
 dicots 	 Alnus_glutinosa 	 genomic_data 	 dhAlnGlut1 	 hic-arima2
 dicots 	 Alnus_glutinosa 	 genomic_data 	 dhAlnGlut1 	 pacbio
 dicots 	 Anagallis_arvensis 	 genomic_data 	 ddAnaArve1 	 hic-arima2
+dicots 	 Andromeda_polifolia 	 genomic_data 	 ddAndPoli2 	 hic-arima2
 dicots 	 Anemone_pulsatilla 	 genomic_data 	 dmAnePuls1 	 10x
 dicots 	 Anemone_pulsatilla 	 genomic_data 	 dmAnePuls1 	 pacbio
 dicots 	 Angelica_archangelica 	 genomic_data 	 drAngArch1 	 hic-arima2
@@ -56,6 +57,7 @@ dicots 	 Betula_pubescens 	 genomic_data 	 dhBetPube1 	 hic-arima2
 dicots 	 Betula_pubescens 	 genomic_data 	 dhBetPube1 	 pacbio
 dicots 	 Bistorta_vivipara 	 genomic_data 	 dcBisVivi2 	 hic-arima2
 dicots 	 Blackstonia_perfoliata 	 genomic_data 	 daBlaPerf1 	 hic-arima2
+dicots 	 Blackstonia_perfoliata 	 genomic_data 	 daBlaPerf2 	 hic-arima2
 dicots 	 Borago_officinalis 	 genomic_data 	 daBorOffi1 	 10x
 dicots 	 Borago_officinalis 	 genomic_data 	 daBorOffi1 	 pacbio
 dicots 	 Brassica_nigra 	 genomic_data 	 ddBraNigr1 	 hic-arima2
@@ -477,6 +479,7 @@ dicots 	 Viola_tricolor 	 genomic_data 	 ddVioTric1 	 hic-arima2
 dicots 	 Viscum_album 	 genomic_data 	 drVisAlbu1 	 10x
 dicots 	 Viscum_album 	 genomic_data 	 drVisAlbu1 	 hic-arima2
 dicots 	 Viscum_album 	 genomic_data 	 drVisAlbu1 	 pacbio
+monocots 	 Agrostis_stolonifera 	 genomic_data 	 lpAgrStol1 	 hic-arima2
 monocots 	 Alisma_plantago-aquatica 	 genomic_data 	 laAliPlan1 	 hic-arima2
 monocots 	 Alisma_plantago-aquatica 	 genomic_data 	 laAliPlan1 	 pacbio
 monocots 	 Allium_ampeloprasum 	 genomic_data 	 lsAllAmpe1 	 pacbio
@@ -506,6 +509,7 @@ monocots 	 Carex_rostrata 	 genomic_data 	 lpCarRost1 	 pacbio
 monocots 	 Cephalanthera_damasonium 	 genomic_data 	 lsCepDama1 	 hic-arima2
 monocots 	 Colchicum_autumnale 	 genomic_data 	 llColAutu1 	 hic-arima2
 monocots 	 Colchicum_autumnale 	 genomic_data 	 llColAutu1 	 pacbio
+monocots 	 Crocosmia_x_crocosmiiflora 	 genomic_data 	 lsCroCroc1 	 hic-arima2
 monocots 	 Dactylis_glomerata 	 genomic_data 	 lpDacGlom1 	 hic-arima2
 monocots 	 Dactylorhiza_fuchsii 	 genomic_data 	 lsDacFuch1 	 hic-arima2
 monocots 	 Danthonia_decumbens 	 genomic_data 	 lpDanDecu1 	 10x
@@ -545,6 +549,7 @@ monocots 	 Typha_latifolia 	 genomic_data 	 lpTypLati1 	 hic-arima2
 monocots 	 Typha_latifolia 	 genomic_data 	 lpTypLati1 	 pacbio
 monocots 	 Zostera_marina 	 genomic_data 	 laZosMari1 	 hic-arima2
 non-vascular-plants 	 Antitrichia_curtipendula 	 genomic_data 	 cbAntCurt1 	 hic-arima2
+non-vascular-plants 	 Antitrichia_curtipendula 	 genomic_data 	 cbAntCurt2 	 hic-arima2
 non-vascular-plants 	 Conocephalum_conicum 	 genomic_data 	 cmConConi3 	 hic-arima2
 non-vascular-plants 	 Hylocomiadelphus_triquetrus 	 genomic_data 	 cbHylTriq10 	 hic-arima2
 non-vascular-plants 	 Hylocomiadelphus_triquetrus 	 genomic_data 	 cbHylTriq8 	 10x

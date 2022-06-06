@@ -16,7 +16,7 @@ The second is the number of data types per species.
 
 | Data type | Number |
 | --- | --- |
-| hic-arima2 | 234 |
+| hic-arima2 | 237 |
 | pacbio | 185 |
 | 10x | 102 |
 | hic-dnazoo | 1 |
