@@ -25,3 +25,6 @@ grep "lustre" | \
 awk -F/ '{print $8,"\t",$9,"\t",$10,"\t",$11,"\t",$12}' > all_plant_samples_by_genomic_data.tsv
 
 printf "Done\n"
+
+mv all_assembled_plant_genomes.tsv ../data/
+mv all_plant_samples_by_genomic_data.tsv ../data/
