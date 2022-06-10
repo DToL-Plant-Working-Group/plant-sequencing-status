@@ -1,6 +1,6 @@
 library(data.table)
 
-setwd("~/Documents/DToL-Plant-Sequence-Progress/src/")
+setwd("/lustre/scratch123/tol/teams/blaxter/users/mb39/plant-sequencing-status/src")
 
 assemblies <- fread("../data/all_assembled_plant_genomes.tsv",
     col.names = c("group", "species", "stage"),
