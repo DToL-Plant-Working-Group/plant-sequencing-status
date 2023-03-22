@@ -2,9 +2,11 @@ dicots 	 Ailanthus_altissima 	 released
 dicots 	 Ballota_nigra 	 released
 dicots 	 Buxus_sempervirens 	 released
 dicots 	 Chamaenerion_angustifolium 	 released
+dicots 	 Chenopodium_album 	 released
 dicots 	 Geum_urbanum 	 released
 dicots 	 Hedera_helix 	 released
 dicots 	 Impatiens_glandulifera 	 released
+dicots 	 Linaria_vulgaris 	 released
 dicots 	 Malus_sylvestris 	 released
 dicots 	 Medicago_arabica 	 released
 dicots 	 Mercurialis_annua 	 released
@@ -15,9 +17,11 @@ dicots 	 Pulicaria_dysenterica 	 released
 dicots 	 Quercus_robur 	 released
 dicots 	 Scutellaria_galericulata 	 released
 dicots 	 Senecio_squalidus 	 released
+dicots 	 Sherardia_arvensis 	 released
 dicots 	 Solanum_dulcamara 	 released
 monocots 	 Juncus_effusus 	 released
 monocots 	 Luzula_sylvatica 	 released
+non-vascular-plants 	 Lunularia_cruciata 	 released
 non-vascular-plants 	 Rhytidiadelphus_loreus 	 released
 non-vascular-plants 	 Thuidium_tamariscinum 	 released
 dicots 	 Acer_campestre 	 curated
@@ -75,6 +79,7 @@ dicots 	 Sherardia_arvensis 	 curated
 dicots 	 Sherardia_arvensis 	 curated
 dicots 	 Solanum_dulcamara 	 curated
 dicots 	 Solanum_dulcamara 	 curated
+dicots 	 Trifolium_dubium 	 curated
 dicots 	 Trifolium_fragiferum 	 curated
 dicots 	 Urtica_urens 	 curated
 dicots 	 Viscum_album 	 curated
@@ -96,6 +101,7 @@ dicots 	 Alnus_glutinosa 	 draft
 dicots 	 Arabidopsis_thaliana 	 draft
 dicots 	 Arctium_minus 	 draft
 dicots 	 Ballota_nigra 	 draft
+dicots 	 Berberis_vulgaris 	 draft
 dicots 	 Buxus_sempervirens 	 draft
 dicots 	 Chamaenerion_angustifolium 	 draft
 dicots 	 Chenopodium_album 	 draft
@@ -103,6 +109,7 @@ dicots 	 Euphorbia_peplus 	 draft
 dicots 	 Filipendula_ulmaria 	 draft
 dicots 	 Geum_urbanum 	 draft
 dicots 	 Hedera_helix 	 draft
+dicots 	 Ilex_aquifolium 	 draft
 dicots 	 Impatiens_glandulifera 	 draft
 dicots 	 Impatiens_glandulifera 	 draft
 dicots 	 Impatiens_glandulifera 	 draft
@@ -135,12 +142,15 @@ dicots 	 Trifolium_subterraneum 	 draft
 dicots 	 Urtica_dioica 	 draft
 dicots 	 Urtica_urens 	 draft
 dicots 	 Viscum_album 	 draft
+monocots 	 Bromus_sterilis 	 draft
 monocots 	 Carex_depauperata 	 draft
 monocots 	 Juncus_effusus 	 draft
 monocots 	 Lemna_minuta 	 draft
 monocots 	 Luzula_sylvatica 	 draft
 monocots 	 Phragmites_australis 	 draft
 monocots 	 Schoenoplectus_lacustris 	 draft
+non-vascular-plants 	 Antitrichia_curtipendula 	 draft
+non-vascular-plants 	 Climacium_dendroides 	 draft
 non-vascular-plants 	 Hylocomiadelphus_triquetrus 	 draft
 non-vascular-plants 	 Lunularia_cruciata 	 draft
 non-vascular-plants 	 Polytrichum_commune 	 draft
