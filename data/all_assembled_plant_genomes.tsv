@@ -15,6 +15,7 @@ dicots 	 Polygonum_aviculare 	 released
 dicots 	 Potentilla_anserina 	 released
 dicots 	 Pulicaria_dysenterica 	 released
 dicots 	 Quercus_robur 	 released
+dicots 	 Sambucus_nigra 	 released
 dicots 	 Scutellaria_galericulata 	 released
 dicots 	 Senecio_squalidus 	 released
 dicots 	 Sherardia_arvensis 	 released
@@ -35,11 +36,13 @@ dicots 	 Ballota_nigra 	 curated
 dicots 	 Buxus_sempervirens 	 curated
 dicots 	 Chamaenerion_angustifolium 	 curated
 dicots 	 Chenopodium_album 	 curated
+dicots 	 Comarum_palustre 	 curated
 dicots 	 Euphorbia_peplus 	 curated
 dicots 	 Filipendula_ulmaria 	 curated
 dicots 	 Geum_urbanum 	 curated
 dicots 	 Hedera_helix 	 curated
 dicots 	 Hedera_helix 	 curated
+dicots 	 Ilex_aquifolium 	 curated
 dicots 	 Impatiens_glandulifera 	 curated
 dicots 	 Linaria_vulgaris 	 curated
 dicots 	 Linaria_vulgaris 	 curated
@@ -83,11 +86,15 @@ dicots 	 Trifolium_dubium 	 curated
 dicots 	 Trifolium_fragiferum 	 curated
 dicots 	 Urtica_urens 	 curated
 dicots 	 Viscum_album 	 curated
+monocots 	 Bromus_sterilis 	 curated
 monocots 	 Carex_depauperata 	 curated
 monocots 	 Juncus_effusus 	 curated
 monocots 	 Luzula_sylvatica 	 curated
 monocots 	 Phragmites_australis 	 curated
 monocots 	 Schoenoplectus_lacustris 	 curated
+non-vascular-plants 	 Antitrichia_curtipendula 	 curated
+non-vascular-plants 	 Climacium_dendroides 	 curated
+non-vascular-plants 	 Isothecium_myosuroides 	 curated
 non-vascular-plants 	 Lunularia_cruciata 	 curated
 non-vascular-plants 	 Polytrichum_commune 	 curated
 non-vascular-plants 	 Rhytidiadelphus_loreus 	 curated
@@ -95,7 +102,6 @@ non-vascular-plants 	 Rhytidiadelphus_loreus 	 curated
 non-vascular-plants 	 Thuidium_tamariscinum 	 curated
 non-vascular-plants 	 Thuidium_tamariscinum 	 curated
 dicots 	 Polygonum_aviculare 	 draft
-dicots 	 Scutellaria_minor 	 draft
 dicots 	 Ailanthus_altissima 	 draft
 dicots 	 Alnus_glutinosa 	 draft
 dicots 	 Arabidopsis_thaliana 	 draft
@@ -105,6 +111,7 @@ dicots 	 Berberis_vulgaris 	 draft
 dicots 	 Buxus_sempervirens 	 draft
 dicots 	 Chamaenerion_angustifolium 	 draft
 dicots 	 Chenopodium_album 	 draft
+dicots 	 Comarum_palustre 	 draft
 dicots 	 Euphorbia_peplus 	 draft
 dicots 	 Filipendula_ulmaria 	 draft
 dicots 	 Geum_urbanum 	 draft
@@ -130,6 +137,7 @@ dicots 	 Polygonum_aviculare 	 draft
 dicots 	 Potentilla_anserina 	 draft
 dicots 	 Pulicaria_dysenterica 	 draft
 dicots 	 Quercus_robur 	 draft
+dicots 	 Salicornia_ramosissima 	 draft
 dicots 	 Sambucus_nigra 	 draft
 dicots 	 Scutellaria_galericulata 	 draft
 dicots 	 Senecio_squalidus 	 draft
@@ -152,6 +160,7 @@ monocots 	 Schoenoplectus_lacustris 	 draft
 non-vascular-plants 	 Antitrichia_curtipendula 	 draft
 non-vascular-plants 	 Climacium_dendroides 	 draft
 non-vascular-plants 	 Hylocomiadelphus_triquetrus 	 draft
+non-vascular-plants 	 Isothecium_myosuroides 	 draft
 non-vascular-plants 	 Lunularia_cruciata 	 draft
 non-vascular-plants 	 Polytrichum_commune 	 draft
 non-vascular-plants 	 Rhytidiadelphus_loreus 	 draft

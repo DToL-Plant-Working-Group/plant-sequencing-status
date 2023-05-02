@@ -4,22 +4,22 @@ Two summary tables are presented here. The first is the number of assemblies in 
 
 | Plant Group | Stage | Number |
 | --- | --- | --- |
-| dicots | released | 21 |
+| dicots | released | 22 |
 | monocots | released | 2 |
 | non-vascular-plants | released | 3 |
-| dicots | curated | 59 |
-| monocots | curated | 5 |
-| non-vascular-plants | curated | 6 |
-| dicots | draft | 48 |
+| dicots | curated | 61 |
+| monocots | curated | 6 |
+| non-vascular-plants | curated | 9 |
+| dicots | draft | 49 |
 | monocots | draft | 7 |
-| non-vascular-plants | draft | 7 |
+| non-vascular-plants | draft | 8 |
 
 The second is the number of data types per species.
 
 | Data type | Number |
 | --- | --- |
-| hic-arima2 | 613 |
-| pacbio | 392 |
+| hic-arima2 | 625 |
+| pacbio | 441 |
 | 10x | 102 |
 | hic-dnazoo | 1 |
 | htag | 2 |
