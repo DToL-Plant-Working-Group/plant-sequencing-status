@@ -56,6 +56,7 @@ dicots 	 Anthriscus_sylvestris 	 genomic_data 	 drAntSylv1 	 pacbio
 dicots 	 Anthyllis_vulneraria 	 genomic_data 	 drAntVuln1 	 hic-arima2
 dicots 	 Anthyllis_vulneraria 	 genomic_data 	 drAntVuln1 	 pacbio
 dicots 	 Aquilegia_vulgaris 	 genomic_data 	 dmAquVulg1 	 hic-arima2
+dicots 	 Aquilegia_vulgaris 	 genomic_data 	 dmAquVulg1 	 pacbio
 dicots 	 Arabidopsis_thaliana 	 genomic_data 	 ddAraThal4 	 10x
 dicots 	 Arabidopsis_thaliana 	 genomic_data 	 ddAraThal4 	 pacbio
 dicots 	 Arabidopsis_thaliana 	 genomic_data 	 ddAraThal6 	 hic-arima2
@@ -93,6 +94,7 @@ dicots 	 Ballota_nigra 	 genomic_data 	 daBalNigr1 	 pacbio
 dicots 	 Barbarea_vulgaris 	 genomic_data 	 ddBarVulg1 	 hic-arima2
 dicots 	 Barbarea_vulgaris 	 genomic_data 	 ddBarVulg1 	 pacbio
 dicots 	 Barbarea_vulgaris 	 genomic_data 	 ddBarVulg2 	 hic-arima2
+dicots 	 Barbarea_vulgaris 	 genomic_data 	 ddBarVulg2 	 pacbio
 dicots 	 Bellardia_viscosa 	 genomic_data 	 daBelVisc1 	 hic-arima2
 dicots 	 Bellardia_viscosa 	 genomic_data 	 daBelVisc1 	 pacbio
 dicots 	 Bellis_perennis 	 genomic_data 	 daBelPere1 	 10x
@@ -303,6 +305,7 @@ dicots 	 Euonymus_europaeus 	 genomic_data 	 drEuoEuro1 	 hic-arima2
 dicots 	 Euonymus_europaeus 	 genomic_data 	 drEuoEuro1 	 pacbio
 dicots 	 Eupatorium_cannabinum 	 genomic_data 	 daEupCann1 	 10x
 dicots 	 Eupatorium_cannabinum 	 genomic_data 	 daEupCann1 	 hic-arima2
+dicots 	 Eupatorium_cannabinum 	 genomic_data 	 daEupCann1 	 pacbio
 dicots 	 Euphorbia_amygdaloides 	 genomic_data 	 ddEupAmyg1 	 hic-arima2
 dicots 	 Euphorbia_amygdaloides 	 genomic_data 	 ddEupAmyg1 	 pacbio
 dicots 	 Euphorbia_exigua 	 genomic_data 	 ddEupExig1 	 hic-arima2
@@ -724,6 +727,7 @@ dicots 	 Orobanche_minor 	 genomic_data 	 daOroMino1 	 hic-arima2
 dicots 	 Orobanche_minor 	 genomic_data 	 daOroMino1 	 pacbio
 dicots 	 Oxalis_acetosella 	 genomic_data 	 drOxaAcet2 	 hic-arima2
 dicots 	 Oxyria_digyna 	 genomic_data 	 dcOxyDigy1 	 hic-arima2
+dicots 	 Oxytropis_halleri 	 genomic_data 	 drOxyHall1 	 pacbio
 dicots 	 Papaver_rhoeas 	 genomic_data 	 dmPapRhoe1 	 10x
 dicots 	 Papaver_rhoeas 	 genomic_data 	 dmPapRhoe1 	 hic-arima2
 dicots 	 Papaver_rhoeas 	 genomic_data 	 dmPapRhoe1 	 pacbio
@@ -1026,6 +1030,7 @@ dicots 	 Tanacetum_vulgare 	 genomic_data 	 daTanVulg1 	 10x
 dicots 	 Tanacetum_vulgare 	 genomic_data 	 daTanVulg1 	 hic-arima2
 dicots 	 Tanacetum_vulgare 	 genomic_data 	 daTanVulg1 	 pacbio
 dicots 	 Tephroseris_integrifolia 	 genomic_data 	 daTepInte1 	 hic-arima2
+dicots 	 Tephroseris_palustris 	 genomic_data 	 daTepPalu1 	 pacbio
 dicots 	 Teucrium_botrys 	 genomic_data 	 daTeuBotr1 	 hic-arima2
 dicots 	 Teucrium_chamaedrys 	 genomic_data 	 daTeuCham1 	 hic-arima2
 dicots 	 Teucrium_chamaedrys 	 genomic_data 	 daTeuCham1 	 pacbio
@@ -1212,6 +1217,7 @@ monocots 	 Carex_bigelowii 	 genomic_data 	 lpCarBige2 	 pacbio
 monocots 	 Carex_capillaris 	 genomic_data 	 lpCarCapi2 	 hic-arima2
 monocots 	 Carex_capillaris 	 genomic_data 	 lpCarCapi2 	 pacbio
 monocots 	 Carex_caryophyllea 	 genomic_data 	 lpCarCary1 	 hic-arima2
+monocots 	 Carex_caryophyllea 	 genomic_data 	 lpCarCary1 	 pacbio
 monocots 	 Carex_depauperata 	 genomic_data 	 lpCarDepa1 	 hic-arima2
 monocots 	 Carex_depauperata 	 genomic_data 	 lpCarDepa1 	 pacbio
 monocots 	 Carex_distans 	 genomic_data 	 lpCarDist1 	 hic-arima2
@@ -1225,13 +1231,16 @@ monocots 	 Carex_hirta 	 genomic_data 	 lpCarHirt1 	 pacbio
 monocots 	 Carex_laevigata 	 genomic_data 	 lpCarLaev1 	 hic-arima2
 monocots 	 Carex_laevigata 	 genomic_data 	 lpCarLaev1 	 pacbio
 monocots 	 Carex_lepidocarpa 	 genomic_data 	 lpCarLepi1 	 hic-arima2
+monocots 	 Carex_leporina 	 genomic_data 	 lpCarLepo1 	 pacbio
 monocots 	 Carex_leporina 	 genomic_data 	 lpCarLepo2 	 hic-arima2
 monocots 	 Carex_montana 	 genomic_data 	 lpCarMont1 	 hic-arima2
 monocots 	 Carex_nigra 	 genomic_data 	 lpCarNigr1 	 hic-arima2
 monocots 	 Carex_nigra 	 genomic_data 	 lpCarNigr1 	 pacbio
 monocots 	 Carex_nigra 	 genomic_data 	 lpCarNigr3 	 pacbio
 monocots 	 Carex_otrubae 	 genomic_data 	 lpCarOtru1 	 hic-arima2
+monocots 	 Carex_otrubae 	 genomic_data 	 lpCarOtru1 	 pacbio
 monocots 	 Carex_pallescens 	 genomic_data 	 lpCarPall1 	 hic-arima2
+monocots 	 Carex_pallescens 	 genomic_data 	 lpCarPall1 	 pacbio
 monocots 	 Carex_panicea 	 genomic_data 	 lpCarPani1 	 hic-arima2
 monocots 	 Carex_panicea 	 genomic_data 	 lpCarPani1 	 pacbio
 monocots 	 Carex_paniculata 	 genomic_data 	 lpCarPanc1 	 hic-arima2
@@ -1353,6 +1362,7 @@ monocots 	 Lolium_perenne 	 genomic_data 	 lpLolPere1 	 hic-arima2
 monocots 	 Lolium_perenne 	 genomic_data 	 lpLolPere1 	 pacbio
 monocots 	 Luzula_campestris 	 genomic_data 	 lpLuzCamp1 	 hic-arima2
 monocots 	 Luzula_campestris 	 genomic_data 	 lpLuzCamp1 	 pacbio
+monocots 	 Luzula_spicata 	 genomic_data 	 lpLuzSpic1 	 pacbio
 monocots 	 Luzula_sylvatica 	 genomic_data 	 lpLuzSylv1 	 hic-arima2
 monocots 	 Luzula_sylvatica 	 genomic_data 	 lpLuzSylv1 	 pacbio
 monocots 	 Melica_uniflora 	 genomic_data 	 lpMelUnif1 	 hic-arima2
@@ -1418,6 +1428,7 @@ monocots 	 Tulipa_sylvestris 	 genomic_data 	 llTulSylv1 	 pacbio
 monocots 	 Typha_latifolia 	 genomic_data 	 lpTypLati1 	 10x
 monocots 	 Typha_latifolia 	 genomic_data 	 lpTypLati1 	 hic-arima2
 monocots 	 Typha_latifolia 	 genomic_data 	 lpTypLati1 	 pacbio
+monocots 	 Xerophyllum_tenax 	 genomic_data 	 llXerTena1 	 pacbio
 monocots 	 Zostera_marina 	 genomic_data 	 laZosMari16 	 pacbio
 monocots 	 Zostera_marina 	 genomic_data 	 laZosMari1 	 hic-arima2
 monocots 	 Zostera_marina 	 genomic_data 	 laZosMari2 	 pacbio
@@ -1512,6 +1523,7 @@ vascular-plants 	 Asplenium_scolopendrium 	 genomic_data 	 voAspScol1 	 10x
 vascular-plants 	 Asplenium_scolopendrium 	 genomic_data 	 voAspScol1 	 hic-arima2
 vascular-plants 	 Asplenium_scolopendrium 	 genomic_data 	 voAspScol1 	 pacbio
 vascular-plants 	 Asplenium_septentrionale 	 genomic_data 	 voAspSept1 	 hic-arima2
+vascular-plants 	 Asplenium_septentrionale 	 genomic_data 	 voAspSept1 	 pacbio
 vascular-plants 	 Asplenium_trichomanes 	 genomic_data 	 voAspTric1 	 hic-arima2
 vascular-plants 	 Asplenium_trichomanes 	 genomic_data 	 voAspTric1 	 pacbio
 vascular-plants 	 Asplenium_viride 	 genomic_data 	 voAspViri1 	 hic-arima2
@@ -1536,6 +1548,7 @@ vascular-plants 	 Equisetum_palustre 	 genomic_data 	 veEquPalu1 	 10x
 vascular-plants 	 Equisetum_palustre 	 genomic_data 	 veEquPalu1 	 hic-arima2
 vascular-plants 	 Equisetum_palustre 	 genomic_data 	 veEquPalu1 	 pacbio
 vascular-plants 	 Equisetum_sylvaticum 	 genomic_data 	 veEquSylv1 	 hic-arima2
+vascular-plants 	 Equisetum_sylvaticum 	 genomic_data 	 veEquSylv2 	 pacbio
 vascular-plants 	 Equisetum_telmateia 	 genomic_data 	 veEquTelm1 	 10x
 vascular-plants 	 Equisetum_telmateia 	 genomic_data 	 veEquTelm1 	 hic-arima2
 vascular-plants 	 Equisetum_telmateia 	 genomic_data 	 veEquTelm1 	 pacbio
