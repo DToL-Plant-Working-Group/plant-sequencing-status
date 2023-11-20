@@ -176,6 +176,7 @@ dicots 	 Centaurea_nigra 	 genomic_data 	 daCenNigr1 	 hic-arima2
 dicots 	 Centaurea_nigra 	 genomic_data 	 daCenNigr1 	 pacbio
 dicots 	 Centaurium_erythraea 	 genomic_data 	 daCenEryt1 	 hic-arima2
 dicots 	 Centaurium_erythraea 	 genomic_data 	 daCenEryt1 	 pacbio
+dicots 	 Cerastium_alpinum 	 genomic_data 	 dcCerAlpi1 	 pacbio
 dicots 	 Cerastium_arvense 	 genomic_data 	 dcCerArve1 	 hic-arima2
 dicots 	 Cerastium_fontanum 	 genomic_data 	 dcCerFont2 	 hic-arima2
 dicots 	 Cerastium_fontanum 	 genomic_data 	 dcCerFont2 	 pacbio
@@ -1057,6 +1058,7 @@ dicots 	 Trifolium_occidentale 	 genomic_data 	 drTriOcci1 	 hic-arima2
 dicots 	 Trifolium_pratense 	 genomic_data 	 drTriPrat1 	 pacbio
 dicots 	 Trifolium_pratense 	 genomic_data 	 drTriPrat2 	 hic-arima2
 dicots 	 Trifolium_repens 	 genomic_data 	 drTriRepe1 	 hic-arima2
+dicots 	 Trifolium_squamosum 	 genomic_data 	 drTriSqua1 	 hic-arima2
 dicots 	 Trifolium_subterraneum 	 genomic_data 	 drTriSubt1 	 hic-arima2
 dicots 	 Trifolium_subterraneum 	 genomic_data 	 drTriSubt1 	 pacbio
 dicots 	 Tripleurospermum_maritimum 	 genomic_data 	 daTriMari1 	 hic-arima2
@@ -1155,6 +1157,7 @@ monocots 	 Agrostis_gigantea 	 genomic_data 	 lpAgrGiga1 	 hic-arima2
 monocots 	 Agrostis_gigantea 	 genomic_data 	 lpAgrGiga1 	 pacbio
 monocots 	 Agrostis_stolonifera 	 genomic_data 	 lpAgrStol1 	 hic-arima2
 monocots 	 Agrostis_stolonifera 	 genomic_data 	 lpAgrStol1 	 pacbio
+monocots 	 Aira_praecox 	 genomic_data 	 lpAirPrae1 	 pacbio
 monocots 	 Alisma_plantago-aquatica 	 genomic_data 	 laAliPlan1 	 hic-arima2
 monocots 	 Alisma_plantago-aquatica 	 genomic_data 	 laAliPlan1 	 pacbio
 monocots 	 Allium_ampeloprasum 	 genomic_data 	 lsAllAmpe1 	 hic-arima2
@@ -1348,6 +1351,7 @@ monocots 	 Juncus_gerardii 	 genomic_data 	 lpJunGera1 	 pacbio
 monocots 	 Juncus_inflexus 	 genomic_data 	 lpJunInfl1 	 hic-arima2
 monocots 	 Juncus_inflexus 	 genomic_data 	 lpJunInfl1 	 pacbio
 monocots 	 Juncus_squarrosus 	 genomic_data 	 lpJunSqua1 	 hic-arima2
+monocots 	 Koeleria_macrantha 	 genomic_data 	 lpKoeMacr1 	 pacbio
 monocots 	 Leersia_oryzoides 	 genomic_data 	 lpLeeOryz1 	 hic-arima2
 monocots 	 Leersia_oryzoides 	 genomic_data 	 lpLeeOryz1 	 pacbio
 monocots 	 Lemna_gibba 	 genomic_data 	 laLemGibb1 	 hic-arima2
@@ -1385,6 +1389,7 @@ monocots 	 Phleum_pratense 	 genomic_data 	 lpPhlPrat1 	 hic-arima2
 monocots 	 Phragmites_australis 	 genomic_data 	 lpPhrAust1 	 hic-arima2
 monocots 	 Phragmites_australis 	 genomic_data 	 lpPhrAust1 	 pacbio
 monocots 	 Poa_alpina 	 genomic_data 	 lpPoaAlpi2 	 hic-arima2
+monocots 	 Poa_chaixii 	 genomic_data 	 lpPoaChai1 	 pacbio
 monocots 	 Poa_infirma 	 genomic_data 	 lpPoaInfi1 	 hic-arima2
 monocots 	 Poa_infirma 	 genomic_data 	 lpPoaInfi1 	 pacbio
 monocots 	 Poa_trivialis 	 genomic_data 	 lpPoaTriv1 	 hic-arima2

@@ -7,7 +7,7 @@ Two summary tables are presented here. The first is the number of assemblies in 
 | dicots | released | 56 |
 | monocots | released | 4 |
 | non-vascular-plants | released | 7 |
-| dicots | curated | 98 |
+| dicots | curated | 99 |
 | monocots | curated | 10 |
 | non-vascular-plants | curated | 9 |
 | dicots | draft | 115 |
@@ -18,8 +18,8 @@ The second is the number of data types per species.
 
 | Data type | Number |
 | --- | --- |
-| hic-arima2 | 776 |
-| pacbio | 595 |
+| hic-arima2 | 777 |
+| pacbio | 599 |
 | 10x | 102 |
 | hic-dnazoo | 1 |
 | htag | 2 |
