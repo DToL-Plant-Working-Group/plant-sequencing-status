@@ -7,7 +7,7 @@ Two summary tables are presented here. The first is the number of assemblies in 
 | dicots | released | 70 |
 | monocots | released | 7 |
 | non-vascular-plants | released | 7 |
-| dicots | curated | 110 |
+| dicots | curated | 112 |
 | monocots | curated | 14 |
 | non-vascular-plants | curated | 13 |
 | dicots | draft | 131 |
