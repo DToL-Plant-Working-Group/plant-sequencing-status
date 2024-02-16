@@ -2,14 +2,14 @@ library(data.table)
 
 setwd("/lustre/scratch123/tol/teams/blaxter/users/mb39/plant-sequencing-status/src")
 
-assemblies <- fread("../data/all_assembled_plant_genomes.tsv",
+assemblies <- unique(fread("../data/all_assembled_plant_genomes.tsv",
     col.names = c("group", "species", "stage"),
     header = FALSE
-)
-samples <- fread("../data/all_plant_samples_by_genomic_data.tsv",
+))
+samples <- unique(fread("../data/all_plant_samples_by_genomic_data.tsv",
     col.names = c("group", "species", "delete", "sample", "type"),
     header = FALSE
-)
+))
 
 no_assemblies <- assemblies[, .(.N), by = .(group, stage)]
 
