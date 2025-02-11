@@ -299,6 +299,7 @@ dicots 	 Salicornia_ramosissima 	 curated
 dicots 	 Salix_caprea 	 curated
 dicots 	 Salix_cinerea 	 curated
 dicots 	 Salix_repens 	 curated
+dicots 	 Salix_viminalis 	 curated
 dicots 	 Sambucus_nigra 	 curated
 dicots 	 Samolus_valerandi 	 curated
 dicots 	 Scutellaria_galericulata 	 curated
@@ -309,6 +310,7 @@ dicots 	 Solanum_dulcamara 	 curated
 dicots 	 Solanum_nigrum 	 curated
 dicots 	 Spergularia_bocconei 	 curated
 dicots 	 Spergularia_marina 	 curated
+dicots 	 Syringa_vulgaris 	 curated
 dicots 	 Tamarix_gallica 	 curated
 dicots 	 Tanacetum_parthenium 	 curated
 dicots 	 Tanacetum_vulgare 	 curated
@@ -538,6 +540,7 @@ dicots 	 Lythrum_hyssopifolia 	 draft
 dicots 	 Malus_domestica 	 draft
 dicots 	 Malus_sylvestris 	 draft
 dicots 	 Malus_x_robusta 	 draft
+dicots 	 Malva_neglecta 	 draft
 dicots 	 Matricaria_chamomilla 	 draft
 dicots 	 Matricaria_discoidea 	 draft
 dicots 	 Matthiola_sinuata 	 draft
@@ -703,6 +706,8 @@ monocots 	 Iris_foetidissima 	 draft
 monocots 	 Juncus_bufonius 	 draft
 monocots 	 Juncus_effusus 	 draft
 monocots 	 Juncus_inflexus 	 draft
+monocots 	 Juncus_squarrosus 	 draft
+monocots 	 Leersia_oryzoides 	 draft
 monocots 	 Lemna_minuta 	 draft
 monocots 	 Luzula_pallescens 	 draft
 monocots 	 Luzula_sylvatica 	 draft
@@ -717,9 +722,12 @@ monocots 	 Schoenoplectus_lacustris 	 draft
 monocots 	 Schoenoplectus_triqueter 	 draft
 monocots 	 Schoenus_nigricans 	 draft
 monocots 	 Scirpus_sylvaticus 	 draft
+monocots 	 Sparganium_emersum 	 draft
 monocots 	 Sparganium_erectum 	 draft
+monocots 	 Trichophorum_cespitosum 	 draft
 monocots 	 Triglochin_maritima 	 draft
 monocots 	 Triglochin_palustris 	 draft
+non-vascular-plants 	 Andreaea_hookeri 	 draft
 non-vascular-plants 	 Anomodon_viticulosus 	 draft
 non-vascular-plants 	 Antitrichia_curtipendula 	 draft
 non-vascular-plants 	 Brachythecium_rutabulum 	 draft
