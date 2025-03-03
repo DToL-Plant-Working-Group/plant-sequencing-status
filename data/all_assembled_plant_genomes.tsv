@@ -194,6 +194,7 @@ dicots 	 Calluna_vulgaris 	 curated
 dicots 	 Calystegia_soldanella 	 curated
 dicots 	 Cardamine_flexuosa 	 curated
 dicots 	 Cardamine_hirsuta 	 curated
+dicots 	 Carlina_vulgaris 	 curated
 dicots 	 Chamaenerion_angustifolium 	 curated
 dicots 	 Chenopodium_album 	 curated
 dicots 	 Comarum_palustre 	 curated
@@ -205,6 +206,7 @@ dicots 	 Cruciata_laevipes 	 curated
 dicots 	 Draba_incana 	 curated
 dicots 	 Draba_verna 	 curated
 dicots 	 Dryas_octopetala 	 curated
+dicots 	 Epilobium_hirsutum 	 curated
 dicots 	 Erodium_maritimum 	 curated
 dicots 	 Erodium_moschatum 	 curated
 dicots 	 Euonymus_europaeus 	 curated
@@ -237,10 +239,13 @@ dicots 	 Hypericum_pulchrum 	 curated
 dicots 	 Ilex_aquifolium 	 curated
 dicots 	 Impatiens_glandulifera 	 curated
 dicots 	 Impatiens_parviflora 	 curated
+dicots 	 Jacobaea_maritima 	 curated
+dicots 	 Jacobaea_vulgaris 	 curated
 dicots 	 Jasione_montana 	 curated
 dicots 	 Laburnum_anagyroides 	 curated
 dicots 	 Lamium_amplexicaule 	 curated
 dicots 	 Lamium_purpureum 	 curated
+dicots 	 Lapsana_communis 	 curated
 dicots 	 Lathyrus_aphaca 	 curated
 dicots 	 Lathyrus_linifolius 	 curated
 dicots 	 Lepidium_didymum 	 curated
@@ -251,6 +256,7 @@ dicots 	 Lycopus_europaeus 	 curated
 dicots 	 Malus_domestica 	 curated
 dicots 	 Malus_sylvestris 	 curated
 dicots 	 Malus_x_robusta 	 curated
+dicots 	 Malva_neglecta 	 curated
 dicots 	 Matricaria_chamomilla 	 curated
 dicots 	 Matricaria_discoidea 	 curated
 dicots 	 Matthiola_sinuata 	 curated
@@ -264,10 +270,12 @@ dicots 	 Moehringia_trinervia 	 curated
 dicots 	 Myrica_gale 	 curated
 dicots 	 Myriophyllum_alterniflorum 	 curated
 dicots 	 Nasturtium_officinale 	 curated
+dicots 	 Ononis_reclinata 	 curated
 dicots 	 Oxyria_digyna 	 curated
 dicots 	 Parietaria_judaica 	 curated
 dicots 	 Pentaglottis_sempervirens 	 curated
 dicots 	 Persicaria_maculosa 	 curated
+dicots 	 Petasites_albus 	 curated
 dicots 	 Petasites_hybridus 	 curated
 dicots 	 Polygonum_aviculare 	 curated
 dicots 	 Polygonum_maritimum 	 curated
@@ -290,11 +298,14 @@ dicots 	 Quercus_robur 	 curated
 dicots 	 Ranunculus_sardous 	 curated
 dicots 	 Ranunculus_sceleratus 	 curated
 dicots 	 Rhinanthus_minor 	 curated
+dicots 	 Ribes_rubrum 	 curated
+dicots 	 Ribes_uva_crispa 	 curated
 dicots 	 Rosa_agrestis 	 curated
 dicots 	 Rosa_canina 	 curated
 dicots 	 Rosa_rugosa 	 curated
 dicots 	 Rosa_spinosissima 	 curated
 dicots 	 Rubus_caesius 	 curated
+dicots 	 Rubus_idaeus 	 curated
 dicots 	 Salicornia_ramosissima 	 curated
 dicots 	 Salix_caprea 	 curated
 dicots 	 Salix_cinerea 	 curated
@@ -314,6 +325,8 @@ dicots 	 Syringa_vulgaris 	 curated
 dicots 	 Tamarix_gallica 	 curated
 dicots 	 Tanacetum_parthenium 	 curated
 dicots 	 Tanacetum_vulgare 	 curated
+dicots 	 Thalictrum_minus 	 curated
+dicots 	 Torilis_japonica 	 curated
 dicots 	 Tragopogon_pratensis 	 curated
 dicots 	 Trifolium_dubium 	 curated
 dicots 	 Trifolium_fragiferum 	 curated
@@ -331,6 +344,7 @@ dicots 	 Verbascum_nigrum 	 curated
 dicots 	 Verbascum_thapsus 	 curated
 dicots 	 Verbena_officinalis 	 curated
 dicots 	 Veronica_arvensis 	 curated
+dicots 	 Veronica_scutellata 	 curated
 dicots 	 Veronica_serpyllifolia 	 curated
 dicots 	 Veronica_triphyllos 	 curated
 dicots 	 Veronica_verna 	 curated
@@ -357,8 +371,11 @@ monocots 	 Carex_sylvatica 	 curated
 monocots 	 Cyperus_fuscus 	 curated
 monocots 	 Digitaria_sanguinalis 	 curated
 monocots 	 Eleocharis_quinqueflora 	 curated
+monocots 	 Eriophorum_vaginatum 	 curated
 monocots 	 Iris_foetidissima 	 curated
 monocots 	 Juncus_effusus 	 curated
+monocots 	 Juncus_squarrosus 	 curated
+monocots 	 Leersia_oryzoides 	 curated
 monocots 	 Lemna_minuta 	 curated
 monocots 	 Luzula_pallescens 	 curated
 monocots 	 Luzula_sylvatica 	 curated
@@ -366,9 +383,12 @@ monocots 	 Narthecium_ossifragum 	 curated
 monocots 	 Phragmites_australis 	 curated
 monocots 	 Poa_chaixii 	 curated
 monocots 	 Polypogon_viridis 	 curated
+monocots 	 Potamogeton_natans 	 curated
 monocots 	 Schoenoplectus_lacustris 	 curated
 monocots 	 Schoenoplectus_triqueter 	 curated
 monocots 	 Scirpus_sylvaticus 	 curated
+monocots 	 Sparganium_emersum 	 curated
+monocots 	 Trichophorum_cespitosum 	 curated
 monocots 	 Triglochin_maritima 	 curated
 monocots 	 Triglochin_palustris 	 curated
 non-vascular-plants 	 Antitrichia_curtipendula 	 curated
@@ -395,6 +415,7 @@ non-vascular-plants 	 Rhynchostegiella_tenella 	 curated
 non-vascular-plants 	 Rhynchostegium_megapolitanum 	 curated
 non-vascular-plants 	 Rhytidiadelphus_loreus 	 curated
 non-vascular-plants 	 Sphagnum_contortum 	 curated
+non-vascular-plants 	 Sphagnum_girgensohnii 	 curated
 non-vascular-plants 	 Sphagnum_tenellum 	 curated
 non-vascular-plants 	 Straminergon_stramineum 	 curated
 non-vascular-plants 	 Thuidium_tamariscinum 	 curated
@@ -532,6 +553,7 @@ dicots 	 Linnaea_borealis 	 draft
 dicots 	 Linum_bienne 	 draft
 dicots 	 Lithospermum_officinale 	 draft
 dicots 	 Lobelia_dortmanna 	 draft
+dicots 	 Lobelia_urens 	 draft
 dicots 	 Logfia_minima 	 draft
 dicots 	 Lotus_pedunculatus 	 draft
 dicots 	 Lycopus_europaeus 	 draft
@@ -700,6 +722,7 @@ monocots 	 Cyperus_fuscus 	 draft
 monocots 	 Digitaria_sanguinalis 	 draft
 monocots 	 Eleocharis_parvula 	 draft
 monocots 	 Eleocharis_quinqueflora 	 draft
+monocots 	 Eriophorum_angustifolium 	 draft
 monocots 	 Eriophorum_vaginatum 	 draft
 monocots 	 Holcus_mollis 	 draft
 monocots 	 Iris_foetidissima 	 draft
