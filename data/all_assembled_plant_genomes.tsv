@@ -169,6 +169,7 @@ non-vascular-plants 	 Ulota_crispa 	 released
 dicots 	 Acaena_ovalifolia 	 curated
 dicots 	 Acer_campestre 	 curated
 dicots 	 Adonis_annua 	 curated
+dicots 	 Aesculus_hippocastanum 	 curated
 dicots 	 Agrostemma_githago 	 curated
 dicots 	 Ailanthus_altissima 	 curated
 dicots 	 Ajuga_chamaepitys 	 curated
@@ -194,9 +195,11 @@ dicots 	 Calluna_vulgaris 	 curated
 dicots 	 Calystegia_soldanella 	 curated
 dicots 	 Cardamine_flexuosa 	 curated
 dicots 	 Cardamine_hirsuta 	 curated
+dicots 	 Carduus_nutans 	 curated
 dicots 	 Carlina_vulgaris 	 curated
 dicots 	 Chamaenerion_angustifolium 	 curated
 dicots 	 Chenopodium_album 	 curated
+dicots 	 Cirsium_eriophorum 	 curated
 dicots 	 Comarum_palustre 	 curated
 dicots 	 Convolvulus_arvensis 	 curated
 dicots 	 Cornus_suecica 	 curated
@@ -319,6 +322,7 @@ dicots 	 Senecio_squalidus 	 curated
 dicots 	 Sherardia_arvensis 	 curated
 dicots 	 Solanum_dulcamara 	 curated
 dicots 	 Solanum_nigrum 	 curated
+dicots 	 Spergula_arvensis 	 curated
 dicots 	 Spergularia_bocconei 	 curated
 dicots 	 Spergularia_marina 	 curated
 dicots 	 Syringa_vulgaris 	 curated
@@ -343,6 +347,7 @@ dicots 	 Vaccinium_vitis_idaea 	 curated
 dicots 	 Verbascum_nigrum 	 curated
 dicots 	 Verbascum_thapsus 	 curated
 dicots 	 Verbena_officinalis 	 curated
+dicots 	 Veronica_anagallis_aquatica 	 curated
 dicots 	 Veronica_arvensis 	 curated
 dicots 	 Veronica_scutellata 	 curated
 dicots 	 Veronica_serpyllifolia 	 curated
@@ -724,7 +729,9 @@ monocots 	 Eleocharis_parvula 	 draft
 monocots 	 Eleocharis_quinqueflora 	 draft
 monocots 	 Eriophorum_angustifolium 	 draft
 monocots 	 Eriophorum_vaginatum 	 draft
+monocots 	 Hierochloe_odorata 	 draft
 monocots 	 Holcus_mollis 	 draft
+monocots 	 Hordeum_vulgare 	 draft
 monocots 	 Iris_foetidissima 	 draft
 monocots 	 Juncus_bufonius 	 draft
 monocots 	 Juncus_effusus 	 draft
