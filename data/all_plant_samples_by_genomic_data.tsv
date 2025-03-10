@@ -1826,6 +1826,7 @@ monocots 	 Carex_divulsa 	 genomic_data 	 lpCarDivu1 	 hic-arima2
 monocots 	 Carex_divulsa 	 genomic_data 	 lpCarDivu1 	 pacbio
 monocots 	 Carex_echinata 	 genomic_data 	 lpCarEchi1 	 pacbio
 monocots 	 Carex_echinata 	 genomic_data 	 lpCarEchi2 	 hic-arima2
+monocots 	 Carex_echinata 	 genomic_data 	 lpCarEchi2 	 pacbio
 monocots 	 Carex_elata 	 genomic_data 	 lpCarElat1 	 hic-arima2
 monocots 	 Carex_elata 	 genomic_data 	 lpCarElat1 	 pacbio
 monocots 	 Carex_extensa 	 genomic_data 	 lpCarExte1 	 hic-arima2

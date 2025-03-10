@@ -206,6 +206,7 @@ dicots 	 Cornus_suecica 	 curated
 dicots 	 Corylus_avellana 	 curated
 dicots 	 Crataegus_laevigata 	 curated
 dicots 	 Cruciata_laevipes 	 curated
+dicots 	 Cymbalaria_muralis 	 curated
 dicots 	 Draba_incana 	 curated
 dicots 	 Draba_verna 	 curated
 dicots 	 Dryas_octopetala 	 curated
@@ -224,8 +225,11 @@ dicots 	 Filipendula_ulmaria 	 curated
 dicots 	 Fragaria_moschata 	 curated
 dicots 	 Fragaria_vesca 	 curated
 dicots 	 Frangula_alnus 	 curated
+dicots 	 Galatella_linosyris 	 curated
 dicots 	 Galeopsis_tetrahit 	 curated
 dicots 	 Galium_aparine 	 curated
+dicots 	 Galium_uliginosum 	 curated
+dicots 	 Geranium_molle 	 curated
 dicots 	 Geranium_rotundifolium 	 curated
 dicots 	 Geum_rivale 	 curated
 dicots 	 Geum_urbanum 	 curated
@@ -254,6 +258,8 @@ dicots 	 Lathyrus_linifolius 	 curated
 dicots 	 Lepidium_didymum 	 curated
 dicots 	 Ligustrum_vulgare 	 curated
 dicots 	 Linaria_vulgaris 	 curated
+dicots 	 Lobelia_dortmanna 	 curated
+dicots 	 Lobelia_urens 	 curated
 dicots 	 Logfia_minima 	 curated
 dicots 	 Lycopus_europaeus 	 curated
 dicots 	 Malus_domestica 	 curated
@@ -316,15 +322,18 @@ dicots 	 Salix_repens 	 curated
 dicots 	 Salix_viminalis 	 curated
 dicots 	 Sambucus_nigra 	 curated
 dicots 	 Samolus_valerandi 	 curated
+dicots 	 Saxifraga_aizoides 	 curated
 dicots 	 Scutellaria_galericulata 	 curated
 dicots 	 Scutellaria_minor 	 curated
 dicots 	 Senecio_squalidus 	 curated
+dicots 	 Senecio_sylvaticus 	 curated
 dicots 	 Sherardia_arvensis 	 curated
 dicots 	 Solanum_dulcamara 	 curated
 dicots 	 Solanum_nigrum 	 curated
 dicots 	 Spergula_arvensis 	 curated
 dicots 	 Spergularia_bocconei 	 curated
 dicots 	 Spergularia_marina 	 curated
+dicots 	 Succisa_pratensis 	 curated
 dicots 	 Syringa_vulgaris 	 curated
 dicots 	 Tamarix_gallica 	 curated
 dicots 	 Tanacetum_parthenium 	 curated
@@ -340,6 +349,7 @@ dicots 	 Trifolium_subterraneum 	 curated
 dicots 	 Tripolium_pannonicum 	 curated
 dicots 	 Tussilago_farfara 	 curated
 dicots 	 Ulmus_glabra 	 curated
+dicots 	 Ulmus_minor 	 curated
 dicots 	 Umbilicus_rupestris 	 curated
 dicots 	 Urtica_dioica 	 curated
 dicots 	 Urtica_urens 	 curated
