@@ -1,6 +1,6 @@
 library(data.table)
 
-setwd("/lustre/scratch123/tol/teams/blaxter/users/mb39/plant-sequencing-status/src")
+setwd("/lustre/scratch122/tol/teams/blaxter/users/mb39/plant-sequencing-status/src")
 
 assemblies <- unique(fread("../data/all_assembled_plant_genomes.tsv",
     col.names = c("group", "species", "stage"),
