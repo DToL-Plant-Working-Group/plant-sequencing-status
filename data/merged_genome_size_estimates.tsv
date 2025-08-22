@@ -11,8 +11,8 @@ Aesculus hippocastanum	drAesHipp1.hap1.1	Chromosome	513587473	513548273	drAesHip
 Aesculus hippocastanum	drAesHipp1.hap2.1	Scaffold	506897474	506862074	drAesHipp1	568232822
 Agrostemma githago	dcAgrGith1.1 alternate haplotype	Contig	25466553	25466553	dcAgrGith1	938568361
 Agrostemma githago	dcAgrGith1.1	Chromosome	1735037658	1734959258	dcAgrGith1	938568361
-Ailanthus altissimus	drAilAlti1.1 alternate haplotype	Contig	937153372	937153372		
-Ailanthus altissimus	drAilAlti1.1	Chromosome	938396475	938393475		
+Ailanthus altissima	drAilAlti1.1 alternate haplotype	Contig	937153372	937153372	drAilAlti1	1012463836
+Ailanthus altissima	drAilAlti1.1	Chromosome	938396475	938393475	drAilAlti1	1012463836
 Ajuga chamaepitys	daAjuCham1.1 alternate haplotype	Contig	39014124	39014124	daAjuCham1	991357294
 Ajuga chamaepitys	daAjuCham1.1	Chromosome	891563074	891515274	daAjuCham1	991357294
 Ajuga reptans	daAjuRept1.hap1.1	Chromosome	984048775	983953775	daAjuRept1	1013879047
@@ -47,8 +47,6 @@ Arctium minus	daArcMinu1.1 alternate haplotype	Contig	465430802	465430802	daArcM
 Arctium minus	daArcMinu1.1	Chromosome	1903063616	1903060816	daArcMinu1	1125772609
 Arenaria serpyllifolia	dcAreSerp1.hap1.1	Chromosome	726254524	726217924	dcAreSerp1	372435111
 Arenaria serpyllifolia	dcAreSerp1.hap2.1	Scaffold	713024767	712997767	dcAreSerp1	372435111
-Argentina anserina	drPotAnse1.1 alternate haplotype	Scaffold	604516465	604515465		
-Argentina anserina	drPotAnse1.1	Chromosome	236973942	236970542		
 Armoracia rusticana	ddArmRust1.hap1.1	Chromosome	605901571	605827171	ddArmRust1	667543241
 Armoracia rusticana	ddArmRust1.hap2.1	Chromosome	589750271	589682071	ddArmRust1	667543241
 Astragalus alpinus	drAstAlpi1.hap1.1	Chromosome	766579426	766430826	drAstAlpi1	749506819
@@ -148,6 +146,8 @@ Chenopodium album	dcCheAlbu1.1 alternate haplotype	Contig	5987979	5987979	dcCheA
 Chenopodium album	dcCheAlbu1.1	Chromosome	1593843283	1593830057	dcCheAlbu1	877760056
 Cirsium dissectum	daCirDiss1.hap1.1	Chromosome	1069227339	1069155239	daCirDiss1	1197068929
 Cirsium dissectum	daCirDiss1.hap2.1	Scaffold	1020155333	1020091633	daCirDiss1	1197068929
+Cirsium eriophorum	daCirErio1.hap1.1	Chromosome	1578568570	1578439170	daCirErio1	1701627374
+Cirsium eriophorum	daCirErio1.hap2.1	Scaffold	1589592816	1589473016	daCirErio1	1701627374
 Cirsium heterophyllum	daCirHete1.hap1.1	Chromosome	944019485	943954185	daCirHete1	923229218
 Cirsium heterophyllum	daCirHete1.hap2.1	Scaffold	940461936	940397836	daCirHete1	923229218
 Climacium dendroides	cbCliDend2.1	Chromosome	413060100	413045700	cbCliDend1	7316670
@@ -263,8 +263,12 @@ Geum rivale	drGeuRiva1.hap1.1	Chromosome	1047505177	1047495360	drGeuRiva1	106707
 Geum rivale	drGeuRiva1.hap2.1	Scaffold	1031235461	1031224861	drGeuRiva1	1067077523
 Geum urbanum	drGeuUrba1.1 alternate haplotype	Contig	384893071	384893071	drGeuUrba1	652392134
 Geum urbanum	drGeuUrba1.1	Chromosome	1304378891	1304361491	drGeuUrba1	652392134
+Glaux maritima	ddGlaMari2.hap1.1	Chromosome	1323519841	1323499141	ddGlaMari2	1345187692
+Glaux maritima	ddGlaMari2.hap2.1	Scaffold	1293096983	1292772683	ddGlaMari2	1345187692
 Glechoma hederacea	daGleHede1.hap1.1	Chromosome	753334131	753271931	daGleHede1	436209919
 Glechoma hederacea	daGleHede1.hap2.1	Scaffold	741838258	741774258	daGleHede1	436209919
+Gnaphalium supinum	daGnaSupi1.hap1.1	Chromosome	1062158553	1062117353	daGnaSupi1	1082386791
+Gnaphalium supinum	daGnaSupi1.hap2.1	Scaffold	1054330278	1054287078	daGnaSupi1	1082386791
 Gnaphalium uliginosum	daGnaUlig1.1 alternate haplotype	Contig	14642887	14642887	daGnaUlig1	368902909
 Gnaphalium uliginosum	daGnaUlig1.1	Chromosome	354384338	354363738	daGnaUlig1	368902909
 Hedera helix	drHedHeli1.1 alternate haplotype	Scaffold	1083831595	1083830589	drHedHeli13	1349288254
@@ -330,6 +334,7 @@ Inula salicina	daInuSali1.hap2.1	Chromosome	1549176105	1548979305	daInuSali1	154
 Iris foetidissima	lsIriFoet1.hap1.1	Chromosome	6994326806	6993956206	lsIriFoet1	7148443110
 Iris foetidissima	lsIriFoet1.hap2.1	Scaffold	6884123664	6883657264	lsIriFoet1	7148443110
 Isopterygiella pulchella	cbIsoPulc3.1	Chromosome	641620782	641324382	cbIsoPulc3	605140658
+Isothecium myosuroides	cbIsoMyos1.1	Chromosome	388278473	388267673	cbIsoMyos1	386715274
 Jacobaea maritima	daJacMari1.hap1.1	Chromosome	2191046023	2190590623	daJacMari1	1114962839
 Jacobaea maritima	daJacMari1.hap2.1	Scaffold	2193897259	2193454259	daJacMari1	1114962839
 Jacobaea vulgaris	daJacVulg1.hap1.1	Chromosome	2027853508	2027325508	daJacVulg1	1988805428
@@ -381,8 +386,6 @@ Lobelia urens	daLobUren4.hap2.1	Chromosome	393054755	393036955	daLobUren4	459287
 Loeskeobryum brevirostre	cbLoeBrev3.1	Chromosome	385085386	384916786	cbLoeBrev3	375542338
 Logfia minima	daLogMini1.1 alternate haplotype	Contig	5876633	5876633	daLogMini1	281467773
 Logfia minima	daLogMini1.1	Chromosome	544901426	544814626	daLogMini1	281467773
-Lophiolepis eriophora	daCirErio1.hap1.1	Chromosome	1578568570	1578439170		
-Lophiolepis eriophora	daCirErio1.hap2.1	Scaffold	1589592816	1589473016		
 Lotus pedunculatus	drLotPedu3.1 alternate haplotype	Scaffold	499640687	499549187	drLotPedu2	161098329
 Lotus pedunculatus	drLotPedu3.1 alternate haplotype	Scaffold	499640687	499549187	drLotPedu3	523570004
 Lotus pedunculatus	drLotPedu3.1	Chromosome	480457339	480393939	drLotPedu2	161098329
@@ -396,8 +399,6 @@ Luzula sylvatica	lpLuzSylv1.1	Chromosome	444535728	444506128	lpLuzSylv11	5118760
 Luzula sylvatica	lpLuzSylv1.1	Chromosome	444535728	444506128	lpLuzSylv1	458868954
 Luzula sylvatica	lpLuzSylv1.1 alternate haplotype	Scaffold	324892716	324892516	lpLuzSylv11	511876018
 Luzula sylvatica	lpLuzSylv1.1 alternate haplotype	Scaffold	324892716	324892516	lpLuzSylv1	458868954
-Lysimachia maritima	ddGlaMari2.hap1.1	Chromosome	1323519841	1323499141		
-Lysimachia maritima	ddGlaMari2.hap2.1	Scaffold	1293096983	1292772683		
 Lysimachia thyrsiflora	ddLysThyr1.hap1.1	Chromosome	1252306411	1252214811	ddLysThyr1	1260048106
 Lysimachia thyrsiflora	ddLysThyr1.hap2.1	Scaffold	1265972079	1265874479	ddLysThyr1	1260048106
 Lythrum hyssopifolia	drLytHyso1.hap1.1	Chromosome	659862002	659663402	drLytHyso1	707681841
@@ -509,8 +510,6 @@ Nasturtium officinale	ddNasOffi1.1	Chromosome	224952480	224905680	ddNasOffi1	109
 Neckera pumila	cbNecPumi1.1	Chromosome	339344350	339320150	cbNecPumi1	387263053
 Nymphoides peltata	daNymPelt1.hap1.1	Chromosome	721921864	721878864	daNymPelt1	729230245
 Nymphoides peltata	daNymPelt1.hap2.1	Scaffold	724172888	724154488	daNymPelt1	729230245
-Omalotheca supina	daGnaSupi1.hap1.1	Chromosome	1062158553	1062117353		
-Omalotheca supina	daGnaSupi1.hap2.1	Scaffold	1054330278	1054287078		
 Ononis reclinata	drOnoRecl1.hap1.1	Chromosome	1196220647	1196006647	drOnoRecl1	636363319
 Ononis reclinata	drOnoRecl1.hap2.1	Scaffold	1136642483	1136492283	drOnoRecl1	636363319
 Ornithopus perpusillus	drOrnPerp1.hap1.1	Chromosome	528923748	528879148	drOrnPerp1	572158664
@@ -565,6 +564,8 @@ Populus tremula	ddPopTrem1.hap1.1	Chromosome	408644056	408621456	ddPopTrem1	4742
 Populus tremula	ddPopTrem1.hap2.1	Scaffold	415454593	415441793	ddPopTrem1	474282703
 Potamogeton natans	laPotNata1.hap1.1	Chromosome	728990470	728968270	laPotNata1	645450344
 Potamogeton natans	laPotNata1.hap2.1	Scaffold	626828247	626809447	laPotNata1	645450344
+Potentilla anserina	drPotAnse1.1 alternate haplotype	Scaffold	604516465	604515465	drPotAnse1	429569345
+Potentilla anserina	drPotAnse1.1	Chromosome	236973942	236970542	drPotAnse1	429569345
 Potentilla indica	drPotIndi1.hap1.1	Chromosome	1525095436	1524981236	drPotIndi1	763620856
 Potentilla indica	drPotIndi1.hap2.1	Scaffold	1436576254	1436483454	drPotIndi1	763620856
 Potentilla sterilis	drPotSter1.1 alternate haplotype	Scaffold	172372255	172372055	drPotSter1	377665948
@@ -581,7 +582,6 @@ Prunus avium	drPruAviu1.hap1.1	Chromosome	355749846	355726246	drPruAviu1	3719763
 Prunus avium	drPruAviu1.hap2.1	Scaffold	346154162	346134162	drPruAviu1	371976388
 Prunus padus	drPruPadu1.1 alternate haplotype	Scaffold	449669538	449626538	drPruPadu1	514885490
 Prunus padus	drPruPadu1.1	Chromosome	454487192	454445792	drPruPadu1	514885490
-Pseudisothecium myosuroides	cbIsoMyos1.1	Chromosome	388278473	388267673		
 Pseudognaphalium luteoalbum	daPseLute1.1 alternate haplotype	Contig	6656575	6656575	daPseLute1	928210612
 Pseudognaphalium luteoalbum	daPseLute1.1	Chromosome	881348296	881262496	daPseLute1	928210612
 Pseudoscleropodium purum	cbPsePuru1.1	Chromosome	318261484	318250684	cbPsePuru1	327225333
@@ -738,8 +738,8 @@ Triglochin palustris	laTriPals1.1 alternate haplotype	Scaffold	405557890	4054472
 Triglochin palustris	laTriPals1.1	Chromosome	437486790	437439765	laTriPals1	476608879
 Tripolium pannonicum	daTriPann2.hap1.1	Chromosome	8348753268	8347386668	daTriPann2	8478693487
 Tripolium pannonicum	daTriPann2.hap2.1	Scaffold	8399668565	8398286165	daTriPann2	8478693487
-Trocdaris verticillata	drTroVert1.hap1.1	Chromosome	627406795	627360795		
-Trocdaris verticillata	drTroVert1.hap2.1	Scaffold	626511834	626463434		
+Trocdaris verticillatum	drTroVert1.hap1.1	Chromosome	627406795	627360795	drTroVert1	633625162
+Trocdaris verticillatum	drTroVert1.hap2.1	Scaffold	626511834	626463434	drTroVert1	633625162
 Tussilago farfara	daTusFarf1.hap1.1	Chromosome	1596196676	1596088676	daTusFarf1	1706265960
 Tussilago farfara	daTusFarf1.hap2.1	Scaffold	1580246002	1580142402	daTusFarf1	1706265960
 Ulex minor	drUleMino1.hap1.1	Chromosome	878425790	878370590	drUleMino1	953390656

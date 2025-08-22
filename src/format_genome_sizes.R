@@ -8,6 +8,15 @@ setnames(x = assemblies, old = c("V1", "V2", "V3", "V4", "V5"), new = c("species
 
 assemblies[, species := gsub(x = species, pattern = "-", replacement = " ")]
 
+# sort out some taxonomy issues...
+assemblies[species == "Ailanthus altissimus"]$species <- "Ailanthus altissima"
+assemblies[species == "Argentina anserina"]$species <- "Potentilla anserina"
+assemblies[species == "Lophiolepis eriophora"]$species <- "Cirsium eriophorum"
+assemblies[species == "Lysimachia maritima"]$species <- "Glaux maritima"
+assemblies[species == "Omalotheca supina"]$species <- "Gnaphalium supinum"
+assemblies[species == "Pseudisothecium myosuroides"]$species <- "Isothecium myosuroides"
+assemblies[species == "Trocdaris verticillata"]$species <- "Trocdaris verticillatum"
+
 genomescope <- fread("../data/genome_size_genomescope.tsv")
 
 setnames(x = genomescope, old = c("V1", "V2", "V3"), new = c("species", "tolid", "pacbio_genomescope_length"))
