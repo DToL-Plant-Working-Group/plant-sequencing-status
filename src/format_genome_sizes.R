@@ -6,6 +6,8 @@ assemblies <- fread("../data/genome_size_assemblies.tsv")
 
 setnames(x = assemblies, old = c("V1", "V2", "V3", "V4", "V5"), new = c("species", "assembly", "level", "assembly_length", "assembly_ungapped_length"))
 
+assemblies[, species := gsub(x = species, pattern = "-", replacement = " ")]
+
 genomescope <- fread("../data/genome_size_genomescope.tsv")
 
 setnames(x = genomescope, old = c("V1", "V2", "V3"), new = c("species", "tolid", "pacbio_genomescope_length"))
