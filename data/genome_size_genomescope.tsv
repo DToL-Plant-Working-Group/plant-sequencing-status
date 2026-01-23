@@ -37,7 +37,7 @@ Anethum_foeniculum	drAneFoen2	1547193313
 Angelica_archangelica	drAngArch1	2987742192
 Angelica_sylvestris	drAngSylv1	2409458213
 Antennaria_dioica	daAntDioi1	1632825894
-Anthriscus_caucalis	drAntCauc1	10133595
+Anthriscus_caucalis	drAntCauc1	6644351
 Anthriscus_sylvestris	drAntSylv1	1852754301
 Anthyllis_vulneraria	drAntVuln1	351392024
 Aquilegia_vulgaris	dmAquVulg1	322772003
@@ -317,7 +317,7 @@ Helosciadium_nodiflorum	drHelNodi1	858850769
 Heracleum_mantegazzianum	drHerMant1	787007590
 Heracleum_sphondylium	drHerSpho1	2142496953
 Herniaria_ciliolata	dcHerCili1	1163723457
-Hesperis_matronalis	ddHesMatr1	1916029104
+Hesperis_matronalis	ddHesMatr1	3688512913
 Hibiscus_tridactylites	ddHibTrid2	1576067391
 Hibiscus_trionum	ddHibTrio2	59411112
 Hibiscus_trionum	ddHibTrio3	3536307
@@ -335,7 +335,7 @@ Hieracium_sp_SM_2023a	daHieSpea1	1299355976
 Hippophae_rhamnoides	drHipRham1	1224731492
 Hippuris_vulgaris	daHipVulg1	551912243
 Hippuris_vulgaris	daHipVulg2	2183642
-Homogyne_alpina	daHomAlpi1	3423799282
+Homogyne_alpina	daHomAlpi1	3300530591
 Honckenya_peploides	dcHonPepl1	3598652582
 Hornungia_petraea	ddHorPetr1	184860454
 Hottonia_palustris	ddHotPalu2	841490869
@@ -449,7 +449,7 @@ Melampyrum_sylvaticum	daMelSylv4	1565000063
 Melissa_officinalis	daMelOffi1	390330904
 Melittis_melissophyllum	daMelMeli1	543020966
 Mentha_aquatica	daMenAqua1	1360872513
-Mentha_arvensis	daMenArve1	1081060581
+Mentha_arvensis	daMenArve1	1201819983
 Menyanthes_trifoliata	daMenTrif1	776659579
 Mercurialis_annua	ddMerAnnu1	507419773
 Mercurialis_perennis	ddMerPere1	758987457
@@ -467,9 +467,9 @@ Myosotis_scorpioides	daMyoScor1	499096517
 Myosotis_sylvatica	daMyoSylv1	298014931
 Myrica_gale	dhMyrGale1	663223703
 Myriophyllum_alterniflorum	drMyrAlte1	332372595
-Myriophyllum_alterniflorum	drMyrAlte5	144978054
+Myriophyllum_alterniflorum	drMyrAlte5	144912302
 Myriophyllum_aquaticum	drMyrAqua1	265615013
-Myriophyllum_aquaticum	drMyrAqua2	485616649
+Myriophyllum_aquaticum	drMyrAqua2	250390388
 Myriophyllum_spicatum	drMyrSpic1	426232216
 Myrrhis_odorata	drMyrOdor1	798846761
 Nasturtium_officinale	ddNasOffi1	110405405
@@ -569,7 +569,7 @@ Quercus_cerris	dhQueCerr2	1628145567
 Quercus_ilex	dhQueIlex1	864504016
 Quercus_petraea	dhQuePetr1	855192859
 Quercus_robur	dhQueRobu3	15749138168
-Quercus_robur	dhQueRobu92	846088495
+Quercus_robur	dhQueRobu92	852746671
 Ranunculus_acris	dmRanAcri1	4690386236
 Ranunculus_auricomus	dmRanAuri1	2939377905
 Ranunculus_bulbosus	dmRanBulb1	5209649931
@@ -654,7 +654,7 @@ Scorzonera_humilis	daScoHumi1	2646635804
 Scorzoneroides_autumnalis	daScoAutu1	848174569
 Scrophularia_auriculata	daScrAuri1	761675103
 Scrophularia_umbrosa	daScrUmbr1	1342855045
-Scrophularia_vernalis	daScrVern1	69641180
+Scrophularia_vernalis	daScrVern1	394292665
 Scutellaria_galericulata	daScuGale1	398435340
 Scutellaria_minor	daScuMino1	378931120
 Sedum_acre	drSedAcre1	587488024
@@ -863,9 +863,11 @@ Bromus_interruptus	lpBroIntr1	4641528782
 Bromus_secalinus	lpBroSeca1	5202464206
 Bromus_sterilis	lpBroSter1	2814672178
 Butomus_umbellatus	laButUmbe1	3807666398
+Calamagrostis_canescens	lpCalCane1	3104259920
 Calla_palustris	laCalPalu1	3890
 Carex_acutiformis	lpCarAcui1	419486304
 Carex_arenaria	lpCarAren1	374946312
+Carex_atrata	lpCarAtra1	423774133
 Carex_bigelowii	lpCarBige1	407768045
 Carex_bigelowii	lpCarBige2	364610997
 Carex_buxbaumii	lpCarBuxb1	343226538
@@ -901,9 +903,11 @@ Carex_remota	lpCarRemo1	405525500
 Carex_riparia	lpCarRipa1	432475567
 Carex_rostrata	lpCarRost1	403982130
 Carex_rupestris	lpCarRupe1	359364725
+Carex_saxatilis	lpCarSaxa1	413571946
 Carex_spicata	lpCarSpic1	421837923
 Carex_strigosa	lpCarStri1	371655687
 Carex_sylvatica	lpCarSylv1	433893251
+Carex_vaginata	lpCarVagi1	747449878
 Carex_viridula	lpCarViri1	383245654
 Cephalanthera_damasonium	lsCepDama1	5197850967
 Cephalanthera_damasonium	lsCepDama2	92106441
@@ -937,17 +941,22 @@ Epipactis_palustris	lsEpiPalu1	1812794621
 Epipactis_purpurata	lsEpiPurp1	1908041776
 Eriocaulon_aquaticum	lpEriAqua1	1213805660
 Eriophorum_angustifolium	lpEriAngu1	466400083
+Eriophorum_latifolium	lpEriLati1	508016768
 Eriophorum_vaginatum	lpEriVagi1	343367355
+Festuca_arenaria	lpFesAren1	2503718005
 Festuca_arundinacea	lpFesArun1	3500247889
+Festuca_bromoides	lpFesBrom1	2167423981
 Festuca_gigantea	lpFesGiga1	1105173592
 Festuca_heterophylla	lpFesHete1	4592370480
 Festuca_ovina	lpFesOvin2	1634998285
+Festuca_pratensis	lpFesPrat1	2565461502
 Festuca_rubra	lpFesRubr2	6156676947
 Festuca_vivipara	lpFesVivi1	4194222836
 Fritillaria_meleagris	llFriMele1	49320247686
 Gagea_bohemica	llGagBohe3	3038174965
 Gagea_lutea	llGagLute1	Inf
 Galanthus_nivalis	lsGalNiva1	1237757613
+Glyceria_declinata	lpGlyDecl1	394092380
 Glyceria_fluitans	lpGlyFlui1	553142780
 Glyceria_maxima	lpGlyMaxi1	6037012670
 Groenlandia_densa	laGroDens1	295249165
@@ -972,6 +981,7 @@ Juncus_effusus	lpJunEffu1	126936172
 Juncus_gerardii	lpJunGera1	247021016
 Juncus_inflexus	lpJunInfl1	325948616
 Juncus_squarrosus	lpJunSqua1	154617508
+Juncus_tenuis	lpJunTenu1	202907292
 Koeleria_macrantha	lpKoeMacr1	1128258709
 Leersia_oryzoides	lpLeeOryz1	775110921
 Lemna_japonica	laLemJapo1	208776916
@@ -980,6 +990,7 @@ Lemna_trisulca	laLemTris1	522619252
 Leucojum_aestivum	lsLeuAest1	948188032
 Leymus_arenarius	lpLeyAren1	17988835000
 Lilium_martagon	llLilMart1	1100068581
+Lolium_multiflorum	lpLolMult1	2186566289
 Lolium_perenne	lpLolPere1	2682766807
 Luronium_natans	laLurNata1	231498767
 Luzula_campestris	lpLuzCamp1	467510069
@@ -1048,8 +1059,10 @@ Scilla_verna	lsSciVern1	2879924431
 Scirpus_sylvaticus	lpSciSylv1	351824172
 Sesleria_caerulea	lpSesCaer1	1640756818
 Sisyrinchium_bermudianum	lsSisBeru1	407453611
+Sparganium_angustifolium	lpSpaAngu1	502870199
 Sparganium_emersum	lpSpaEmer1	503443108
 Sparganium_erectum	lpSpaErec1	476323576
+Sparganium_natans	lpSpaNata1	476734769
 Spirodela_polyrhiza	laSpiPoly1	160275176
 Stratiotes_aloides	laStrAloi1	4774080605
 Stuckenia_filiformis	laStuFili1	671384050
@@ -1095,6 +1108,7 @@ Equisetum_variegatum	veEquVari1	10881856088
 Ginkgo_biloba	vgGinBilo1	2290693425
 Gymnocarpium_robertianum	voGymRobe2	2378963987
 Huperzia_selago	vlHupSela1	2640353612
+Isoetes_lacustris	vlIsoLacu1	1720522393
 Lycopodium_clavatum	vlLycClav1	421556034
 Onoclea_sensibilis	voOnoSens1	207823824
 Ophioglossum_vulgatum	vsOphVulg1	5391847449
@@ -1102,7 +1116,7 @@ Osmunda_regalis	voOsmRega1	1288303846
 Phegopteris_connectilis	voPheConn1	36759106
 Phegopteris_connectilis	voPheConn4	3739601684
 Pilularia_globulifera	voPilGlob4	202752059
-Polypodium_vulgare	voPolVulg1	3508969644
+Polypodium_vulgare	voPolVulg1	5521311385
 Polystichum_lonchitis	voPolLonc1	4409753251
 Polystichum_setiferum	voPolSeti1	5288890736
 Pseudotsuga_menziesii	vpPseMenz1	874465640
@@ -1140,6 +1154,7 @@ Bazzania_pearsonii	cjBazPear3	730362256
 Bazzania_tricrenata	cjBazTric3	427666036
 Bazzania_trilobata	cjBazTril2	573298509
 Blasia_pusilla	cmBlaPusi2	739724386
+Blindia_acuta	cbBliAcut1	286380651
 Blindiadelphus_recurvatus	cbBliRecu4	259283991
 Brachydontium_trichodes	cbBraTric1	262562028
 Brachythecium_rutabulum	cbBraRuta5	383240000
@@ -1150,6 +1165,7 @@ Bryum_calophyllum	cbBryCalo1	1101815377
 Bryum_knowltonii	cbBryKnow1	855839361
 Bryum_marratii	cbBryMarr1	617688532
 Bryum_moravicum	cbBryMora1	197356912
+Bryum_riparium	cbBryRipa1	169403976
 Calliergon_cordifolium	cbCalCord2	654315449
 Calliergonella_cuspidata	cbCalCusp2	349239684
 Calliergon_giganteum	cbCalGiga1	7385333
@@ -1161,6 +1177,7 @@ Campylopus_flexuosus	cbCamFlex1	271614391
 Campylopus_introflexus	cbCamIntr1	216581175
 Cephalozia_bicuspidata	cjCepBicu4	148998950
 Ceratodon_purpureus	cbCerPurp3	149619564
+Chionoloma_tenuirostre	cbChiTenu1	414544551
 Climacium_dendroides	cbCliDend1	7505490
 Climacium_dendroides	cbCliDend2	433292628
 Climacium_dendroides	cbCliDend3	82315369
@@ -1356,7 +1373,7 @@ Sphagnum_fimbriatum	csSphFimb3	145141747
 Sphagnum_girgensohnii	csSphGirg1	388961035
 Sphagnum_inundatum	csSphInun1	29487747
 Sphagnum_lindbergii	csSphLind2	199332446
-Sphagnum_medium	csSphMedi1	597153738
+Sphagnum_medium	csSphMedi1	572981748
 Sphagnum_palustre	csSphPalu1	417032453
 Sphagnum_papillosum	csSphPapi3	255509764
 Sphagnum_riparium	csSphRipa1	196369832
