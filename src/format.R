@@ -20,6 +20,8 @@ data_per_species <- unique(
 # print github table
 cat(r"{# DToL Plant Sequencing Status
 
+Genome size plots: https://dtol-plant-working-group.github.io/plant-sequencing-status/
+
 Two summary tables are presented here. The first is the number of assemblies in the pipelines at the moment.
 
 | Plant Group | Stage | Number |
