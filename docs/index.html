@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DToL genome size data</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.5;
+  }
+  h1 { margin-bottom: 0.25rem; }
+  h2 { margin-top: 3rem; }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+  }
+  .controls label { display: flex; align-items: center; gap: 0.4rem; }
+  .controls input[type="range"] { width: 220px; }
+  .plot-container { overflow-x: auto; }
+  #status { color: #888; font-style: italic; }
+  footer { margin-top: 3rem; font-size: 0.85rem; color: #888; }
+</style>
+</head>
+<body>
+
+<h1>DToL genome size data</h1>
+<p id="status">Loading data…</p>
+
+<div id="app" hidden>
+
+<p>GenomeScope derived length from PacBio raw data plotted against the ungapped
+assembly length taken from the assembled genome. There appear to be two lines,
+one falling roughly on the 1:1 line, and one on the 2:1 line.</p>
+<ul><li>Colour by assembly level</li></ul>
+
+<div class="controls">
+  <label><input type="checkbox" id="chromHap" checked> Chromosomal &amp; primary haplotype only</label>
+</div>
+<div class="plot-container" id="plot1"></div>
+
+<h2></h2>
+<p>The second plot shows the same data as the first plot but you can adjust the
+scales and colour either by heterozygosity or repeat content, both of which
+are derived from the GenomeScope data.</p>
+
+<div class="controls">
+  <label>Color points by
+    <select id="colorBy">
+      <option value="het_percent_mid">Heterozygosity (%)</option>
+      <option value="repeat_percent_mid">Repeat content (%)</option>
+    </select>
+  </label>
+  <label>Axis max (bp)
+    <input type="range" id="xAxisMax" min="400000000" max="100000000000" step="1000" value="2500000000">
+    <span id="xAxisMaxLabel"></span>
+  </label>
+</div>
+<div class="plot-container" id="plot2"></div>
+
+<h2></h2>
+<p>The last plot shows the 1C content on the y axis, and the ungapped fasta
+length from the genome assembly on the x axis. The scale can be adjusted to
+show more or less data. Curiously, the data lies mainly above the 1:1 line.</p>
+
+<div class="controls">
+  <label>Zoom factor
+    <input type="range" id="divFactor" min="1" max="40" step="0.2" value="6">
+    <span id="divFactorLabel"></span>
+  </label>
+</div>
+<div class="plot-container" id="plot3"></div>
+
+<footer>Data: <code>all_genome_size_data.tsv</code>, regenerated weekly by the
+plant-sequencing-status pipeline.</footer>
+
+</div>
+
+<script type="module">
+import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
+
+const fmt = d3.format(".2s");
+const colorLabel = (colorBy) => ({
+  het_percent_mid: "Heterozygosity (%)",
+  repeat_percent_mid: "Repeat content (%)"
+}[colorBy]);
+
+function toNum(v) {
+  if (v == null) return undefined;
+  const s = String(v).trim();
+  if (!s || s.toUpperCase() === "NA") return undefined;
+  const cleaned = s.replace(/,/g, "").replace(/\s*bp$/i, "").replace(/%$/, "");
+  const n = +cleaned;
+  return Number.isFinite(n) ? n : undefined;
+}
+
+function buildData(raw) {
+  const useGenomeScope = "max";
+  return raw.map((d) => {
+    const assembly_length = toNum(d.assembly_length);
+    const assembly_ungapped_length = toNum(d.assembly_ungapped_length);
+    const gap_bp = (assembly_length ?? 0) - (assembly_ungapped_length ?? 0);
+
+    const gsMin = toNum(d.Genome_Haploid_Length_min_bp);
+    const gsMax = toNum(d.Genome_Haploid_Length_max_bp);
+    const gsMid = gsMin != null && gsMax != null ? (gsMin + gsMax) / 2 : gsMax ?? gsMin;
+    const gsBest = useGenomeScope === "mid" ? gsMid : useGenomeScope === "min" ? gsMin ?? gsMid : gsMax ?? gsMid;
+
+    const ratio_ungapped_to_pacbio = gsBest && assembly_ungapped_length ? assembly_ungapped_length / gsBest : undefined;
+    const ratio_assembly_to_pacbio = gsBest && assembly_length ? assembly_length / gsBest : undefined;
+
+    return {
+      species: d.species,
+      assembly: d.assembly,
+      level: d.level,
+      tolid: d.tolid,
+      assembly_length,
+      assembly_ungapped_length,
+      gap_bp,
+      pacbio_genomescope_length: gsBest,
+      ratio_ungapped_to_pacbio,
+      ratio_assembly_to_pacbio,
+      label: `${d.species} — ${d.assembly}`,
+      genomescope: {
+        p: toNum(d.p),
+        k: toNum(d.k),
+        haploid_bp: { min: gsMin, max: gsMax, mid: gsMid },
+        homozygous_percent: { min: toNum(d.Homozygous_aa_min), max: toNum(d.Homozygous_aa_max) },
+        heterozygous_percent: { min: toNum(d.Heterozygous_ab_min), max: toNum(d.Heterozygous_ab_max) },
+        repeat_bp: { min: toNum(d.Genome_Repeat_Length_min_bp), max: toNum(d.Genome_Repeat_Length_max_bp) },
+        unique_bp: { min: toNum(d.Genome_Unique_Length_min_bp), max: toNum(d.Genome_Unique_Length_max_bp) },
+        model_fit_percent: { min: toNum(d.Model_Fit_min_percent), max: toNum(d.Model_Fit_max_percent) },
+        read_error_rate_percent: { min: toNum(d.Read_Error_Rate_min_percent), max: toNum(d.Read_Error_Rate_max_percent) }
+      },
+      sample: {
+        collection_location: d.collection_location,
+        id_number: d["ID Number"],
+        project: d.Project,
+        higher_group: d["Higher Group"],
+        family: d.Family,
+        genus: d.Genus,
+        species_epithet: d.Species,
+        standard: d.Standard,
+        buffer: d.Buffer,
+        measured_by: d["measured by"],
+        date: d.Date,
+        dtol_specimen_id: d["DToL Specimen ID"],
+        previous_estimate_2c: d["Previous estimate (2C) (prime*)"],
+        comments: d["Comments on DToL sample"]
+      },
+      flow_cytometry: {
+        mean1: toNum(d.mean1),
+        mean2: toNum(d.mean2),
+        cv1: toNum(d.cv1),
+        cv2: toNum(d.cv2),
+        ratio: toNum(d.ratio),
+        ave_sample: toNum(d["ave.sample"]),
+        ave_standard: toNum(d["ave.standard"]),
+        gs_pg_2c_replicate: toNum(d["GS pg (2C) replicate"]),
+        gs_pg_2c: toNum(d["GS pg (2C)"]),
+        gs_pg_1c: toNum(d["GS pg (1C)"]),
+        pg_per_gbp_1c: toNum(d["1C/Gbp"]),
+        cv_sample: toNum(d["cv.sample"]),
+        cv_standard: toNum(d["cv.standard"]),
+        sd_r_sample: toNum(d["SD(R).sample"]),
+        stdv_gs: toNum(d["STDV(GS)"])
+      }
+    };
+  });
+}
+
+function buildData2(data) {
+  return data.map((d) => {
+    const hetMin = d.genomescope?.heterozygous_percent?.min;
+    const hetMax = d.genomescope?.heterozygous_percent?.max;
+    const hetMid = hetMin != null && hetMax != null ? (hetMin + hetMax) / 2 : hetMax ?? hetMin;
+
+    const hapMin = d.genomescope?.haploid_bp?.min;
+    const hapMax = d.genomescope?.haploid_bp?.max;
+    const repMin = d.genomescope?.repeat_bp?.min;
+    const repMax = d.genomescope?.repeat_bp?.max;
+
+    const repeatPctMin = repMin != null && hapMax != null ? 100 * (repMin / hapMax) : undefined;
+    const repeatPctMax =
+      repMax != null && hapMin != null
+        ? 100 * (repMax / hapMin)
+        : repMax != null && d.pacbio_genomescope_length != null
+        ? 100 * (repMax / d.pacbio_genomescope_length)
+        : undefined;
+    const repeatPctMid = repeatPctMin != null && repeatPctMax != null ? (repeatPctMin + repeatPctMax) / 2 : repeatPctMax ?? repeatPctMin;
+
+    return { ...d, het_percent_mid: hetMid, repeat_percent_mid: repeatPctMid, repeat_percent_min: repeatPctMin, repeat_percent_max: repeatPctMax };
+  });
+}
+
+function filterChromHap(data, chromHap) {
+  if (!chromHap) return data;
+  return data.filter((d) => d.level === "Chromosome" && !d.assembly.includes("hap2"));
+}
+
+// --- load data ---
+const raw = await d3.tsv("./data/all_genome_size_data.tsv");
+const data2 = buildData2(buildData(raw));
+
+const maxVal = d3.max(data2, (d) => Math.max(d.pacbio_genomescope_length ?? 0, d.assembly_ungapped_length ?? 0));
+
+// --- controls ---
+const chromHapEl = document.getElementById("chromHap");
+const colorByEl = document.getElementById("colorBy");
+const xAxisMaxEl = document.getElementById("xAxisMax");
+const xAxisMaxLabel = document.getElementById("xAxisMaxLabel");
+const divFactorEl = document.getElementById("divFactor");
+const divFactorLabel = document.getElementById("divFactorLabel");
+
+function renderPlot1() {
+  const chromHap = chromHapEl.checked;
+  const xMax = d3.max(data2, (d) => d.pacbio_genomescope_length ?? 0);
+  const yMax = d3.max(data2, (d) => d.assembly_ungapped_length ?? 0);
+  const line21_xend = Math.min(xMax, yMax / 2);
+  const data3 = filterChromHap(data2, chromHap);
+
+  const plot = Plot.plot({
+    width: 900,
+    height: 520,
+    marginLeft: 70,
+    marginBottom: 60,
+    grid: true,
+    x: { label: "GenomeScope length (bp)", tickFormat: fmt, domain: [0, 4000000000] },
+    y: { label: "Fasta (ug; bp)", tickFormat: fmt, domain: [0, 4000000000] },
+    color: { legend: true, label: "Assembly level" },
+    marks: [
+      Plot.line([{ x: 0, y: 0 }, { x: maxVal, y: maxVal }], { x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.4 }),
+      Plot.line([{ x: 0, y: 0 }, { x: line21_xend, y: 2 * line21_xend }], {
+        x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.6, strokeDasharray: "4,3"
+      }),
+      Plot.dot(data3, {
+        x: "pacbio_genomescope_length",
+        y: "assembly_ungapped_length",
+        r: 4,
+        fill: "level",
+        tip: { channels: { Species: (d) => d.species, Assembly: (d) => d.assembly, Level: (d) => d.level } }
+      })
+    ]
+  });
+  document.getElementById("plot1").replaceChildren(plot);
+}
+
+function renderPlot2() {
+  const chromHap = chromHapEl.checked;
+  const colorBy = colorByEl.value;
+  const xAxisMax = +xAxisMaxEl.value;
+  xAxisMaxLabel.textContent = fmt(xAxisMax);
+
+  const colDomain = d3.extent(data2.filter((d) => d[colorBy] != null), (d) => d[colorBy]);
+  const data3 = filterChromHap(data2, chromHap);
+
+  const plot = Plot.plot({
+    width: 900,
+    height: 520,
+    marginLeft: 70,
+    marginBottom: 60,
+    grid: true,
+    x: { label: "GenomeScope length (bp)", tickFormat: fmt, domain: [0, xAxisMax] },
+    y: { label: "Fasta (ug; bp)", tickFormat: fmt, domain: [0, xAxisMax] },
+    color: { type: "linear", label: colorLabel(colorBy), domain: colDomain },
+    marks: [
+      Plot.line([{ x: 0, y: 0 }, { x: xAxisMax, y: xAxisMax }], { x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.35 }),
+      Plot.line([{ x: 0, y: 0 }, { x: xAxisMax, y: 2 * xAxisMax }], {
+        x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.6, strokeDasharray: "4,3"
+      }),
+      Plot.text(
+        [
+          { x: xAxisMax * 0.75, y: xAxisMax * 0.75, t: "1:1" },
+          { x: xAxisMax * 0.5, y: 2 * xAxisMax * 0.5, t: "2:1" }
+        ],
+        { x: "x", y: "y", text: "t", dx: 26, dy: -6 }
+      ),
+      Plot.dot(data3, {
+        x: "pacbio_genomescope_length",
+        y: "assembly_ungapped_length",
+        r: 4,
+        fill: (d) => d[colorBy],
+        tip: { channels: { Species: (d) => d.species, Assembly: (d) => d.assembly, Level: (d) => d.level } }
+      })
+    ]
+  });
+  document.getElementById("plot2").replaceChildren(plot);
+}
+
+function renderPlot3() {
+  const chromHap = chromHapEl.checked;
+  const colorBy = colorByEl.value;
+  const divFactor = +divFactorEl.value;
+  divFactorLabel.textContent = `×${divFactor.toFixed(1)}`;
+
+  const data3 = filterChromHap(data2, chromHap);
+  const toGbp = (x) => x / 1e9;
+
+  const xMaxG = d3.max(data3, (d) => toGbp(d.assembly_length ?? 0));
+  const yMaxG = d3.max(data3, (d) => d.flow_cytometry?.pg_per_gbp_1c ?? 0);
+  const line11_end = Math.min(xMaxG, yMaxG);
+  const line21_xend = Math.min(xMaxG, yMaxG / 2);
+  const colDomain = d3.extent(data3.filter((d) => d[colorBy] != null), (d) => d[colorBy]);
+
+  const plot = Plot.plot({
+    width: 900,
+    height: 520,
+    marginLeft: 70,
+    marginBottom: 60,
+    grid: true,
+    x: { label: "Fasta (Gbp)", tickFormat: d3.format(".1f"), domain: [0, xMaxG / divFactor] },
+    y: { label: "1C genome size (Gbp)", domain: [0, yMaxG / divFactor] },
+    color: { type: "linear", label: colorLabel(colorBy), domain: colDomain },
+    marks: [
+      Plot.line([{ x: 0, y: 0 }, { x: line11_end, y: line11_end }], { x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.35 }),
+      Plot.line([{ x: 0, y: 0 }, { x: line21_xend, y: 2 * line21_xend }], {
+        x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.6, strokeDasharray: "4,3"
+      }),
+      Plot.text(
+        [
+          { x: (line11_end * 0.92) / divFactor, y: (line11_end * 0.92) / divFactor, t: "1:1" },
+          { x: (line21_xend * 0.9) / divFactor, y: (2 * line21_xend * 0.9) / divFactor, t: "2:1" }
+        ],
+        { x: "x", y: "y", text: "t", dx: 18, dy: 0 }
+      ),
+      Plot.dot(data3, {
+        x: (d) => toGbp(d.assembly_length),
+        y: (d) => d.flow_cytometry?.pg_per_gbp_1c,
+        r: 4,
+        fill: (d) => d[colorBy],
+        tip: {
+          channels: {
+            Species: (d) => d.species,
+            Assembly: (d) => d.assembly,
+            Level: (d) => d.level,
+            "Assembly length": (d) => d3.format(".2f")(toGbp(d.assembly_length)) + " Gbp",
+            "1C (flow cytometry)": (d) => (d.flow_cytometry?.pg_per_gbp_1c != null ? d.flow_cytometry.pg_per_gbp_1c.toFixed(2) + " Gbp" : "NA"),
+            [colorLabel(colorBy)]: (d) => (d[colorBy] != null ? d[colorBy].toFixed(2) : "NA")
+          },
+          format: { x: (x) => x.toFixed(2) + " Gbp", y: (y) => y.toFixed(2) + " Gbp" }
+        }
+      })
+    ]
+  });
+  document.getElementById("plot3").replaceChildren(plot);
+}
+
+function renderAll() {
+  renderPlot1();
+  renderPlot2();
+  renderPlot3();
+}
+
+chromHapEl.addEventListener("change", renderAll);
+colorByEl.addEventListener("change", () => { renderPlot2(); renderPlot3(); });
+xAxisMaxEl.addEventListener("input", renderPlot2);
+divFactorEl.addEventListener("input", renderPlot3);
+
+renderAll();
+document.getElementById("status").remove();
+document.getElementById("app").hidden = false;
+</script>
+</body>
+</html>

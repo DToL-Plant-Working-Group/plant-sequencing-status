@@ -33,7 +33,16 @@ fwrite(all_estimates, file = "../data/merged_genome_size_estimates.tsv", sep = "
 
 # add the c value data
 
-cval <- fread("../data/dtol_cval_database_26_08_25.csv")
+# pick the most recently modified snapshot, since the filename is dated and
+# gets replaced by hand whenever a new C-value database export is downloaded
+cval_files <- Sys.glob("../data/dtol_cval_database_*.csv")
+if (length(cval_files) == 0) {
+    stop("No data/dtol_cval_database_*.csv file found - download a C-value database snapshot first")
+}
+cval_file <- cval_files[which.max(file.info(cval_files)$mtime)]
+cat("Using C-value database:", cval_file, "\n")
+
+cval <- fread(cval_file)
 
 # if the 1C/Gbp value is missing, delete the row
 cval <- cval[!is.na(`1C/Gbp`)]
