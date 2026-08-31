@@ -5,6 +5,7 @@ dicots 	 Achillea_maritima 	 released
 dicots 	 Achillea_ptarmica 	 released
 dicots 	 Adonis_annua 	 released
 dicots 	 Aesculus_hippocastanum 	 released
+dicots 	 Agrimonia_eupatoria 	 released
 dicots 	 Agrostemma_githago 	 released
 dicots 	 Ailanthus_altissima 	 released
 dicots 	 Ajuga_chamaepitys 	 released
@@ -47,6 +48,7 @@ dicots 	 Calendula_officinalis 	 released
 dicots 	 Callitriche_obtusangula 	 released
 dicots 	 Calluna_vulgaris 	 released
 dicots 	 Calystegia_soldanella 	 released
+dicots 	 Campanula_latifolia 	 released
 dicots 	 Cardamine_amara 	 released
 dicots 	 Cardamine_flexuosa 	 released
 dicots 	 Cardamine_hirsuta 	 released
@@ -95,6 +97,7 @@ dicots 	 Epilobium_ciliatum 	 released
 dicots 	 Epilobium_hirsutum 	 released
 dicots 	 Erica_ciliaris 	 released
 dicots 	 Erica_cinerea 	 released
+dicots 	 Erica_tetralix 	 released
 dicots 	 Erodium_maritimum 	 released
 dicots 	 Erodium_moschatum 	 released
 dicots 	 Eryngium_campestre 	 released
@@ -168,6 +171,7 @@ dicots 	 Lactuca_saligna 	 released
 dicots 	 Lamium_amplexicaule 	 released
 dicots 	 Lamium_purpureum 	 released
 dicots 	 Lapsana_communis 	 released
+dicots 	 Lathraea_clandestina 	 released
 dicots 	 Lathraea_squamaria 	 released
 dicots 	 Lathyrus_aphaca 	 released
 dicots 	 Lathyrus_linifolius 	 released
@@ -193,6 +197,7 @@ dicots 	 Lycopus_europaeus 	 released
 dicots 	 Lysimachia_thyrsiflora 	 released
 dicots 	 Lythrum_hyssopifolia 	 released
 dicots 	 Lythrum_portula 	 released
+dicots 	 Lythrum_salicaria 	 released
 dicots 	 Malus_domestica 	 released
 dicots 	 Malus_sylvestris 	 released
 dicots 	 Malus_x_robusta 	 released
@@ -213,6 +218,7 @@ dicots 	 Misopates_orontium 	 released
 dicots 	 Moehringia_trinervia 	 released
 dicots 	 Myrica_gale 	 released
 dicots 	 Myriophyllum_alterniflorum 	 released
+dicots 	 Myriophyllum_aquaticum 	 released
 dicots 	 Myrrhis_odorata 	 released
 dicots 	 Nasturtium_officinale 	 released
 dicots 	 Nuphar_pumila 	 released
@@ -225,6 +231,7 @@ dicots 	 Orobanche_hederae 	 released
 dicots 	 Orobanche_minor 	 released
 dicots 	 Oxyria_digyna 	 released
 dicots 	 Parietaria_judaica 	 released
+dicots 	 Pastinaca_sativa 	 released
 dicots 	 Paulownia_tomentosa 	 released
 dicots 	 Pentaglottis_sempervirens 	 released
 dicots 	 Persicaria_amphibia 	 released
@@ -237,6 +244,7 @@ dicots 	 Polycarpon_tetraphyllum 	 released
 dicots 	 Polygala_serpyllifolia 	 released
 dicots 	 Polygonum_aviculare 	 released
 dicots 	 Polygonum_maritimum 	 released
+dicots 	 Populus_alba 	 released
 dicots 	 Populus_nigra 	 released
 dicots 	 Populus_tremula 	 released
 dicots 	 Potentilla_anglica 	 released
@@ -257,6 +265,7 @@ dicots 	 Quercus_cerris 	 released
 dicots 	 Quercus_ilex 	 released
 dicots 	 Quercus_petraea 	 released
 dicots 	 Quercus_robur 	 released
+dicots 	 Ranunculus_repens 	 released
 dicots 	 Ranunculus_sardous 	 released
 dicots 	 Ranunculus_sceleratus 	 released
 dicots 	 Reseda_luteola 	 released
@@ -266,6 +275,7 @@ dicots 	 Rhododendron_ponticum 	 released
 dicots 	 Ribes_nigrum 	 released
 dicots 	 Ribes_rubrum 	 released
 dicots 	 Ribes_uva_crispa 	 released
+dicots 	 Robinia_pseudoacacia 	 released
 dicots 	 Rosa_agrestis 	 released
 dicots 	 Rosa_canina 	 released
 dicots 	 Rosa_rubiginosa 	 released
@@ -282,8 +292,10 @@ dicots 	 Salix_alba 	 released
 dicots 	 Salix_arbuscula 	 released
 dicots 	 Salix_caprea 	 released
 dicots 	 Salix_cinerea 	 released
+dicots 	 Salix_euxina 	 released
 dicots 	 Salix_herbacea 	 released
 dicots 	 Salix_lanata 	 released
+dicots 	 Salix_myrsinifolia 	 released
 dicots 	 Salix_pentandra 	 released
 dicots 	 Salix_repens 	 released
 dicots 	 Salix_reticulata 	 released
@@ -303,12 +315,14 @@ dicots 	 Senecio_viscosus 	 released
 dicots 	 Sherardia_arvensis 	 released
 dicots 	 Sibbaldia_procumbens 	 released
 dicots 	 Silene_acaulis 	 released
+dicots 	 Silene_dioica 	 released
 dicots 	 Solanum_dulcamara 	 released
 dicots 	 Solanum_nigrum 	 released
 dicots 	 Solidago_canadensis 	 released
 dicots 	 Solidago_virgaurea 	 released
 dicots 	 Sonchus_oleraceus 	 released
 dicots 	 Sorbus_bristoliensis 	 released
+dicots 	 Sorbus_devoniensis 	 released
 dicots 	 Spergula_arvensis 	 released
 dicots 	 Spergularia_bocconei 	 released
 dicots 	 Spergularia_marina 	 released
@@ -404,6 +418,7 @@ monocots 	 Eleocharis_parvula 	 released
 monocots 	 Eleocharis_quinqueflora 	 released
 monocots 	 Eriophorum_angustifolium 	 released
 monocots 	 Eriophorum_vaginatum 	 released
+monocots 	 Festuca_heterophylla 	 released
 monocots 	 Hierochloe_odorata 	 released
 monocots 	 Holcus_mollis 	 released
 monocots 	 Hordeum_vulgare 	 released
@@ -754,9 +769,11 @@ dicots 	 Euphrasia_nemorosa 	 curated
 dicots 	 Euphrasia_tetraquetra 	 curated
 dicots 	 Fagus_sylvatica 	 curated
 dicots 	 Fallopia_convolvulus 	 curated
+dicots 	 Ficus_carica 	 curated
 dicots 	 Filago_lutescens 	 curated
 dicots 	 Filago_pyramidata 	 curated
 dicots 	 Filipendula_ulmaria 	 curated
+dicots 	 Filipendula_vulgaris 	 curated
 dicots 	 Fragaria_moschata 	 curated
 dicots 	 Fragaria_vesca 	 curated
 dicots 	 Frangula_alnus 	 curated
@@ -764,7 +781,9 @@ dicots 	 Fraxinus_excelsior 	 curated
 dicots 	 Fumaria_muralis 	 curated
 dicots 	 Galatella_linosyris 	 curated
 dicots 	 Galega_officinalis 	 curated
+dicots 	 Galeopsis_angustifolia 	 curated
 dicots 	 Galeopsis_tetrahit 	 curated
+dicots 	 Galinsoga_quadriradiata 	 curated
 dicots 	 Galium_aparine 	 curated
 dicots 	 Galium_boreale 	 curated
 dicots 	 Galium_saxatile 	 curated
@@ -831,6 +850,7 @@ dicots 	 Lepidium_latifolium 	 curated
 dicots 	 Levisticum_officinale 	 curated
 dicots 	 Ligusticum_scoticum 	 curated
 dicots 	 Ligustrum_vulgare 	 curated
+dicots 	 Limbarda_crithmoides 	 curated
 dicots 	 Limosella_australis 	 curated
 dicots 	 Linaria_repens 	 curated
 dicots 	 Linaria_vulgaris 	 curated
@@ -884,6 +904,7 @@ dicots 	 Ornithopus_perpusillus 	 curated
 dicots 	 Orobanche_alba 	 curated
 dicots 	 Orobanche_hederae 	 curated
 dicots 	 Orobanche_minor 	 curated
+dicots 	 Oxalis_corniculata 	 curated
 dicots 	 Oxyria_digyna 	 curated
 dicots 	 Parietaria_judaica 	 curated
 dicots 	 Pastinaca_sativa 	 curated
@@ -976,6 +997,7 @@ dicots 	 Sedum_album 	 curated
 dicots 	 Senecio_squalidus 	 curated
 dicots 	 Senecio_sylvaticus 	 curated
 dicots 	 Senecio_viscosus 	 curated
+dicots 	 Senecio_vulgaris 	 curated
 dicots 	 Sherardia_arvensis 	 curated
 dicots 	 Sibbaldia_procumbens 	 curated
 dicots 	 Silene_acaulis 	 curated
@@ -1025,6 +1047,7 @@ dicots 	 Tussilago_farfara 	 curated
 dicots 	 Ulex_minor 	 curated
 dicots 	 Ulmus_glabra 	 curated
 dicots 	 Ulmus_minor 	 curated
+dicots 	 Ulmus_procera 	 curated
 dicots 	 Umbilicus_rupestris 	 curated
 dicots 	 Urtica_dioica 	 curated
 dicots 	 Urtica_urens 	 curated
@@ -1042,6 +1065,7 @@ dicots 	 Veronica_scutellata 	 curated
 dicots 	 Veronica_serpyllifolia 	 curated
 dicots 	 Veronica_triphyllos 	 curated
 dicots 	 Veronica_verna 	 curated
+dicots 	 Viburnum_lantana 	 curated
 dicots 	 Vicia_hirsuta 	 curated
 dicots 	 Vicia_lathyroides 	 curated
 dicots 	 Vicia_parviflora 	 curated
@@ -1328,6 +1352,7 @@ non-vascular-plants 	 Ulota_phyllantha 	 curated
 non-vascular-plants 	 Zygodon_viridissimus 	 curated
 vascular-plants 	 Diphasiastrum_alpinum 	 curated
 vascular-plants 	 Equisetum_palustre 	 curated
+dicots 	 Acaena_novae_zelandiae 	 draft
 dicots 	 Acaena_ovalifolia 	 draft
 dicots 	 Acer_campestre 	 draft
 dicots 	 Acer_pseudoplatanus 	 draft
@@ -1438,11 +1463,13 @@ dicots 	 Erica_ciliaris 	 draft
 dicots 	 Erica_cinerea 	 draft
 dicots 	 Erica_tetralix 	 draft
 dicots 	 Erigeron_karvinskianus 	 draft
+dicots 	 Erodium_cicutarium 	 draft
 dicots 	 Erodium_maritimum 	 draft
 dicots 	 Erodium_moschatum 	 draft
 dicots 	 Eryngium_campestre 	 draft
 dicots 	 Euonymus_europaeus 	 draft
 dicots 	 Euphorbia_amygdaloides 	 draft
+dicots 	 Euphorbia_helioscopia 	 draft
 dicots 	 Euphorbia_lathyris 	 draft
 dicots 	 Euphorbia_maculata 	 draft
 dicots 	 Euphorbia_peplus 	 draft
@@ -1460,6 +1487,7 @@ dicots 	 Fragaria_moschata 	 draft
 dicots 	 Fragaria_vesca 	 draft
 dicots 	 Frangula_alnus 	 draft
 dicots 	 Fraxinus_excelsior 	 draft
+dicots 	 Fuchsia_magellanica 	 draft
 dicots 	 Fumaria_muralis 	 draft
 dicots 	 Galatella_linosyris 	 draft
 dicots 	 Galega_officinalis 	 draft
@@ -1493,6 +1521,7 @@ dicots 	 Hibiscus_verdcourtii 	 draft
 dicots 	 Hieracium_snowdoniense 	 draft
 dicots 	 Hippophae_rhamnoides 	 draft
 dicots 	 Hippuris_vulgaris 	 draft
+dicots 	 Homogyne_alpina 	 draft
 dicots 	 Honckenya_peploides 	 draft
 dicots 	 Hottonia_palustris 	 draft
 dicots 	 Humulus_lupulus 	 draft
@@ -1590,6 +1619,7 @@ dicots 	 Orobanche_alba 	 draft
 dicots 	 Orobanche_hederae 	 draft
 dicots 	 Orobanche_minor 	 draft
 dicots 	 Oxalis_corniculata 	 draft
+dicots 	 Oxalis_debilis 	 draft
 dicots 	 Oxyria_digyna 	 draft
 dicots 	 Parietaria_judaica 	 draft
 dicots 	 Pastinaca_sativa 	 draft
@@ -1665,6 +1695,7 @@ dicots 	 Salix_euxina 	 draft
 dicots 	 Salix_herbacea 	 draft
 dicots 	 Salix_lanata 	 draft
 dicots 	 Salix_myrsinifolia 	 draft
+dicots 	 Salix_myrsinites 	 draft
 dicots 	 Salix_pentandra 	 draft
 dicots 	 Salix_phylicifolia 	 draft
 dicots 	 Salix_purpurea 	 draft
@@ -1691,6 +1722,8 @@ dicots 	 Sherardia_arvensis 	 draft
 dicots 	 Sibbaldia_procumbens 	 draft
 dicots 	 Silene_acaulis 	 draft
 dicots 	 Silene_dioica 	 draft
+dicots 	 Silene_noctiflora 	 draft
+dicots 	 Silene_nutans 	 draft
 dicots 	 Sisymbrium_orientale 	 draft
 dicots 	 Solanum_dulcamara 	 draft
 dicots 	 Solanum_nigrum 	 draft
@@ -1751,6 +1784,7 @@ dicots 	 Verbena_officinalis 	 draft
 dicots 	 Veronica_anagallis_aquatica 	 draft
 dicots 	 Veronica_arvensis 	 draft
 dicots 	 Veronica_filiformis 	 draft
+dicots 	 Veronica_officinalis 	 draft
 dicots 	 Veronica_persica 	 draft
 dicots 	 Veronica_scutellata 	 draft
 dicots 	 Veronica_serpyllifolia 	 draft
