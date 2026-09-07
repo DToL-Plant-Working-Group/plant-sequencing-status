@@ -5,11 +5,13 @@ dicots 	 Achillea_maritima 	 released
 dicots 	 Achillea_ptarmica 	 released
 dicots 	 Adonis_annua 	 released
 dicots 	 Aesculus_hippocastanum 	 released
+dicots 	 Aethusa_cynapium 	 released
 dicots 	 Agrimonia_eupatoria 	 released
 dicots 	 Agrostemma_githago 	 released
 dicots 	 Ailanthus_altissima 	 released
 dicots 	 Ajuga_chamaepitys 	 released
 dicots 	 Ajuga_reptans 	 released
+dicots 	 Alchemilla_mollis 	 released
 dicots 	 Alnus_cordata 	 released
 dicots 	 Alnus_glutinosa 	 released
 dicots 	 Alnus_incana 	 released
@@ -46,6 +48,7 @@ dicots 	 Buddleja_davidii 	 released
 dicots 	 Buxus_sempervirens 	 released
 dicots 	 Calendula_officinalis 	 released
 dicots 	 Callitriche_obtusangula 	 released
+dicots 	 Callitriche_stagnalis 	 released
 dicots 	 Calluna_vulgaris 	 released
 dicots 	 Calystegia_soldanella 	 released
 dicots 	 Campanula_latifolia 	 released
@@ -102,6 +105,7 @@ dicots 	 Erodium_maritimum 	 released
 dicots 	 Erodium_moschatum 	 released
 dicots 	 Eryngium_campestre 	 released
 dicots 	 Euonymus_europaeus 	 released
+dicots 	 Euphorbia_amygdaloides 	 released
 dicots 	 Euphorbia_lathyris 	 released
 dicots 	 Euphorbia_maculata 	 released
 dicots 	 Euphorbia_peplus 	 released
@@ -141,6 +145,7 @@ dicots 	 Hedera_helix 	 released
 dicots 	 Helianthemum_oelandicum 	 released
 dicots 	 Heracleum_mantegazzianum 	 released
 dicots 	 Heracleum_sphondylium 	 released
+dicots 	 Hesperis_matronalis 	 released
 dicots 	 Hibiscus_tridactylites 	 released
 dicots 	 Hibiscus_verdcourtii 	 released
 dicots 	 Hieracium_snowdoniense 	 released
@@ -178,6 +183,7 @@ dicots 	 Lathyrus_linifolius 	 released
 dicots 	 Leontodon_hispidus 	 released
 dicots 	 Lepidium_campestre 	 released
 dicots 	 Lepidium_didymum 	 released
+dicots 	 Lepidium_latifolium 	 released
 dicots 	 Levisticum_officinale 	 released
 dicots 	 Ligusticum_scoticum 	 released
 dicots 	 Ligustrum_vulgare 	 released
@@ -214,6 +220,7 @@ dicots 	 Melampyrum_sylvaticum 	 released
 dicots 	 Melittis_melissophyllum 	 released
 dicots 	 Mentha_aquatica 	 released
 dicots 	 Mercurialis_annua 	 released
+dicots 	 Mimulus_peregrinus 	 released
 dicots 	 Misopates_orontium 	 released
 dicots 	 Moehringia_trinervia 	 released
 dicots 	 Myrica_gale 	 released
@@ -286,6 +293,7 @@ dicots 	 Rubus_idaeus 	 released
 dicots 	 Rubus_saxatilis 	 released
 dicots 	 Rumex_acetosa 	 released
 dicots 	 Rumex_acetosella 	 released
+dicots 	 Rumex_conglomeratus 	 released
 dicots 	 Rumex_obtusifolius 	 released
 dicots 	 Salicornia_ramosissima 	 released
 dicots 	 Salix_alba 	 released
@@ -299,6 +307,7 @@ dicots 	 Salix_myrsinifolia 	 released
 dicots 	 Salix_pentandra 	 released
 dicots 	 Salix_repens 	 released
 dicots 	 Salix_reticulata 	 released
+dicots 	 Salix_triandra 	 released
 dicots 	 Salix_viminalis 	 released
 dicots 	 Sambucus_nigra 	 released
 dicots 	 Samolus_valerandi 	 released
@@ -334,6 +343,7 @@ dicots 	 Syringa_vulgaris 	 released
 dicots 	 Tamarix_gallica 	 released
 dicots 	 Tanacetum_parthenium 	 released
 dicots 	 Tanacetum_vulgare 	 released
+dicots 	 Tellima_grandiflora 	 released
 dicots 	 Tephroseris_palustris 	 released
 dicots 	 Teucrium_botrys 	 released
 dicots 	 Teucrium_scorodonia 	 released
@@ -425,6 +435,7 @@ monocots 	 Hordeum_vulgare 	 released
 monocots 	 Iris_foetidissima 	 released
 monocots 	 Isolepis_cernua 	 released
 monocots 	 Juncus_bufonius 	 released
+monocots 	 Juncus_conglomeratus 	 released
 monocots 	 Juncus_effusus 	 released
 monocots 	 Juncus_inflexus 	 released
 monocots 	 Juncus_squarrosus 	 released
@@ -553,6 +564,7 @@ non-vascular-plants 	 Kurzia_trichoclados 	 released
 non-vascular-plants 	 Lepidozia_cupressina 	 released
 non-vascular-plants 	 Lepidozia_reptans 	 released
 non-vascular-plants 	 Leucobryum_glaucum 	 released
+non-vascular-plants 	 Leucobryum_juniperoideum 	 released
 non-vascular-plants 	 Leucodon_sciuroides 	 released
 non-vascular-plants 	 Lewinskya_affinis 	 released
 non-vascular-plants 	 Lewinskya_rupestris 	 released
@@ -620,7 +632,9 @@ non-vascular-plants 	 Scapania_gracilis 	 released
 non-vascular-plants 	 Scapania_ornithopodioides 	 released
 non-vascular-plants 	 Scapania_undulata 	 released
 non-vascular-plants 	 Schistidium_strictum 	 released
+non-vascular-plants 	 Sciuro_hypnum_glaciale 	 released
 non-vascular-plants 	 Southbya_tophacea 	 released
+non-vascular-plants 	 Sphagnum_capillifolium 	 released
 non-vascular-plants 	 Sphagnum_compactum 	 released
 non-vascular-plants 	 Sphagnum_contortum 	 released
 non-vascular-plants 	 Sphagnum_girgensohnii 	 released
@@ -649,6 +663,7 @@ non-vascular-plants 	 Ulota_phyllantha 	 released
 non-vascular-plants 	 Zygodon_viridissimus 	 released
 vascular-plants 	 Diphasiastrum_alpinum 	 released
 vascular-plants 	 Equisetum_palustre 	 released
+dicots 	 Acaena_novae_zelandiae 	 curated
 dicots 	 Acaena_ovalifolia 	 curated
 dicots 	 Acer_campestre 	 curated
 dicots 	 Acer_pseudoplatanus 	 curated
@@ -761,6 +776,7 @@ dicots 	 Erodium_moschatum 	 curated
 dicots 	 Eryngium_campestre 	 curated
 dicots 	 Euonymus_europaeus 	 curated
 dicots 	 Euphorbia_amygdaloides 	 curated
+dicots 	 Euphorbia_helioscopia 	 curated
 dicots 	 Euphorbia_lathyris 	 curated
 dicots 	 Euphorbia_maculata 	 curated
 dicots 	 Euphorbia_peplus 	 curated
@@ -1242,6 +1258,7 @@ non-vascular-plants 	 Heterocladium_heteropterum 	 curated
 non-vascular-plants 	 Hookeria_lucens 	 curated
 non-vascular-plants 	 Hygrohypnum_duriusculum 	 curated
 non-vascular-plants 	 Hylocomiadelphus_triquetrus 	 curated
+non-vascular-plants 	 Hymenoloma_crispulum 	 curated
 non-vascular-plants 	 Hyocomium_armoricum 	 curated
 non-vascular-plants 	 Hypnum_cupressiforme 	 curated
 non-vascular-plants 	 Isopterygiella_pulchella 	 curated
@@ -1326,6 +1343,7 @@ non-vascular-plants 	 Southbya_tophacea 	 curated
 non-vascular-plants 	 Sphagnum_capillifolium 	 curated
 non-vascular-plants 	 Sphagnum_compactum 	 curated
 non-vascular-plants 	 Sphagnum_contortum 	 curated
+non-vascular-plants 	 Sphagnum_fallax 	 curated
 non-vascular-plants 	 Sphagnum_girgensohnii 	 curated
 non-vascular-plants 	 Sphagnum_lindbergii 	 curated
 non-vascular-plants 	 Sphagnum_palustre 	 curated
@@ -1609,6 +1627,7 @@ dicots 	 Myriophyllum_verticillatum 	 draft
 dicots 	 Myrrhis_odorata 	 draft
 dicots 	 Nasturtium_officinale 	 draft
 dicots 	 Nicotiana_alata 	 draft
+dicots 	 Nuphar_lutea 	 draft
 dicots 	 Nuphar_pumila 	 draft
 dicots 	 Nymphoides_peltata 	 draft
 dicots 	 Oenanthe_lachenalii 	 draft
@@ -1618,6 +1637,7 @@ dicots 	 Ornithopus_perpusillus 	 draft
 dicots 	 Orobanche_alba 	 draft
 dicots 	 Orobanche_hederae 	 draft
 dicots 	 Orobanche_minor 	 draft
+dicots 	 Oxalis_acetosella 	 draft
 dicots 	 Oxalis_corniculata 	 draft
 dicots 	 Oxalis_debilis 	 draft
 dicots 	 Oxyria_digyna 	 draft
@@ -1761,6 +1781,7 @@ dicots 	 Trifolium_dubium 	 draft
 dicots 	 Trifolium_fragiferum 	 draft
 dicots 	 Trifolium_occidentale 	 draft
 dicots 	 Trifolium_repens 	 draft
+dicots 	 Trifolium_squamosum 	 draft
 dicots 	 Trifolium_striatum 	 draft
 dicots 	 Trifolium_subterraneum 	 draft
 dicots 	 Tripolium_pannonicum 	 draft
@@ -1777,6 +1798,7 @@ dicots 	 Urtica_dioica 	 draft
 dicots 	 Urtica_urens 	 draft
 dicots 	 Vaccinium_myrtillus 	 draft
 dicots 	 Vaccinium_vitis_idaea 	 draft
+dicots 	 Valeriana_pyrenaica 	 draft
 dicots 	 Valerianella_locusta 	 draft
 dicots 	 Verbascum_nigrum 	 draft
 dicots 	 Verbascum_thapsus 	 draft
