@@ -79,6 +79,7 @@ dicots 	 Comarum_palustre 	 released
 dicots 	 Convolvulus_arvensis 	 released
 dicots 	 Cornus_sanguinea 	 released
 dicots 	 Cornus_suecica 	 released
+dicots 	 Corrigiola_litoralis 	 released
 dicots 	 Corylus_avellana 	 released
 dicots 	 Corylus_colurna 	 released
 dicots 	 Crassula_aquatica 	 released
@@ -295,6 +296,7 @@ dicots 	 Rumex_acetosa 	 released
 dicots 	 Rumex_acetosella 	 released
 dicots 	 Rumex_conglomeratus 	 released
 dicots 	 Rumex_obtusifolius 	 released
+dicots 	 Sagina_maritima 	 released
 dicots 	 Salicornia_ramosissima 	 released
 dicots 	 Salix_alba 	 released
 dicots 	 Salix_arbuscula 	 released
@@ -627,6 +629,7 @@ non-vascular-plants 	 Rhytidiadelphus_loreus 	 released
 non-vascular-plants 	 Riccia_beyrichiana 	 released
 non-vascular-plants 	 Riccia_sorocarpa 	 released
 non-vascular-plants 	 Rosulabryum_capillare 	 released
+non-vascular-plants 	 Sarmentypnum_sarmentosum 	 released
 non-vascular-plants 	 Scapania_compacta 	 released
 non-vascular-plants 	 Scapania_gracilis 	 released
 non-vascular-plants 	 Scapania_ornithopodioides 	 released
@@ -771,6 +774,7 @@ dicots 	 Epilobium_hirsutum 	 curated
 dicots 	 Erica_ciliaris 	 curated
 dicots 	 Erica_cinerea 	 curated
 dicots 	 Erica_tetralix 	 curated
+dicots 	 Erigeron_karvinskianus 	 curated
 dicots 	 Erodium_maritimum 	 curated
 dicots 	 Erodium_moschatum 	 curated
 dicots 	 Eryngium_campestre 	 curated
@@ -897,6 +901,7 @@ dicots 	 Medicago_arabica 	 curated
 dicots 	 Medicago_lupulina 	 curated
 dicots 	 Melampyrum_pratense 	 curated
 dicots 	 Melampyrum_sylvaticum 	 curated
+dicots 	 Melilotus_altissimus 	 curated
 dicots 	 Melittis_melissophyllum 	 curated
 dicots 	 Mentha_aquatica 	 curated
 dicots 	 Mercurialis_annua 	 curated
@@ -1018,6 +1023,7 @@ dicots 	 Sherardia_arvensis 	 curated
 dicots 	 Sibbaldia_procumbens 	 curated
 dicots 	 Silene_acaulis 	 curated
 dicots 	 Silene_dioica 	 curated
+dicots 	 Silene_noctiflora 	 curated
 dicots 	 Solanum_dulcamara 	 curated
 dicots 	 Solanum_nigrum 	 curated
 dicots 	 Solidago_canadensis 	 curated
@@ -1076,6 +1082,7 @@ dicots 	 Verbena_officinalis 	 curated
 dicots 	 Veronica_anagallis_aquatica 	 curated
 dicots 	 Veronica_arvensis 	 curated
 dicots 	 Veronica_filiformis 	 curated
+dicots 	 Veronica_officinalis 	 curated
 dicots 	 Veronica_persica 	 curated
 dicots 	 Veronica_scutellata 	 curated
 dicots 	 Veronica_serpyllifolia 	 curated
@@ -1344,6 +1351,7 @@ non-vascular-plants 	 Sphagnum_capillifolium 	 curated
 non-vascular-plants 	 Sphagnum_compactum 	 curated
 non-vascular-plants 	 Sphagnum_contortum 	 curated
 non-vascular-plants 	 Sphagnum_fallax 	 curated
+non-vascular-plants 	 Sphagnum_fimbriatum 	 curated
 non-vascular-plants 	 Sphagnum_girgensohnii 	 curated
 non-vascular-plants 	 Sphagnum_lindbergii 	 curated
 non-vascular-plants 	 Sphagnum_palustre 	 curated
@@ -1386,6 +1394,7 @@ dicots 	 Ajuga_chamaepitys 	 draft
 dicots 	 Ajuga_reptans 	 draft
 dicots 	 Alchemilla_alpina 	 draft
 dicots 	 Alchemilla_mollis 	 draft
+dicots 	 Alliaria_petiolata 	 draft
 dicots 	 Alnus_cordata 	 draft
 dicots 	 Alnus_glutinosa 	 draft
 dicots 	 Alnus_incana 	 draft
@@ -1522,6 +1531,7 @@ dicots 	 Geranium_dissectum 	 draft
 dicots 	 Geranium_molle 	 draft
 dicots 	 Geranium_pratense 	 draft
 dicots 	 Geranium_rotundifolium 	 draft
+dicots 	 Geum_macrophyllum 	 draft
 dicots 	 Geum_rivale 	 draft
 dicots 	 Geum_urbanum 	 draft
 dicots 	 Glaucium_flavum 	 draft
@@ -1530,6 +1540,7 @@ dicots 	 Glechoma_hederacea 	 draft
 dicots 	 Gnaphalium_supinum 	 draft
 dicots 	 Gnaphalium_uliginosum 	 draft
 dicots 	 Hedera_helix 	 draft
+dicots 	 Hedlundia_pseudomeinichii 	 draft
 dicots 	 Helianthemum_oelandicum 	 draft
 dicots 	 Heracleum_mantegazzianum 	 draft
 dicots 	 Heracleum_sphondylium 	 draft
@@ -1565,6 +1576,7 @@ dicots 	 Koelreuteria_paniculata 	 draft
 dicots 	 Laburnum_anagyroides 	 draft
 dicots 	 Lactuca_saligna 	 draft
 dicots 	 Lamium_amplexicaule 	 draft
+dicots 	 Lamium_maculatum 	 draft
 dicots 	 Lamium_purpureum 	 draft
 dicots 	 Lapsana_communis 	 draft
 dicots 	 Lathraea_clandestina 	 draft
@@ -1629,6 +1641,7 @@ dicots 	 Nasturtium_officinale 	 draft
 dicots 	 Nicotiana_alata 	 draft
 dicots 	 Nuphar_lutea 	 draft
 dicots 	 Nuphar_pumila 	 draft
+dicots 	 Nymphaea_alba 	 draft
 dicots 	 Nymphoides_peltata 	 draft
 dicots 	 Oenanthe_lachenalii 	 draft
 dicots 	 Oenothera_biennis 	 draft
@@ -1672,6 +1685,7 @@ dicots 	 Prunella_vulgaris 	 draft
 dicots 	 Prunus_avium 	 draft
 dicots 	 Prunus_lusitanica 	 draft
 dicots 	 Prunus_padus 	 draft
+dicots 	 Pseudofumaria_lutea 	 draft
 dicots 	 Pseudognaphalium_luteoalbum 	 draft
 dicots 	 Pulicaria_dysenterica 	 draft
 dicots 	 Pyrus_communis 	 draft
@@ -1817,6 +1831,7 @@ dicots 	 Vicia_hirsuta 	 draft
 dicots 	 Vicia_lathyroides 	 draft
 dicots 	 Vicia_parviflora 	 draft
 dicots 	 Vicia_sativa 	 draft
+dicots 	 Vicia_tetrasperma 	 draft
 dicots 	 Viola_odorata 	 draft
 dicots 	 Viola_palustris 	 draft
 dicots 	 Viola_stagnina 	 draft
