@@ -709,6 +709,7 @@ dicots 	 Ajuga_chamaepitys 	 curated
 dicots 	 Ajuga_reptans 	 curated
 dicots 	 Alchemilla_alpina 	 curated
 dicots 	 Alchemilla_mollis 	 curated
+dicots 	 Alliaria_petiolata 	 curated
 dicots 	 Alnus_cordata 	 curated
 dicots 	 Alnus_glutinosa 	 curated
 dicots 	 Alnus_incana 	 curated
@@ -842,6 +843,7 @@ dicots 	 Geranium_dissectum 	 curated
 dicots 	 Geranium_molle 	 curated
 dicots 	 Geranium_pratense 	 curated
 dicots 	 Geranium_rotundifolium 	 curated
+dicots 	 Geum_macrophyllum 	 curated
 dicots 	 Geum_rivale 	 curated
 dicots 	 Geum_urbanum 	 curated
 dicots 	 Glaucium_flavum 	 curated
@@ -986,6 +988,7 @@ dicots 	 Primula_veris 	 curated
 dicots 	 Primula_vulgaris 	 curated
 dicots 	 Prunella_vulgaris 	 curated
 dicots 	 Prunus_avium 	 curated
+dicots 	 Prunus_lusitanica 	 curated
 dicots 	 Prunus_padus 	 curated
 dicots 	 Pseudognaphalium_luteoalbum 	 curated
 dicots 	 Pulicaria_dysenterica 	 curated
@@ -1039,6 +1042,7 @@ dicots 	 Sambucus_nigra 	 curated
 dicots 	 Samolus_valerandi 	 curated
 dicots 	 Saxifraga_aizoides 	 curated
 dicots 	 Saxifraga_cespitosa 	 curated
+dicots 	 Saxifraga_oppositifolia 	 curated
 dicots 	 Scleranthus_annuus 	 curated
 dicots 	 Scrophularia_umbrosa 	 curated
 dicots 	 Scutellaria_galericulata 	 curated
@@ -1061,6 +1065,7 @@ dicots 	 Solanum_nigrum 	 curated
 dicots 	 Solidago_canadensis 	 curated
 dicots 	 Solidago_virgaurea 	 curated
 dicots 	 Sonchus_oleraceus 	 curated
+dicots 	 Sonchus_palustris 	 curated
 dicots 	 Sorbus_anglica 	 curated
 dicots 	 Sorbus_bristoliensis 	 curated
 dicots 	 Sorbus_devoniensis 	 curated
@@ -1125,6 +1130,7 @@ dicots 	 Vicia_hirsuta 	 curated
 dicots 	 Vicia_lathyroides 	 curated
 dicots 	 Vicia_parviflora 	 curated
 dicots 	 Vicia_sativa 	 curated
+dicots 	 Vicia_tetrasperma 	 curated
 dicots 	 Viola_odorata 	 curated
 dicots 	 Viola_palustris 	 curated
 dicots 	 Viola_stagnina 	 curated
@@ -1157,6 +1163,7 @@ monocots 	 Carex_riparia 	 curated
 monocots 	 Carex_rostrata 	 curated
 monocots 	 Carex_spicata 	 curated
 monocots 	 Carex_sylvatica 	 curated
+monocots 	 Catapodium_rigidum 	 curated
 monocots 	 Colchicum_autumnale 	 curated
 monocots 	 Crocus_tommasinianus 	 curated
 monocots 	 Cyperus_fuscus 	 curated
@@ -1214,6 +1221,7 @@ monocots 	 Trichophorum_cespitosum 	 curated
 monocots 	 Triglochin_maritima 	 curated
 monocots 	 Triglochin_palustris 	 curated
 monocots 	 Xerophyllum_tenax 	 curated
+monocots 	 Zostera_noltei 	 curated
 non-vascular-plants 	 Amphidium_lapponicum 	 curated
 non-vascular-plants 	 Amphidium_mougeotii 	 curated
 non-vascular-plants 	 Anastrepta_orcadensis 	 curated
@@ -1487,6 +1495,7 @@ dicots 	 Centaurium_intermedium 	 draft
 dicots 	 Cerastium_alpinum 	 draft
 dicots 	 Ceratocapnos_claviculata 	 draft
 dicots 	 Chamaenerion_angustifolium 	 draft
+dicots 	 Chelidonium_majus 	 draft
 dicots 	 Chenopodium_album 	 draft
 dicots 	 Chrysosplenium_oppositifolium 	 draft
 dicots 	 Cicerbita_muralis 	 draft
@@ -1514,6 +1523,7 @@ dicots 	 Daucus_carota 	 draft
 dicots 	 Descurainia_sophia 	 draft
 dicots 	 Diapensia_lapponica 	 draft
 dicots 	 Dipsacus_fullonum 	 draft
+dicots 	 Doronicum_pardalianches 	 draft
 dicots 	 Draba_incana 	 draft
 dicots 	 Draba_verna 	 draft
 dicots 	 Dryas_octopetala 	 draft
@@ -1534,6 +1544,7 @@ dicots 	 Euphorbia_amygdaloides 	 draft
 dicots 	 Euphorbia_helioscopia 	 draft
 dicots 	 Euphorbia_lathyris 	 draft
 dicots 	 Euphorbia_maculata 	 draft
+dicots 	 Euphorbia_paralias 	 draft
 dicots 	 Euphorbia_peplus 	 draft
 dicots 	 Euphrasia_confusa 	 draft
 dicots 	 Euphrasia_nemorosa 	 draft
@@ -1548,6 +1559,7 @@ dicots 	 Filipendula_vulgaris 	 draft
 dicots 	 Fragaria_moschata 	 draft
 dicots 	 Fragaria_vesca 	 draft
 dicots 	 Frangula_alnus 	 draft
+dicots 	 Frankenia_laevis 	 draft
 dicots 	 Fraxinus_excelsior 	 draft
 dicots 	 Fuchsia_magellanica 	 draft
 dicots 	 Fumaria_muralis 	 draft
@@ -1565,6 +1577,7 @@ dicots 	 Gentianella_amarella 	 draft
 dicots 	 Geranium_dissectum 	 draft
 dicots 	 Geranium_molle 	 draft
 dicots 	 Geranium_pratense 	 draft
+dicots 	 Geranium_robertianum 	 draft
 dicots 	 Geranium_rotundifolium 	 draft
 dicots 	 Geum_macrophyllum 	 draft
 dicots 	 Geum_rivale 	 draft
@@ -1777,7 +1790,9 @@ dicots 	 Samolus_valerandi 	 draft
 dicots 	 Saxifraga_aizoides 	 draft
 dicots 	 Saxifraga_cespitosa 	 draft
 dicots 	 Saxifraga_oppositifolia 	 draft
+dicots 	 Scabiosa_columbaria 	 draft
 dicots 	 Scleranthus_annuus 	 draft
+dicots 	 Scleranthus_perennis 	 draft
 dicots 	 Scrophularia_umbrosa 	 draft
 dicots 	 Scutellaria_galericulata 	 draft
 dicots 	 Scutellaria_minor 	 draft
@@ -1955,6 +1970,7 @@ monocots 	 Scirpus_sylvaticus 	 draft
 monocots 	 Sparganium_emersum 	 draft
 monocots 	 Sparganium_erectum 	 draft
 monocots 	 Stuckenia_pectinata 	 draft
+monocots 	 Tofieldia_pusilla 	 draft
 monocots 	 Trichophorum_cespitosum 	 draft
 monocots 	 Triglochin_maritima 	 draft
 monocots 	 Triglochin_palustris 	 draft
