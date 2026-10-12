@@ -12,6 +12,7 @@ dicots 	 Agrostemma_githago 	 released
 dicots 	 Ailanthus_altissima 	 released
 dicots 	 Ajuga_chamaepitys 	 released
 dicots 	 Ajuga_reptans 	 released
+dicots 	 Alchemilla_alpina 	 released
 dicots 	 Alchemilla_mollis 	 released
 dicots 	 Alnus_cordata 	 released
 dicots 	 Alnus_glutinosa 	 released
@@ -25,6 +26,7 @@ dicots 	 Anthyllis_vulneraria 	 released
 dicots 	 Aquilegia_vulgaris 	 released
 dicots 	 Arabidopsis_thaliana 	 released
 dicots 	 Arabis_hirsuta 	 released
+dicots 	 Arbutus_unedo 	 released
 dicots 	 Arctium_lappa 	 released
 dicots 	 Arctium_minus 	 released
 dicots 	 Arenaria_serpyllifolia 	 released
@@ -43,6 +45,8 @@ dicots 	 Bellis_perennis 	 released
 dicots 	 Berberis_aquifolium 	 released
 dicots 	 Berberis_vulgaris 	 released
 dicots 	 Betula_pendula 	 released
+dicots 	 Betula_pubescens 	 released
+dicots 	 Bidens_cernua 	 released
 dicots 	 Blitum_bonus_henricus 	 released
 dicots 	 Brassica_nigra 	 released
 dicots 	 Buddleja_davidii 	 released
@@ -109,6 +113,7 @@ dicots 	 Erodium_moschatum 	 released
 dicots 	 Eryngium_campestre 	 released
 dicots 	 Euonymus_europaeus 	 released
 dicots 	 Euphorbia_amygdaloides 	 released
+dicots 	 Euphorbia_helioscopia 	 released
 dicots 	 Euphorbia_lathyris 	 released
 dicots 	 Euphorbia_maculata 	 released
 dicots 	 Euphorbia_peplus 	 released
@@ -140,6 +145,7 @@ dicots 	 Geranium_dissectum 	 released
 dicots 	 Geranium_molle 	 released
 dicots 	 Geranium_pratense 	 released
 dicots 	 Geranium_rotundifolium 	 released
+dicots 	 Geum_macrophyllum 	 released
 dicots 	 Geum_rivale 	 released
 dicots 	 Geum_urbanum 	 released
 dicots 	 Glaucium_flavum 	 released
@@ -242,6 +248,7 @@ dicots 	 Myriophyllum_verticillatum 	 released
 dicots 	 Myrrhis_odorata 	 released
 dicots 	 Nasturtium_officinale 	 released
 dicots 	 Nicotiana_alata 	 released
+dicots 	 Nuphar_lutea 	 released
 dicots 	 Nuphar_pumila 	 released
 dicots 	 Nymphoides_peltata 	 released
 dicots 	 Oenanthe_lachenalii 	 released
@@ -251,6 +258,7 @@ dicots 	 Ornithopus_perpusillus 	 released
 dicots 	 Orobanche_alba 	 released
 dicots 	 Orobanche_hederae 	 released
 dicots 	 Orobanche_minor 	 released
+dicots 	 Oxalis_acetosella 	 released
 dicots 	 Oxalis_corniculata 	 released
 dicots 	 Oxyria_digyna 	 released
 dicots 	 Parietaria_judaica 	 released
@@ -263,6 +271,7 @@ dicots 	 Persicaria_nepalensis 	 released
 dicots 	 Petasites_albus 	 released
 dicots 	 Petasites_hybridus 	 released
 dicots 	 Pilosella_aurantiaca 	 released
+dicots 	 Pilosella_officinarum 	 released
 dicots 	 Platanus_x_hispanica 	 released
 dicots 	 Polycarpon_tetraphyllum 	 released
 dicots 	 Polygala_serpyllifolia 	 released
@@ -281,6 +290,7 @@ dicots 	 Primula_veris 	 released
 dicots 	 Primula_vulgaris 	 released
 dicots 	 Prunella_vulgaris 	 released
 dicots 	 Prunus_avium 	 released
+dicots 	 Prunus_lusitanica 	 released
 dicots 	 Prunus_padus 	 released
 dicots 	 Pseudognaphalium_luteoalbum 	 released
 dicots 	 Pulicaria_dysenterica 	 released
@@ -334,6 +344,7 @@ dicots 	 Sambucus_nigra 	 released
 dicots 	 Samolus_valerandi 	 released
 dicots 	 Saxifraga_aizoides 	 released
 dicots 	 Saxifraga_cespitosa 	 released
+dicots 	 Saxifraga_oppositifolia 	 released
 dicots 	 Scleranthus_annuus 	 released
 dicots 	 Scrophularia_umbrosa 	 released
 dicots 	 Scutellaria_galericulata 	 released
@@ -344,16 +355,20 @@ dicots 	 Senecio_squalidus 	 released
 dicots 	 Senecio_sylvaticus 	 released
 dicots 	 Senecio_viscosus 	 released
 dicots 	 Senecio_vulgaris 	 released
+dicots 	 Seseli_libanotis 	 released
 dicots 	 Sherardia_arvensis 	 released
 dicots 	 Sibbaldia_procumbens 	 released
 dicots 	 Silene_acaulis 	 released
 dicots 	 Silene_dioica 	 released
+dicots 	 Silene_noctiflora 	 released
 dicots 	 Sisymbrium_orientale 	 released
 dicots 	 Solanum_dulcamara 	 released
 dicots 	 Solanum_nigrum 	 released
 dicots 	 Solidago_canadensis 	 released
 dicots 	 Solidago_virgaurea 	 released
 dicots 	 Sonchus_oleraceus 	 released
+dicots 	 Sonchus_palustris 	 released
+dicots 	 Sorbus_anglica 	 released
 dicots 	 Sorbus_bristoliensis 	 released
 dicots 	 Sorbus_devoniensis 	 released
 dicots 	 Spergula_arvensis 	 released
@@ -412,10 +427,12 @@ dicots 	 Veronica_scutellata 	 released
 dicots 	 Veronica_serpyllifolia 	 released
 dicots 	 Veronica_triphyllos 	 released
 dicots 	 Veronica_verna 	 released
+dicots 	 Viburnum_lantana 	 released
 dicots 	 Vicia_hirsuta 	 released
 dicots 	 Vicia_lathyroides 	 released
 dicots 	 Vicia_parviflora 	 released
 dicots 	 Vicia_sativa 	 released
+dicots 	 Vicia_tetrasperma 	 released
 dicots 	 Viola_odorata 	 released
 dicots 	 Viola_palustris 	 released
 dicots 	 Viola_stagnina 	 released
@@ -447,6 +464,7 @@ monocots 	 Carex_riparia 	 released
 monocots 	 Carex_rostrata 	 released
 monocots 	 Carex_spicata 	 released
 monocots 	 Carex_sylvatica 	 released
+monocots 	 Catapodium_rigidum 	 released
 monocots 	 Colchicum_autumnale 	 released
 monocots 	 Crocus_tommasinianus 	 released
 monocots 	 Cyperus_fuscus 	 released
@@ -503,6 +521,7 @@ monocots 	 Trichophorum_cespitosum 	 released
 monocots 	 Triglochin_maritima 	 released
 monocots 	 Triglochin_palustris 	 released
 monocots 	 Xerophyllum_tenax 	 released
+monocots 	 Zostera_noltei 	 released
 non-vascular-plants 	 Amphidium_lapponicum 	 released
 non-vascular-plants 	 Amphidium_mougeotii 	 released
 non-vascular-plants 	 Anastrepta_orcadensis 	 released
@@ -669,6 +688,7 @@ non-vascular-plants 	 Southbya_tophacea 	 released
 non-vascular-plants 	 Sphagnum_capillifolium 	 released
 non-vascular-plants 	 Sphagnum_compactum 	 released
 non-vascular-plants 	 Sphagnum_contortum 	 released
+non-vascular-plants 	 Sphagnum_fallax 	 released
 non-vascular-plants 	 Sphagnum_fimbriatum 	 released
 non-vascular-plants 	 Sphagnum_girgensohnii 	 released
 non-vascular-plants 	 Sphagnum_lindbergii 	 released
@@ -696,6 +716,7 @@ non-vascular-plants 	 Ulota_phyllantha 	 released
 non-vascular-plants 	 Zygodon_viridissimus 	 released
 vascular-plants 	 Diphasiastrum_alpinum 	 released
 vascular-plants 	 Equisetum_palustre 	 released
+vascular-plants 	 Equisetum_sylvaticum 	 released
 dicots 	 Acaena_novae_zelandiae 	 curated
 dicots 	 Acaena_ovalifolia 	 curated
 dicots 	 Acer_campestre 	 curated
@@ -771,6 +792,7 @@ dicots 	 Centaurium_intermedium 	 curated
 dicots 	 Cerastium_alpinum 	 curated
 dicots 	 Ceratocapnos_claviculata 	 curated
 dicots 	 Chamaenerion_angustifolium 	 curated
+dicots 	 Chelidonium_majus 	 curated
 dicots 	 Chenopodium_album 	 curated
 dicots 	 Chrysosplenium_oppositifolium 	 curated
 dicots 	 Cicerbita_muralis 	 curated
@@ -798,6 +820,7 @@ dicots 	 Daucus_carota 	 curated
 dicots 	 Descurainia_sophia 	 curated
 dicots 	 Diapensia_lapponica 	 curated
 dicots 	 Dipsacus_fullonum 	 curated
+dicots 	 Doronicum_pardalianches 	 curated
 dicots 	 Draba_incana 	 curated
 dicots 	 Draba_verna 	 curated
 dicots 	 Dryas_octopetala 	 curated
@@ -891,6 +914,7 @@ dicots 	 Koelreuteria_paniculata 	 curated
 dicots 	 Laburnum_anagyroides 	 curated
 dicots 	 Lactuca_saligna 	 curated
 dicots 	 Lamium_amplexicaule 	 curated
+dicots 	 Lamium_maculatum 	 curated
 dicots 	 Lamium_purpureum 	 curated
 dicots 	 Lapsana_communis 	 curated
 dicots 	 Lathraea_clandestina 	 curated
@@ -997,6 +1021,7 @@ dicots 	 Prunella_vulgaris 	 curated
 dicots 	 Prunus_avium 	 curated
 dicots 	 Prunus_lusitanica 	 curated
 dicots 	 Prunus_padus 	 curated
+dicots 	 Pseudofumaria_lutea 	 curated
 dicots 	 Pseudognaphalium_luteoalbum 	 curated
 dicots 	 Pulicaria_dysenterica 	 curated
 dicots 	 Pyrus_communis 	 curated
@@ -1050,6 +1075,7 @@ dicots 	 Samolus_valerandi 	 curated
 dicots 	 Saxifraga_aizoides 	 curated
 dicots 	 Saxifraga_cespitosa 	 curated
 dicots 	 Saxifraga_oppositifolia 	 curated
+dicots 	 Scabiosa_columbaria 	 curated
 dicots 	 Scleranthus_annuus 	 curated
 dicots 	 Scrophularia_umbrosa 	 curated
 dicots 	 Scutellaria_galericulata 	 curated
@@ -1226,6 +1252,7 @@ monocots 	 Scirpus_sylvaticus 	 curated
 monocots 	 Sparganium_emersum 	 curated
 monocots 	 Sparganium_erectum 	 curated
 monocots 	 Stuckenia_pectinata 	 curated
+monocots 	 Tofieldia_pusilla 	 curated
 monocots 	 Trichophorum_cespitosum 	 curated
 monocots 	 Triglochin_maritima 	 curated
 monocots 	 Triglochin_palustris 	 curated
@@ -1419,6 +1446,7 @@ non-vascular-plants 	 Tetraplodon_mnioides 	 curated
 non-vascular-plants 	 Thuidium_delicatulum 	 curated
 non-vascular-plants 	 Thuidium_tamariscinum 	 curated
 non-vascular-plants 	 Tortella_tortuosa 	 curated
+non-vascular-plants 	 Trichodon_cylindricus 	 curated
 non-vascular-plants 	 Tricholepidozia_tetradactyla 	 curated
 non-vascular-plants 	 Trichostomum_littorale 	 curated
 non-vascular-plants 	 Tritomaria_quinquedentata 	 curated
@@ -2174,6 +2202,7 @@ non-vascular-plants 	 Sphagnum_teres 	 draft
 non-vascular-plants 	 Splachnum_sphaericum 	 draft
 non-vascular-plants 	 Stereodon_callichrous 	 draft
 non-vascular-plants 	 Straminergon_stramineum 	 draft
+non-vascular-plants 	 Syntrichia_papillosa 	 draft
 non-vascular-plants 	 Syntrichia_ruraliformis 	 draft
 non-vascular-plants 	 Tetraplodon_mnioides 	 draft
 non-vascular-plants 	 Thuidium_delicatulum 	 draft

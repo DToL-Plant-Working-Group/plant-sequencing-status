@@ -6,32 +6,32 @@ Two summary tables are presented here. The first is the number of assemblies in 
 
 | Plant Group | Stage | Number |
 | --- | --- | --- |
-| dicots | released | 424 |
-| monocots | released | 81 |
-| non-vascular-plants | released | 191 |
-| vascular-plants | released | 2 |
-| dicots | curated | 450 |
-| monocots | curated | 85 |
-| non-vascular-plants | curated | 194 |
+| dicots | released | 441 |
+| monocots | released | 83 |
+| non-vascular-plants | released | 192 |
+| vascular-plants | released | 3 |
+| dicots | curated | 455 |
+| monocots | curated | 86 |
+| non-vascular-plants | curated | 195 |
 | vascular-plants | curated | 3 |
 | dicots | draft | 474 |
 | monocots | draft | 87 |
-| non-vascular-plants | draft | 197 |
+| non-vascular-plants | draft | 198 |
 | vascular-plants | draft | 4 |
 
 The second is the number of data types per species.
 
 | Data type | Number |
 | --- | --- |
-| hic-arima2 | 1397 |
-| pacbio | 1533 |
+| hic-arima2 | 1401 |
+| pacbio | 1538 |
 | 10x | 105 |
 | hic-dnazoo | 1 |
 | htag-202108 | 3 |
 | htag-sanger | 1 |
 | htag-marek | 1 |
+| hic | 1 |
 | hic-dovetail | 2 |
-| hic-hi-c | 1 |
 | hic-homebrew | 1 |
 | hic-omnic | 1 |
 | htag-202103 | 1 |
