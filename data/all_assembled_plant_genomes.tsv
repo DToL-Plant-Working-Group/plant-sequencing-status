@@ -778,7 +778,6 @@ dicots 	 Calluna_vulgaris 	 curated
 dicots 	 Calystegia_soldanella 	 curated
 dicots 	 Campanula_latifolia 	 curated
 dicots 	 Cardamine_amara 	 curated
-dicots 	 Cardamine_flexuosa 	 curated
 dicots 	 Cardamine_hirsuta 	 curated
 dicots 	 Cardamine_pratensis 	 curated
 dicots 	 Carduus_crispus 	 curated
@@ -870,6 +869,7 @@ dicots 	 Gentianella_amarella 	 curated
 dicots 	 Geranium_dissectum 	 curated
 dicots 	 Geranium_molle 	 curated
 dicots 	 Geranium_pratense 	 curated
+dicots 	 Geranium_robertianum 	 curated
 dicots 	 Geranium_rotundifolium 	 curated
 dicots 	 Geum_macrophyllum 	 curated
 dicots 	 Geum_rivale 	 curated
@@ -965,6 +965,7 @@ dicots 	 Melilotus_altissimus 	 curated
 dicots 	 Melittis_melissophyllum 	 curated
 dicots 	 Mentha_aquatica 	 curated
 dicots 	 Mercurialis_annua 	 curated
+dicots 	 Micranthes_stellaris 	 curated
 dicots 	 Mimulus_peregrinus 	 curated
 dicots 	 Misopates_orontium 	 curated
 dicots 	 Moehringia_trinervia 	 curated
@@ -1519,7 +1520,6 @@ dicots 	 Calluna_vulgaris 	 draft
 dicots 	 Calystegia_soldanella 	 draft
 dicots 	 Campanula_latifolia 	 draft
 dicots 	 Cardamine_amara 	 draft
-dicots 	 Cardamine_flexuosa 	 draft
 dicots 	 Cardamine_hirsuta 	 draft
 dicots 	 Cardamine_pratensis 	 draft
 dicots 	 Carduus_crispus 	 draft
@@ -1568,6 +1568,7 @@ dicots 	 Dryas_octopetala 	 draft
 dicots 	 Empetrum_nigrum 	 draft
 dicots 	 Epilobium_ciliatum 	 draft
 dicots 	 Epilobium_hirsutum 	 draft
+dicots 	 Epilobium_obscurum 	 draft
 dicots 	 Epilobium_parviflorum 	 draft
 dicots 	 Erica_ciliaris 	 draft
 dicots 	 Erica_cinerea 	 draft
@@ -1661,6 +1662,7 @@ dicots 	 Juglans_regia 	 draft
 dicots 	 Koelreuteria_paniculata 	 draft
 dicots 	 Laburnum_anagyroides 	 draft
 dicots 	 Lactuca_saligna 	 draft
+dicots 	 Lactuca_serriola 	 draft
 dicots 	 Lamium_amplexicaule 	 draft
 dicots 	 Lamium_maculatum 	 draft
 dicots 	 Lamium_purpureum 	 draft
