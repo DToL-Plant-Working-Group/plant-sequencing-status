@@ -778,6 +778,7 @@ dicots 	 Calluna_vulgaris 	 curated
 dicots 	 Calystegia_soldanella 	 curated
 dicots 	 Campanula_latifolia 	 curated
 dicots 	 Cardamine_amara 	 curated
+dicots 	 Cardamine_flexuosa 	 curated
 dicots 	 Cardamine_hirsuta 	 curated
 dicots 	 Cardamine_pratensis 	 curated
 dicots 	 Carduus_crispus 	 curated
@@ -976,7 +977,9 @@ dicots 	 Myriophyllum_spicatum 	 curated
 dicots 	 Myriophyllum_verticillatum 	 curated
 dicots 	 Myrrhis_odorata 	 curated
 dicots 	 Nasturtium_officinale 	 curated
+dicots 	 Nicandra_physalodes 	 curated
 dicots 	 Nicotiana_alata 	 curated
+dicots 	 Noccaea_caerulescens 	 curated
 dicots 	 Nuphar_lutea 	 curated
 dicots 	 Nuphar_pumila 	 curated
 dicots 	 Nymphoides_peltata 	 curated
@@ -1078,6 +1081,7 @@ dicots 	 Saxifraga_cespitosa 	 curated
 dicots 	 Saxifraga_oppositifolia 	 curated
 dicots 	 Scabiosa_columbaria 	 curated
 dicots 	 Scleranthus_annuus 	 curated
+dicots 	 Scleranthus_perennis 	 curated
 dicots 	 Scrophularia_umbrosa 	 curated
 dicots 	 Scutellaria_galericulata 	 curated
 dicots 	 Scutellaria_minor 	 curated
@@ -1520,6 +1524,7 @@ dicots 	 Calluna_vulgaris 	 draft
 dicots 	 Calystegia_soldanella 	 draft
 dicots 	 Campanula_latifolia 	 draft
 dicots 	 Cardamine_amara 	 draft
+dicots 	 Cardamine_flexuosa 	 draft
 dicots 	 Cardamine_hirsuta 	 draft
 dicots 	 Cardamine_pratensis 	 draft
 dicots 	 Carduus_crispus 	 draft
@@ -2060,6 +2065,7 @@ non-vascular-plants 	 Ceratodon_purpureus 	 draft
 non-vascular-plants 	 Climacium_dendroides 	 draft
 non-vascular-plants 	 Codriophorus_aciculare 	 draft
 non-vascular-plants 	 Conocephalum_conicum 	 draft
+non-vascular-plants 	 Conocephalum_salebrosum 	 draft
 non-vascular-plants 	 Cratoneuron_filicinum 	 draft
 non-vascular-plants 	 Cryphaea_heteromalla 	 draft
 non-vascular-plants 	 Cynodontium_bruntonii 	 draft
