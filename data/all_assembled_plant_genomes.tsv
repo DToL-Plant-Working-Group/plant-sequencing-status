@@ -108,6 +108,7 @@ dicots 	 Epilobium_hirsutum 	 released
 dicots 	 Erica_ciliaris 	 released
 dicots 	 Erica_cinerea 	 released
 dicots 	 Erica_tetralix 	 released
+dicots 	 Erodium_cicutarium 	 released
 dicots 	 Erodium_maritimum 	 released
 dicots 	 Erodium_moschatum 	 released
 dicots 	 Eryngium_campestre 	 released
@@ -122,6 +123,7 @@ dicots 	 Euphrasia_nemorosa 	 released
 dicots 	 Euphrasia_tetraquetra 	 released
 dicots 	 Fagus_sylvatica 	 released
 dicots 	 Fallopia_convolvulus 	 released
+dicots 	 Ficus_carica 	 released
 dicots 	 Filago_lutescens 	 released
 dicots 	 Filago_pyramidata 	 released
 dicots 	 Filipendula_ulmaria 	 released
@@ -144,6 +146,7 @@ dicots 	 Gentianella_amarella 	 released
 dicots 	 Geranium_dissectum 	 released
 dicots 	 Geranium_molle 	 released
 dicots 	 Geranium_pratense 	 released
+dicots 	 Geranium_robertianum 	 released
 dicots 	 Geranium_rotundifolium 	 released
 dicots 	 Geum_macrophyllum 	 released
 dicots 	 Geum_rivale 	 released
@@ -188,6 +191,7 @@ dicots 	 Koelreuteria_paniculata 	 released
 dicots 	 Laburnum_anagyroides 	 released
 dicots 	 Lactuca_saligna 	 released
 dicots 	 Lamium_amplexicaule 	 released
+dicots 	 Lamium_maculatum 	 released
 dicots 	 Lamium_purpureum 	 released
 dicots 	 Lapsana_communis 	 released
 dicots 	 Lathraea_clandestina 	 released
@@ -215,6 +219,7 @@ dicots 	 Lobelia_urens 	 released
 dicots 	 Logfia_minima 	 released
 dicots 	 Lotus_pedunculatus 	 released
 dicots 	 Lotus_subbiflorus 	 released
+dicots 	 Lotus_tenuis 	 released
 dicots 	 Lycopus_europaeus 	 released
 dicots 	 Lysimachia_thyrsiflora 	 released
 dicots 	 Lythrum_hyssopifolia 	 released
@@ -260,6 +265,7 @@ dicots 	 Orobanche_hederae 	 released
 dicots 	 Orobanche_minor 	 released
 dicots 	 Oxalis_acetosella 	 released
 dicots 	 Oxalis_corniculata 	 released
+dicots 	 Oxalis_debilis 	 released
 dicots 	 Oxyria_digyna 	 released
 dicots 	 Parietaria_judaica 	 released
 dicots 	 Pastinaca_sativa 	 released
@@ -292,6 +298,7 @@ dicots 	 Prunella_vulgaris 	 released
 dicots 	 Prunus_avium 	 released
 dicots 	 Prunus_lusitanica 	 released
 dicots 	 Prunus_padus 	 released
+dicots 	 Pseudofumaria_lutea 	 released
 dicots 	 Pseudognaphalium_luteoalbum 	 released
 dicots 	 Pulicaria_dysenterica 	 released
 dicots 	 Pyrus_communis 	 released
@@ -361,6 +368,7 @@ dicots 	 Sibbaldia_procumbens 	 released
 dicots 	 Silene_acaulis 	 released
 dicots 	 Silene_dioica 	 released
 dicots 	 Silene_noctiflora 	 released
+dicots 	 Silene_nutans 	 released
 dicots 	 Sisymbrium_orientale 	 released
 dicots 	 Solanum_dulcamara 	 released
 dicots 	 Solanum_nigrum 	 released
@@ -517,6 +525,7 @@ monocots 	 Scirpus_sylvaticus 	 released
 monocots 	 Sparganium_emersum 	 released
 monocots 	 Sparganium_erectum 	 released
 monocots 	 Stuckenia_pectinata 	 released
+monocots 	 Tofieldia_pusilla 	 released
 monocots 	 Trichophorum_cespitosum 	 released
 monocots 	 Triglochin_maritima 	 released
 monocots 	 Triglochin_palustris 	 released
@@ -598,12 +607,14 @@ non-vascular-plants 	 Grimmia_montana 	 released
 non-vascular-plants 	 Grimmia_pulvinata 	 released
 non-vascular-plants 	 Grimmia_trichophylla 	 released
 non-vascular-plants 	 Hedwigia_stellata 	 released
+non-vascular-plants 	 Herbertus_borealis 	 released
 non-vascular-plants 	 Herbertus_hutchinsiae 	 released
 non-vascular-plants 	 Herbertus_stramineus 	 released
 non-vascular-plants 	 Heterocladium_heteropterum 	 released
 non-vascular-plants 	 Hookeria_lucens 	 released
 non-vascular-plants 	 Hygrohypnum_duriusculum 	 released
 non-vascular-plants 	 Hylocomiadelphus_triquetrus 	 released
+non-vascular-plants 	 Hymenoloma_crispulum 	 released
 non-vascular-plants 	 Hyocomium_armoricum 	 released
 non-vascular-plants 	 Hypnum_cupressiforme 	 released
 non-vascular-plants 	 Isopterygiella_pulchella 	 released
@@ -708,6 +719,7 @@ non-vascular-plants 	 Tetraplodon_mnioides 	 released
 non-vascular-plants 	 Thuidium_delicatulum 	 released
 non-vascular-plants 	 Thuidium_tamariscinum 	 released
 non-vascular-plants 	 Tortella_tortuosa 	 released
+non-vascular-plants 	 Trichodon_cylindricus 	 released
 non-vascular-plants 	 Tricholepidozia_tetradactyla 	 released
 non-vascular-plants 	 Trichostomum_littorale 	 released
 non-vascular-plants 	 Tritomaria_quinquedentata 	 released
@@ -771,6 +783,7 @@ dicots 	 Blitum_bonus_henricus 	 curated
 dicots 	 Brassica_nigra 	 curated
 dicots 	 Buddleja_davidii 	 curated
 dicots 	 Buxus_sempervirens 	 curated
+dicots 	 Calendula_arvensis 	 curated
 dicots 	 Calendula_officinalis 	 curated
 dicots 	 Callitriche_obtusangula 	 curated
 dicots 	 Callitriche_stagnalis 	 curated
@@ -1135,6 +1148,7 @@ dicots 	 Trifolium_dubium 	 curated
 dicots 	 Trifolium_fragiferum 	 curated
 dicots 	 Trifolium_occidentale 	 curated
 dicots 	 Trifolium_repens 	 curated
+dicots 	 Trifolium_squamosum 	 curated
 dicots 	 Trifolium_striatum 	 curated
 dicots 	 Trifolium_subterraneum 	 curated
 dicots 	 Tripolium_pannonicum 	 curated
