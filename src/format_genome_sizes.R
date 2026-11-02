@@ -23,11 +23,15 @@ genomescope <- fread("../data/genomescope_full.tsv")
 
 # setnames(x = genomescope, old = c("V1", "V2", "V3"), new = c("species", "tolid", "pacbio_genomescope_length"))
 
-genomescope[, species := gsub(x = species, pattern = "_", replacement = " ")]
+# Join each assembly to the GenomeScope run of its own specimen. Joining on
+# species alone pairs assemblies with other specimens' k-mer profiles.
+assemblies[, tolid := sub("\\..*$", "", assembly)]
 
-# merge the data
+# A few ToLIDs have more than one GenomeScope run; keep the best fit
+genomescope <- genomescope[order(tolid, -Model_Fit_max_percent)][!duplicated(tolid)]
+genomescope[, species := NULL]
 
-all_estimates <- unique(merge(assemblies, genomescope, by = c("species"), all.x = TRUE))
+all_estimates <- unique(merge(assemblies, genomescope, by = "tolid", all.x = TRUE))
 
 fwrite(all_estimates, file = "../data/merged_genome_size_estimates.tsv", sep = "\t")
 
