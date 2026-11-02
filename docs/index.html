@@ -3,373 +3,588 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DToL genome size data</title>
+<title>DToL plant genome sizes</title>
+<meta name="description" content="Assembly length, GenomeScope and flow cytometry genome size estimates for Darwin Tree of Life plants.">
 <style>
-  :root { color-scheme: light; --plot-background: #ffffff; }
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfaf7; --surface: #ffffff; --ink: #1c211e; --ink-2: #4c5650; --ink-3: #737d76;
+    --rule: #e4e0d6; --rule-2: #cfcabc; --accent: #2a78d6; --plot-background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121614; --surface: #1a201d; --ink: #ecece6; --ink-2: #b5bcb6; --ink-3: #8b948d;
+      --rule: #29312d; --rule-2: #3a443f; --accent: #6da7ec; --plot-background: #1a201d;
+    }
+  }
+  * { box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    max-width: 960px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    line-height: 1.5;
-    background: #ffffff;
-    color: #1a1a1a;
+    margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55;
   }
-  h1 { margin-bottom: 0.25rem; }
-  h2 { margin-top: 3rem; }
-  .controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
-    margin: 1rem 0;
-    font-size: 0.95rem;
+  main { max-width: 1120px; margin: 0 auto; padding: 2.5rem 16px 5rem; }
+  h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.15; margin: 0 0 .5rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.3rem; line-height: 1.3; margin: 0 0 .35rem; }
+  .lede { color: var(--ink-2); font-size: 1.08rem; max-width: 46em; margin: 0; }
+  a { color: var(--accent); }
+  i.sp { font-style: italic; }
+
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 10px; margin: 1.75rem 0; }
+  .tile { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; }
+  .tile b { display: block; font-size: 1.55rem; font-weight: 600; line-height: 1.2; font-variant-numeric: tabular-nums; }
+  .tile span { font-size: .82rem; color: var(--ink-3); }
+
+  .bar {
+    position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center;
+    padding: 10px 0; background: var(--bg); border-bottom: 1px solid var(--rule); font-size: .9rem;
   }
-  .controls label { display: flex; align-items: center; gap: 0.4rem; }
-  .controls input[type="range"] { width: 220px; }
-  .plot-container { overflow-x: auto; }
-  #status { color: #888; font-style: italic; }
-  footer { margin-top: 3rem; font-size: 0.85rem; color: #888; }
+  .bar label { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); }
+  .bar input[type="search"], .bar select {
+    font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--rule-2); border-radius: 8px; padding: 6px 10px;
+  }
+  .bar input[type="search"] { width: 230px; max-width: 100%; }
+  .chip {
+    font: inherit; font-size: .84rem; color: var(--ink-2); background: var(--surface); border: 1px solid var(--rule-2);
+    border-radius: 999px; padding: 4px 11px; cursor: pointer;
+  }
+  .chip[aria-pressed="false"] { opacity: .5; text-decoration: line-through; }
+  .chips { display: inline-flex; flex-wrap: wrap; gap: 5px; }
+  @media (max-width: 820px) { .bar { position: static; } }
+  #legend { width: 100%; min-height: 26px; color: var(--ink-2); font-size: .82rem; }
+  #legend svg { display: block; }
+
+  section { margin-top: 2.75rem; }
+  .note { color: var(--ink-2); max-width: 46em; margin: 0 0 1rem; }
+  .card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 12px; min-width: 0; }
+  .pair { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: 12px; }
+  @media (max-width: 820px) { .pair { grid-template-columns: minmax(0, 1fr); } }
+  .card h3 { margin: 0 0 6px; font-size: .86rem; font-weight: 600; color: var(--ink-2); }
+  .plot { color: var(--ink-2); }
+  .plot svg { display: block; max-width: 100%; background: transparent; cursor: pointer; }
+  .caveat { font-size: .85rem; color: var(--ink-3); margin: .6rem 0 0; max-width: 56em; }
+
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .88rem; }
+  th, td { padding: 7px 10px; border-bottom: 1px solid var(--rule); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  th:first-child, td:first-child, th.l, td.l { text-align: left; }
+  th { color: var(--ink-3); font-weight: 600; }
+  th button { all: unset; cursor: pointer; }
+  th button:focus-visible, .chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  tbody tr { cursor: pointer; }
+  tbody tr:hover { background: var(--rule); }
+  .more { margin-top: 10px; }
+
+  #detail {
+    position: fixed; right: 16px; bottom: 16px; z-index: 10; width: min(340px, calc(100vw - 32px)); max-height: 70vh; overflow: auto;
+    background: var(--surface); border: 1px solid var(--rule-2); border-radius: 12px; padding: 14px 16px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 18%); font-size: .88rem;
+  }
+  #detail h3 { margin: 0 24px 2px 0; font-size: 1.08rem; font-style: italic; }
+  #detail p { margin: 0; color: var(--ink-3); }
+  #detail dl { display: grid; grid-template-columns: auto auto; justify-content: space-between; gap: 2px 14px; margin: 10px 0 0; }
+  #detail dt { color: var(--ink-3); }
+  #detail dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+  #detail .close { position: absolute; top: 8px; right: 8px; border: 0; background: none; color: var(--ink-3); font-size: 1.2rem; line-height: 1; cursor: pointer; }
+  #detail .flag { margin-top: 8px; color: var(--ink-2); }
+  footer { margin-top: 3.5rem; font-size: .85rem; color: var(--ink-3); }
+  #status { color: var(--ink-3); font-style: italic; }
 </style>
 </head>
 <body>
+<main>
+  <h1>How big are DToL plant genomes?</h1>
+  <p class="lede">Each Darwin Tree of Life plant can be measured three ways: the length of its assembly, a k-mer estimate from GenomeScope, and flow cytometry. Where the three disagree, something interesting is usually going on, whether that is ploidy, repeats or a model that did not fit.</p>
+  <p id="status">Loading data…</p>
 
-<h1>DToL genome size data</h1>
-<p id="status">Loading data…</p>
+  <div id="app" hidden>
+    <div class="tiles" id="tiles"></div>
 
-<div id="app" hidden>
+    <div class="bar">
+      <label>Find <input type="search" id="search" list="names" placeholder="Species name" autocomplete="off"></label>
+      <datalist id="names"></datalist>
+      <span class="chips" id="clades" role="group" aria-label="Plant groups"></span>
+      <label>Colour by <select id="colorBy">
+        <option value="p">GenomeScope ploidy</option>
+        <option value="clade">Plant group</option>
+        <option value="het">Heterozygosity</option>
+        <option value="repeat">Repeat content</option>
+        <option value="fit">Model fit</option>
+      </select></label>
+      <div id="legend"></div>
+    </div>
 
-<p>GenomeScope derived length from PacBio raw data plotted against the ungapped
-assembly length taken from the assembled genome. There appear to be two lines,
-one falling roughly on the 1:1 line, and one on the 2:1 line.</p>
-<ul><li>Colour by assembly level</li></ul>
+    <section>
+      <h2>K-mers against assemblies: why are there two lines?</h2>
+      <p class="note" id="note1"></p>
+      <div class="pair">
+        <div class="card"><h3>GenomeScope length against assembly length</h3><div class="plot" id="plot1"></div></div>
+        <div class="card"><h3>Assembly as a multiple of GenomeScope</h3><div class="plot" id="hist1"></div></div>
+      </div>
+      <p class="caveat" id="cav1"></p>
+    </section>
 
-<div class="controls">
-  <label><input type="checkbox" id="chromHap" checked> Chromosomal &amp; primary haplotype only</label>
-</div>
-<div class="plot-container" id="plot1"></div>
+    <section>
+      <h2>Flow cytometry against assemblies: what is missing?</h2>
+      <p class="note" id="note2"></p>
+      <div class="pair">
+        <div class="card"><h3>1C genome size against assembly length</h3><div class="plot" id="plot2"></div></div>
+        <div class="card"><h3>1C as a multiple of assembly length</h3><div class="plot" id="hist2"></div></div>
+      </div>
+      <p class="caveat" id="cav2"></p>
+    </section>
 
-<h2></h2>
-<p>The second plot shows the same data as the first plot but you can adjust the
-scales and colour either by heterozygosity or repeat content, both of which
-are derived from the GenomeScope data.</p>
+    <section>
+      <h2>Bigger genomes are mostly repeats</h2>
+      <p class="note" id="note3"></p>
+      <div class="card"><h3>GenomeScope repeat content against assembly length</h3><div class="plot" id="plot3"></div></div>
+      <p class="caveat" id="cav3"></p>
+    </section>
 
-<div class="controls">
-  <label>Color points by
-    <select id="colorBy">
-      <option value="het_percent_mid">Heterozygosity (%)</option>
-      <option value="repeat_percent_mid">Repeat content (%)</option>
-    </select>
-  </label>
-  <label>Axis max (bp)
-    <input type="range" id="xAxisMax" min="400000000" max="100000000000" step="1000" value="2500000000">
-    <span id="xAxisMaxLabel"></span>
-  </label>
-</div>
-<div class="plot-container" id="plot2"></div>
+    <section>
+      <h2>Genome size across the largest families</h2>
+      <p class="note" id="note4"></p>
+      <div class="card"><div class="plot" id="plot4"></div></div>
+      <p class="caveat">Family names come from the C-value database, so species without a flow cytometry record are not shown here.</p>
+    </section>
 
-<h2></h2>
-<p>The last plot shows the 1C content on the y axis, and the ungapped fasta
-length from the genome assembly on the x axis. The scale can be adjusted to
-show more or less data. Curiously, the data lies mainly above the 1:1 line.</p>
+    <section>
+      <h2>Worth a second look</h2>
+      <p class="note">Every species in the current view, most discordant first. Discordance is the largest fold difference between any two of the three estimates, so polyploids rank highly because GenomeScope reports a single set. Click a row to pick out that species in the plots, or a heading to sort.</p>
+      <div class="card">
+        <div class="tablewrap"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
+        <button class="chip more" id="more" type="button"></button>
+      </div>
+    </section>
 
-<div class="controls">
-  <label>Zoom factor
-    <input type="range" id="divFactor" min="1" max="40" step="0.2" value="6">
-    <span id="divFactorLabel"></span>
-  </label>
-</div>
-<div class="plot-container" id="plot3"></div>
-
-<footer>Data: <code>all_genome_size_data.tsv</code>, regenerated weekly by the
-plant-sequencing-status pipeline.</footer>
-
-</div>
+    <footer>
+      Data: <a href="./data/all_genome_size_data.tsv"><code>all_genome_size_data.tsv</code></a>, regenerated weekly by the
+      <a href="https://github.com/DToL-Plant-Working-Group/plant-sequencing-status">plant-sequencing-status</a> pipeline.
+      GenomeScope lengths are the upper bound of the model's haploid length, at k = 31.
+    </footer>
+  </div>
+</main>
+<aside id="detail" hidden aria-live="polite"></aside>
 
 <script type="module">
-import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
-import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
+import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm";
+import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/+esm";
 
-const fmt = d3.format(".2s");
-const colorLabel = (colorBy) => ({
-  het_percent_mid: "Heterozygosity (%)",
-  repeat_percent_mid: "Repeat content (%)"
-}[colorBy]);
-
-function toNum(v) {
-  if (v == null) return undefined;
-  const s = String(v).trim();
-  if (!s || s.toUpperCase() === "NA") return undefined;
-  const cleaned = s.replace(/,/g, "").replace(/\s*bp$/i, "").replace(/%$/, "");
-  const n = +cleaned;
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const num = (v) => {
+  const n = parseFloat(v);
   return Number.isFinite(n) ? n : undefined;
+};
+const gb = (v) => (v == null ? "–" : v >= 10 ? d3.format(".1f")(v) + " Gb" : v >= 1 ? d3.format(".2f")(v) + " Gb" : d3.format(".0f")(v * 1000) + " Mb");
+const fold = (v) => (v == null ? "–" : "×" + (v >= 100 ? d3.format(",.0f")(v) : v >= 10 ? d3.format(".0f")(v) : d3.format(".2f")(v)));
+const pct = (v) => (v == null ? "–" : d3.format(".1f")(v) + "%");
+
+// A GenomeScope fit this far from the assembly has almost certainly failed
+const FAILED_FOLD = 8;
+// Log-scale limits, in Gb, shared by the scatter plots
+const DOMAIN = [0.08, 130];
+const CLADES = { d: "Dicots", l: "Monocots", c: "Non-vascular", v: "Other vascular" };
+const LEVEL_RANK = { Chromosome: 3, Scaffold: 2, Contig: 1 };
+
+// --- data ---
+
+// Assemblies are joined to GenomeScope by species alone, so a species with
+// several sequenced specimens repeats each assembly once per specimen. Keep
+// the row whose ToLID matches the assembly, and flag those that have none.
+function bestRows(raw) {
+  const byAssembly = d3.group(raw.filter((d) => !/alternate/.test(d.assembly)), (d) => d.assembly);
+  return [...byAssembly.values()].map((rows) => {
+    const tolid = rows[0].assembly.split(".")[0];
+    const match = rows.find((d) => d.tolid === tolid);
+    return { ...(match || rows[0]), asmTolid: tolid, otherSpecimen: !match && !!rows[0].tolid };
+  });
 }
 
-function buildData(raw) {
-  const useGenomeScope = "max";
-  return raw.map((d) => {
-    const assembly_length = toNum(d.assembly_length);
-    const assembly_ungapped_length = toNum(d.assembly_ungapped_length);
-    const gap_bp = (assembly_length ?? 0) - (assembly_ungapped_length ?? 0);
-
-    const gsMin = toNum(d.Genome_Haploid_Length_min_bp);
-    const gsMax = toNum(d.Genome_Haploid_Length_max_bp);
-    const gsMid = gsMin != null && gsMax != null ? (gsMin + gsMax) / 2 : gsMax ?? gsMin;
-    const gsBest = useGenomeScope === "mid" ? gsMid : useGenomeScope === "min" ? gsMin ?? gsMid : gsMax ?? gsMid;
-
-    const ratio_ungapped_to_pacbio = gsBest && assembly_ungapped_length ? assembly_ungapped_length / gsBest : undefined;
-    const ratio_assembly_to_pacbio = gsBest && assembly_length ? assembly_length / gsBest : undefined;
-
+function toSpecies(rows) {
+  return d3.groups(rows, (d) => d.species).map(([species, group]) => {
+    // Best level first, then primary or hap1 over the other haplotypes
+    const hapRank = (d) => (/\.hap[2-9]/.test(d.assembly) ? 1 : 0);
+    const r = group.slice().sort((a, b) =>
+      d3.descending(LEVEL_RANK[a.level], LEVEL_RANK[b.level]) ||
+      d3.ascending(hapRank(a), hapRank(b)) ||
+      d3.ascending(a.assembly, b.assembly))[0];
+    const asm = num(r.assembly_ungapped_length) / 1e9;
+    const gsMax = num(r.Genome_Haploid_Length_max_bp), gsMin = num(r.Genome_Haploid_Length_min_bp);
+    const gs = gsMax != null ? gsMax / 1e9 : undefined;
+    const c1 = num(r["1C/Gbp"]);
+    const hetLo = num(r.Heterozygous_ab_min), hetHi = num(r.Heterozygous_ab_max);
+    const repLo = num(r.Genome_Repeat_Length_min_bp), repHi = num(r.Genome_Repeat_Length_max_bp);
+    const failed = gs != null && (asm / gs > FAILED_FOLD || asm / gs < 1 / FAILED_FOLD);
+    const usable = !failed && !r.otherSpecimen;
+    const haps = group.filter((d) => d.assembly.split(".")[0] === r.asmTolid);
+    const estimates = [asm, usable ? gs : undefined, c1].filter((v) => v > 0);
     return {
-      species: d.species,
-      assembly: d.assembly,
-      level: d.level,
-      tolid: d.tolid,
-      assembly_length,
-      assembly_ungapped_length,
-      gap_bp,
-      pacbio_genomescope_length: gsBest,
-      ratio_ungapped_to_pacbio,
-      ratio_assembly_to_pacbio,
-      label: `${d.species} — ${d.assembly}`,
-      genomescope: {
-        p: toNum(d.p),
-        k: toNum(d.k),
-        haploid_bp: { min: gsMin, max: gsMax, mid: gsMid },
-        homozygous_percent: { min: toNum(d.Homozygous_aa_min), max: toNum(d.Homozygous_aa_max) },
-        heterozygous_percent: { min: toNum(d.Heterozygous_ab_min), max: toNum(d.Heterozygous_ab_max) },
-        repeat_bp: { min: toNum(d.Genome_Repeat_Length_min_bp), max: toNum(d.Genome_Repeat_Length_max_bp) },
-        unique_bp: { min: toNum(d.Genome_Unique_Length_min_bp), max: toNum(d.Genome_Unique_Length_max_bp) },
-        model_fit_percent: { min: toNum(d.Model_Fit_min_percent), max: toNum(d.Model_Fit_max_percent) },
-        read_error_rate_percent: { min: toNum(d.Read_Error_Rate_min_percent), max: toNum(d.Read_Error_Rate_max_percent) }
-      },
-      sample: {
-        collection_location: d.collection_location,
-        id_number: d["ID Number"],
-        project: d.Project,
-        higher_group: d["Higher Group"],
-        family: d.Family,
-        genus: d.Genus,
-        species_epithet: d.Species,
-        standard: d.Standard,
-        buffer: d.Buffer,
-        measured_by: d["measured by"],
-        date: d.Date,
-        dtol_specimen_id: d["DToL Specimen ID"],
-        previous_estimate_2c: d["Previous estimate (2C) (prime*)"],
-        comments: d["Comments on DToL sample"]
-      },
-      flow_cytometry: {
-        mean1: toNum(d.mean1),
-        mean2: toNum(d.mean2),
-        cv1: toNum(d.cv1),
-        cv2: toNum(d.cv2),
-        ratio: toNum(d.ratio),
-        ave_sample: toNum(d["ave.sample"]),
-        ave_standard: toNum(d["ave.standard"]),
-        gs_pg_2c_replicate: toNum(d["GS pg (2C) replicate"]),
-        gs_pg_2c: toNum(d["GS pg (2C)"]),
-        gs_pg_1c: toNum(d["GS pg (1C)"]),
-        pg_per_gbp_1c: toNum(d["1C/Gbp"]),
-        cv_sample: toNum(d["cv.sample"]),
-        cv_standard: toNum(d["cv.standard"]),
-        sd_r_sample: toNum(d["SD(R).sample"]),
-        stdv_gs: toNum(d["STDV(GS)"])
-      }
+      species, assembly: r.assembly, level: r.level, clade: CLADES[r.assembly[0]] ?? "Other vascular",
+      asm, gs: usable ? gs : undefined, rawGs: gs, c1, failed, otherSpecimen: r.otherSpecimen,
+      p: r.p ? String(+r.p) : undefined,
+      het: hetLo != null && hetHi != null ? (hetLo + hetHi) / 2 : undefined,
+      repeat: usable && repLo != null && gsMax ? (100 * (repLo + repHi)) / (gsMax + (gsMin ?? gsMax)) : undefined,
+      fit: num(r.Model_Fit_max_percent),
+      family: r.Family || undefined,
+      measuredBy: r["measured by"] || undefined,
+      standard: r.Standard || undefined,
+      comment: r["Comments on DToL sample"] || undefined,
+      haps: haps.map((d) => ({ name: d.assembly, len: num(d.assembly_ungapped_length) / 1e9 })),
+      ratioGs: usable && gs ? asm / gs : undefined,
+      ratio1C: c1 && asm ? c1 / asm : undefined,
+      discord: d3.max(estimates) / d3.min(estimates),
     };
   });
 }
 
-function buildData2(data) {
-  return data.map((d) => {
-    const hetMin = d.genomescope?.heterozygous_percent?.min;
-    const hetMax = d.genomescope?.heterozygous_percent?.max;
-    const hetMid = hetMin != null && hetMax != null ? (hetMin + hetMax) / 2 : hetMax ?? hetMin;
+// --- colour ---
 
-    const hapMin = d.genomescope?.haploid_bp?.min;
-    const hapMax = d.genomescope?.haploid_bp?.max;
-    const repMin = d.genomescope?.repeat_bp?.min;
-    const repMax = d.genomescope?.repeat_bp?.max;
+const dark = matchMedia("(prefers-color-scheme: dark)");
+const palette = () => dark.matches
+  ? { blue: "#3987e5", orange: "#d95926", aqua: "#199e70", yellow: "#c98500", magenta: "#d55181", violet: "#9085e9", ramp: ["#6da7ec", "#4a534e", "#f0884f"], none: "#2f3733" }
+  : { blue: "#2a78d6", orange: "#eb6834", aqua: "#1baf7a", yellow: "#eda100", magenta: "#e87ba4", violet: "#6250d6", ramp: ["#1c5cab", "#d9d6cc", "#d4491b"], none: "#ece9e1" };
 
-    const repeatPctMin = repMin != null && hapMax != null ? 100 * (repMin / hapMax) : undefined;
-    const repeatPctMax =
-      repMax != null && hapMin != null
-        ? 100 * (repMax / hapMin)
-        : repMax != null && d.pacbio_genomescope_length != null
-        ? 100 * (repMax / d.pacbio_genomescope_length)
-        : undefined;
-    const repeatPctMid = repeatPctMin != null && repeatPctMax != null ? (repeatPctMin + repeatPctMax) / 2 : repeatPctMax ?? repeatPctMin;
+function colorSpec() {
+  const c = palette();
+  const specs = {
+    p: { value: (d) => d.p, label: "GenomeScope ploidy (p)", domain: ["1", "2", "3", "4", "5", "6"], range: [c.aqua, c.blue, c.magenta, c.orange, c.violet, c.yellow] },
+    clade: { value: (d) => d.clade, label: "Plant group", domain: Object.values(CLADES), range: [c.blue, c.orange, c.aqua, c.yellow] },
+    het: { value: (d) => d.het, label: "Heterozygosity (%), fitted for p = 2 only", linear: true, type: "diverging-symlog" },
+    repeat: { value: (d) => d.repeat, label: "Repeat content (%)", linear: true, type: "diverging" },
+    fit: { value: (d) => d.fit, label: "GenomeScope model fit (%)", linear: true, type: "diverging" },
+  };
+  const s = specs[state.colorBy];
+  // Continuous measures diverge around the median and span the middle 90% of
+  // species, so the bulk of the data isn't flattened by a few extreme values
+  if (s.linear) {
+    const v = species.map(s.value).filter((x) => x != null).sort(d3.ascending);
+    s.pivot = d3.quantileSorted(v, 0.5);
+    s.domain = [d3.quantileSorted(v, 0.05), d3.quantileSorted(v, 0.95)];
+  }
+  s.scale = s.linear
+    ? { type: s.type, domain: s.domain, pivot: s.pivot, interpolate: d3.piecewise(d3.interpolateRgb, c.ramp), clamp: true, unknown: c.none, label: s.label, ...(s.type === "diverging-symlog" ? { constant: 0.25 } : {}) }
+    : { type: "ordinal", domain: s.domain, range: s.range, unknown: c.none, label: s.label };
+  return s;
+}
 
-    return { ...d, het_percent_mid: hetMid, repeat_percent_mid: repeatPctMid, repeat_percent_min: repeatPctMin, repeat_percent_max: repeatPctMax };
+// --- shared plot pieces ---
+
+const state = { colorBy: "p", hidden: new Set(), selected: null, sort: "discord", dir: -1, rows: 12 };
+const widthOf = (id) => Math.max(260, $(id).clientWidth);
+const logAxis = (label) => ({ type: "log", domain: DOMAIN, label, ticks: [0.1, 0.3, 1, 3, 10, 30, 100], tickFormat: (d) => (d < 1 ? d * 1000 + " Mb" : d + " Gb") });
+
+function refLines(multiples) {
+  return multiples.flatMap(({ k, label }) => {
+    const x0 = Math.max(DOMAIN[0], DOMAIN[0] / k), x1 = Math.min(DOMAIN[1], DOMAIN[1] / k);
+    const seg = [{ x: x0, y: x0 * k }, { x: x1, y: x1 * k }];
+    return [
+      Plot.line(seg, { x: "x", y: "y", stroke: "currentColor", strokeOpacity: k === 1 ? 0.55 : 0.3, strokeDasharray: k === 1 ? null : "4,3" }),
+      Plot.text([seg[1]], { x: "x", y: "y", text: () => label, dx: -6, dy: 9, textAnchor: "end", fill: "currentColor", fontSize: 11 }),
+    ];
   });
 }
 
-function filterChromHap(data, chromHap) {
-  if (!chromHap) return data;
-  return data.filter((d) => d.level === "Chromosome" && !d.assembly.includes("hap2"));
+function tipChannels(extra) {
+  return {
+    Species: "species",
+    Assembly: (d) => gb(d.asm),
+    GenomeScope: (d) => gb(d.gs),
+    "1C": (d) => gb(d.c1),
+    "Ploidy (p)": (d) => d.p ?? "–",
+    ...extra,
+  };
 }
 
-// --- load data ---
-const raw = await d3.tsv("./data/all_genome_size_data.tsv");
-const data2 = buildData2(buildData(raw));
+function dots(data, opts, spec, extraTip) {
+  return Plot.dot(data, {
+    r: 3.6, fill: spec.value, fillOpacity: 0.9,
+    // Draw the most extreme values last so they aren't buried
+    sort: spec.linear ? (d) => (spec.value(d) == null ? -1 : Math.abs(spec.value(d) - spec.pivot)) : undefined, stroke: "var(--plot-background)", strokeWidth: 0.6, clip: true,
+    channels: tipChannels(extraTip),
+    tip: { format: { x: false, y: false, fill: false, r: false } },
+    ...opts,
+  });
+}
 
-const maxVal = d3.max(data2, (d) => Math.max(d.pacbio_genomescope_length ?? 0, d.assembly_ungapped_length ?? 0));
+function selection(data, opts) {
+  const sel = data.filter((d) => d.species === state.selected);
+  return [
+    Plot.dot(sel, { r: 8, fill: "none", stroke: "currentColor", strokeWidth: 2, clip: true, ...opts }),
+    Plot.text(sel, { ...opts, text: "species", dy: -14, fill: "currentColor", fontStyle: "italic", fontWeight: 600, stroke: "var(--plot-background)", strokeWidth: 3 }),
+  ];
+}
 
-// --- controls ---
-const chromHapEl = document.getElementById("chromHap");
-const colorByEl = document.getElementById("colorBy");
-const xAxisMaxEl = document.getElementById("xAxisMax");
-const xAxisMaxLabel = document.getElementById("xAxisMaxLabel");
-const divFactorEl = document.getElementById("divFactor");
-const divFactorLabel = document.getElementById("divFactorLabel");
+function mount(id, plot) {
+  plot.addEventListener("click", () => {
+    if (plot.value && plot.value.species) select(plot.value.species);
+  });
+  $(id).replaceChildren(plot);
+}
 
-function renderPlot1() {
-  const chromHap = chromHapEl.checked;
-  const xMax = d3.max(data2, (d) => d.pacbio_genomescope_length ?? 0);
-  const yMax = d3.max(data2, (d) => d.assembly_ungapped_length ?? 0);
-  const line21_xend = Math.min(xMax, yMax / 2);
-  const data3 = filterChromHap(data2, chromHap);
-
-  const plot = Plot.plot({
-    width: 900,
-    height: 520,
-    marginLeft: 70,
-    marginBottom: 60,
-    grid: true,
-    x: { label: "GenomeScope length (bp)", tickFormat: fmt, domain: [0, 4000000000] },
-    y: { label: "Fasta (ug; bp)", tickFormat: fmt, domain: [0, 4000000000] },
-    color: { legend: true, label: "Assembly level" },
+// Stacked histogram of fold differences on a log2 axis, by the colour in use
+function foldHist(id, data, value, spec, ticks) {
+  const shown = data.filter((d) => Math.abs(Math.log2(value(d))) <= 3);
+  const categorical = !spec.linear;
+  mount(id, Plot.plot({
+    width: widthOf(id), height: 330, marginLeft: 38, marginBottom: 38,
+    x: { domain: [-3, 3], ticks, tickFormat: (d) => "×" + (d < 0 ? "1/" + 2 ** -d : 2 ** d), label: null },
+    y: { label: "Species", grid: true },
+    color: categorical ? spec.scale : undefined,
     marks: [
-      Plot.line([{ x: 0, y: 0 }, { x: maxVal, y: maxVal }], { x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.4 }),
-      Plot.line([{ x: 0, y: 0 }, { x: line21_xend, y: 2 * line21_xend }], {
-        x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.6, strokeDasharray: "4,3"
-      }),
-      Plot.dot(data3, {
-        x: "pacbio_genomescope_length",
-        y: "assembly_ungapped_length",
-        r: 4,
-        fill: "level",
-        tip: { channels: { Species: (d) => d.species, Assembly: (d) => d.assembly, Level: (d) => d.level } }
-      })
-    ]
-  });
-  document.getElementById("plot1").replaceChildren(plot);
+      Plot.rectY(shown, Plot.binX({ y: "count" }, {
+        x: (d) => Math.log2(value(d)), thresholds: d3.range(-3, 3.01, 0.2),
+        fill: categorical ? spec.value : palette().blue, inset: 0.5, tip: true,
+      })),
+      ...ticks.map((t) => Plot.ruleX([t], { stroke: "currentColor", strokeOpacity: t === 0 ? 0.55 : 0.25, strokeDasharray: t === 0 ? null : "4,3" })),
+      Plot.ruleY([0]),
+    ],
+  }));
 }
 
-function renderPlot2() {
-  const chromHap = chromHapEl.checked;
-  const colorBy = colorByEl.value;
-  const xAxisMax = +xAxisMaxEl.value;
-  xAxisMaxLabel.textContent = fmt(xAxisMax);
+// --- views ---
 
-  const colDomain = d3.extent(data2.filter((d) => d[colorBy] != null), (d) => d[colorBy]);
-  const data3 = filterChromHap(data2, chromHap);
+function current() {
+  return species.filter((d) => !state.hidden.has(d.clade));
+}
 
-  const plot = Plot.plot({
-    width: 900,
-    height: 520,
-    marginLeft: 70,
-    marginBottom: 60,
-    grid: true,
-    x: { label: "GenomeScope length (bp)", tickFormat: fmt, domain: [0, xAxisMax] },
-    y: { label: "Fasta (ug; bp)", tickFormat: fmt, domain: [0, xAxisMax] },
-    color: { type: "linear", label: colorLabel(colorBy), domain: colDomain },
+function render() {
+  const data = current();
+  const spec = colorSpec();
+  renderLegend(spec);
+  renderTiles(data);
+
+  // 1. GenomeScope against the assembly
+  const withGs = data.filter((d) => d.gs >= DOMAIN[0]);
+  const xy1 = { x: "gs", y: "asm" };
+  mount("plot1", Plot.plot({
+    width: widthOf("plot1"), height: 460, marginLeft: 58, marginBottom: 42, grid: true,
+    x: logAxis("GenomeScope length →"), y: logAxis("↑ Assembly length"), color: spec.scale,
     marks: [
-      Plot.line([{ x: 0, y: 0 }, { x: xAxisMax, y: xAxisMax }], { x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.35 }),
-      Plot.line([{ x: 0, y: 0 }, { x: xAxisMax, y: 2 * xAxisMax }], {
-        x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.6, strokeDasharray: "4,3"
-      }),
-      Plot.text(
-        [
-          { x: xAxisMax * 0.75, y: xAxisMax * 0.75, t: "1:1" },
-          { x: xAxisMax * 0.5, y: 2 * xAxisMax * 0.5, t: "2:1" }
-        ],
-        { x: "x", y: "y", text: "t", dx: 26, dy: -6 }
-      ),
-      Plot.dot(data3, {
-        x: "pacbio_genomescope_length",
-        y: "assembly_ungapped_length",
-        r: 4,
-        fill: (d) => d[colorBy],
-        tip: { channels: { Species: (d) => d.species, Assembly: (d) => d.assembly, Level: (d) => d.level } }
-      })
-    ]
-  });
-  document.getElementById("plot2").replaceChildren(plot);
-}
+      ...refLines([{ k: 1, label: "1:1" }, { k: 2, label: "2:1" }, { k: 4, label: "4:1" }]),
+      dots(withGs, xy1, spec), ...selection(withGs, xy1),
+    ],
+  }));
+  foldHist("hist1", data.filter((d) => d.ratioGs), (d) => d.ratioGs, spec, [-2, -1, 0, 1, 2]);
 
-function renderPlot3() {
-  const chromHap = chromHapEl.checked;
-  const colorBy = colorByEl.value;
-  const divFactor = +divFactorEl.value;
-  divFactorLabel.textContent = `×${divFactor.toFixed(1)}`;
+  const near = (v, k) => v != null && Math.abs(Math.log2(v / k)) < 0.3;
+  const n1 = data.filter((d) => near(d.ratioGs, 1)), n2 = data.filter((d) => near(d.ratioGs, 2));
+  const n2p = n2.filter((d) => d.p === "4" ).length, n2d = n2.filter((d) => d.p === "2");
+  const n2flow = d3.median(n2d.filter((d) => d.ratio1C), (d) => d.ratio1C);
+  const fitted = data.filter((d) => d.ratioGs).length;
+  $("note1").textContent = `Of ${fitted} species with a usable fit, ${n1.length} sit on the 1:1 line and ${n2.length} on the 2:1 line. ` +
+    `GenomeScope reports one monoploid set, so an assembly holding two subgenomes lands on the 2:1 line, and ${n2p} of those species were fitted as tetraploid. ` +
+    `The other ${n2d.length} on that line were fitted as diploid, but with a median heterozygosity of ${pct(d3.median(n2d, (d) => d.het))} against ${pct(d3.median(n1.filter((d) => d.p === "2"), (d) => d.het))} for diploid fits on the 1:1 line` +
+    (n2flow != null ? `. Where they have a flow cytometry record, 1C is ${fold(n2flow)} the assembly length, the same as the dataset as a whole. That suggests the assemblies are about right and GenomeScope has found half the genome, as it might if divergent subgenomes of a polyploid were modelled as heterozygous haplotypes.` : ".");
+  const failed = data.filter((d) => d.failed).length, other = data.filter((d) => d.otherSpecimen).length;
+  const left = [
+    failed && `${failed} species whose GenomeScope length differs from the assembly by more than ${FAILED_FOLD}-fold, treated as a failed fit`,
+    other && `${other} with GenomeScope data from a different specimen only`,
+  ].filter(Boolean);
+  $("cav1").textContent = left.length ? `Left out of these two panels, but listed in the table below: ${left.join(", and ")}.` : "";
 
-  const data3 = filterChromHap(data2, chromHap);
-  const toGbp = (x) => x / 1e9;
-
-  const xMaxG = d3.max(data3, (d) => toGbp(d.assembly_length ?? 0));
-  const yMaxG = d3.max(data3, (d) => d.flow_cytometry?.pg_per_gbp_1c ?? 0);
-  const line11_end = Math.min(xMaxG, yMaxG);
-  const line21_xend = Math.min(xMaxG, yMaxG / 2);
-  const colDomain = d3.extent(data3.filter((d) => d[colorBy] != null), (d) => d[colorBy]);
-
-  const plot = Plot.plot({
-    width: 900,
-    height: 520,
-    marginLeft: 70,
-    marginBottom: 60,
-    grid: true,
-    x: { label: "Fasta (Gbp)", tickFormat: d3.format(".1f"), domain: [0, xMaxG / divFactor] },
-    y: { label: "1C genome size (Gbp)", domain: [0, yMaxG / divFactor] },
-    color: { type: "linear", label: colorLabel(colorBy), domain: colDomain },
+  // 2. Flow cytometry against the assembly
+  const withC = data.filter((d) => d.c1);
+  const xy2 = { x: "asm", y: "c1" };
+  mount("plot2", Plot.plot({
+    width: widthOf("plot2"), height: 460, marginLeft: 58, marginBottom: 42, grid: true,
+    x: logAxis("Assembly length →"), y: logAxis("↑ 1C genome size"), color: spec.scale,
     marks: [
-      Plot.line([{ x: 0, y: 0 }, { x: line11_end, y: line11_end }], { x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.35 }),
-      Plot.line([{ x: 0, y: 0 }, { x: line21_xend, y: 2 * line21_xend }], {
-        x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.6, strokeDasharray: "4,3"
-      }),
-      Plot.text(
-        [
-          { x: (line11_end * 0.92) / divFactor, y: (line11_end * 0.92) / divFactor, t: "1:1" },
-          { x: (line21_xend * 0.9) / divFactor, y: (2 * line21_xend * 0.9) / divFactor, t: "2:1" }
-        ],
-        { x: "x", y: "y", text: "t", dx: 18, dy: 0 }
-      ),
-      Plot.dot(data3, {
-        x: (d) => toGbp(d.assembly_length),
-        y: (d) => d.flow_cytometry?.pg_per_gbp_1c,
-        r: 4,
-        fill: (d) => d[colorBy],
-        tip: {
-          channels: {
-            Species: (d) => d.species,
-            Assembly: (d) => d.assembly,
-            Level: (d) => d.level,
-            "Assembly length": (d) => d3.format(".2f")(toGbp(d.assembly_length)) + " Gbp",
-            "1C (flow cytometry)": (d) => (d.flow_cytometry?.pg_per_gbp_1c != null ? d.flow_cytometry.pg_per_gbp_1c.toFixed(2) + " Gbp" : "NA"),
-            [colorLabel(colorBy)]: (d) => (d[colorBy] != null ? d[colorBy].toFixed(2) : "NA")
-          },
-          format: { x: (x) => x.toFixed(2) + " Gbp", y: (y) => y.toFixed(2) + " Gbp" }
-        }
-      })
-    ]
+      ...refLines([{ k: 1, label: "1:1" }, { k: 2, label: "2:1" }]),
+      dots(withC, xy2, spec), ...selection(withC, xy2),
+    ],
+  }));
+  foldHist("hist2", withC, (d) => d.ratio1C, spec, [-1, 0, 1, 2]);
+  const med = d3.median(withC, (d) => d.ratio1C);
+  const above = withC.filter((d) => d.ratio1C > 1).length;
+  $("note2").innerHTML = withC.length
+    ? `${d3.format(".0%")(above / withC.length)} of the ${withC.length} species with a flow cytometry record lie above the 1:1 line: the typical 1C value is ${fold(med)} the assembly length. ` +
+      `Some of that gap is unassembled sequence, such as satellite arrays and rDNA. Some is probably calibration: many plant flow cytometry standards trace back to older reference values that look inflated next to modern telomere-to-telomere and haplotype-resolved assemblies ` +
+      `(<a href="https://doi.org/10.3389/fpls.2025.1548766">Soni &amp; Henry 2025</a>). The C-values here are shown as measured, without recalibration.`
+    : "None of the species in this view have a flow cytometry record.";
+  $("cav2").textContent = "1C is the C-value database's 1C/Gbp column, using each species' most recent measurement. Flow cytometry and sequencing often used different individuals.";
+
+  // 3. Repeats against size, with a running median
+  const withR = data.filter((d) => d.repeat != null);
+  const sorted = withR.slice().sort((a, b) => a.asm - b.asm);
+  const size = Math.max(5, Math.floor(sorted.length / 9));
+  const trend = d3.range(0, Math.max(0, sorted.length - size + 1), size).map((i) => {
+    const bin = sorted.slice(i, i + size);
+    return { x: d3.median(bin, (d) => d.asm), y: d3.median(bin, (d) => d.repeat) };
   });
-  document.getElementById("plot3").replaceChildren(plot);
+  const xy3 = { x: "asm", y: "repeat" };
+  mount("plot3", Plot.plot({
+    width: widthOf("plot3"), height: 400, marginLeft: 48, marginBottom: 42, grid: true,
+    x: logAxis("Assembly length →"), y: { domain: [0, 100], label: "↑ Repeat content (%)" }, color: spec.scale,
+    marks: [
+      dots(withR, xy3, spec, { Repeats: (d) => pct(d.repeat) }),
+      Plot.line(trend, { x: "x", y: "y", stroke: "currentColor", strokeWidth: 2.5, curve: "monotone-x" }),
+      Plot.text(trend.slice(-1), { x: "x", y: "y", text: () => "median", dy: -10, fill: "currentColor", fontWeight: 600 }),
+      ...selection(withR, xy3),
+    ],
+  }));
+  const lo = trend[0], hi = trend[trend.length - 1];
+  $("note3").textContent = trend.length > 1
+    ? `Median repeat content climbs from ${pct(lo.y)} in genomes around ${gb(lo.x)} to ${pct(hi.y)} around ${gb(hi.x)}, in line with repeat expansion driving genome size.`
+    : "Too few species in this view to show a trend.";
+  $("cav3").textContent = "Repeat content is GenomeScope's repeat length as a share of its haploid length, so it is limited by k = 31 and leaves out failed fits. The line joins medians of equal-sized groups of species.";
+
+  // 4. Families, largest median first
+  const families = d3.rollups(data.filter((d) => d.family), (v) => ({ n: v.length, median: d3.median(v, (d) => d.asm) }), (d) => d.family)
+    .filter(([, v]) => v.n >= 5).sort((a, b) => d3.descending(a[1].n, b[1].n)).slice(0, 16)
+    .sort((a, b) => d3.descending(a[1].median, b[1].median));
+  const names = families.map(([f]) => f);
+  const fam = data.filter((d) => names.includes(d.family));
+  const xy4 = { x: "asm", y: "family" };
+  mount("plot4", Plot.plot({
+    width: widthOf("plot4"), height: Math.max(160, names.length * 28 + 50), marginLeft: 128, marginBottom: 38,
+    x: { ...logAxis("Assembly length →"), grid: true }, y: { domain: names, label: null, tickFormat: (f) => `${f} (${families.find((x) => x[0] === f)[1].n})` },
+    color: spec.scale,
+    marks: [
+      dots(fam, xy4, spec),
+      Plot.tickX(families, { x: (d) => d[1].median, y: (d) => d[0], stroke: "currentColor", strokeWidth: 2.5 }),
+      ...selection(fam, xy4),
+    ],
+  }));
+  $("note4").textContent = names.length
+    ? `The ${names.length} largest families in this view, by species count, ordered by median assembly length (black tick). Genome size varies more than ${fold(d3.max(families, ([f]) => {
+        const v = fam.filter((d) => d.family === f).map((d) => d.asm);
+        return d3.max(v) / d3.min(v);
+      }))} within a single family here.`
+    : "Too few species in this view.";
+
+  renderTable(data);
+  renderDetail();
 }
 
-function renderAll() {
-  renderPlot1();
-  renderPlot2();
-  renderPlot3();
+function renderLegend(spec) {
+  $("legend").replaceChildren(Plot.legend({ color: { ...spec.scale, label: spec.linear ? spec.label : undefined }, width: 280, height: 40, tickSize: 0, marginBottom: 14 }));
 }
 
-chromHapEl.addEventListener("change", renderAll);
-colorByEl.addEventListener("change", () => { renderPlot2(); renderPlot3(); });
-xAxisMaxEl.addEventListener("input", renderPlot2);
-divFactorEl.addEventListener("input", renderPlot3);
+function renderTiles(data) {
+  const small = d3.least(data, (d) => d.asm), big = d3.greatest(data, (d) => d.asm);
+  const tiles = data.length ? [
+    [d3.format(",")(data.length), "species in view"],
+    [d3.format(",")(data.filter((d) => d.gs).length), "with a usable GenomeScope fit"],
+    [gb(d3.median(data, (d) => d.asm)), "median assembly length"],
+    [gb(small.asm), `smallest: <i>${esc(small.species)}</i>`],
+    [gb(big.asm), `largest: <i>${esc(big.species)}</i>`],
+    [d3.format(",")(data.filter((d) => d.c1).length), "with flow cytometry"],
+  ] : [["0", "species in view"]];
+  $("tiles").innerHTML = tiles.map(([a, b]) => `<div class="tile"><b>${a}</b><span>${b}</span></div>`).join("");
+}
 
-renderAll();
-document.getElementById("status").remove();
-document.getElementById("app").hidden = false;
+const COLS = [
+  ["species", "Species", (d) => `<i>${esc(d.species)}</i>`, "l"],
+  ["clade", "Group", (d) => esc(d.clade), "l"],
+  ["asm", "Assembly", (d) => gb(d.asm)],
+  ["rawGs", "GenomeScope", (d) => gb(d.rawGs)],
+  ["c1", "1C", (d) => gb(d.c1)],
+  ["p", "p", (d) => d.p ?? "–"],
+  ["fit", "Model fit", (d) => pct(d.fit)],
+  ["discord", "Discordance", (d) => fold(d.discord)],
+  ["why", "Note", (d) => (d.failed ? "Failed fit?" : d.otherSpecimen ? "Other specimen" : ""), "l"],
+];
+
+function renderTable(data) {
+  $("thead").innerHTML = "<tr>" + COLS.map(([k, label, , cls]) =>
+    `<th class="${cls ?? ""}" aria-sort="${state.sort === k ? (state.dir > 0 ? "ascending" : "descending") : "none"}"><button type="button" data-k="${k}">${label}${state.sort === k ? (state.dir > 0 ? " ↑" : " ↓") : ""}</button></th>`).join("") + "</tr>";
+  const key = state.sort;
+  const rows = data.slice().sort((a, b) => {
+    const x = a[key], y = b[key];
+    if (x == null) return y == null ? 0 : 1;
+    if (y == null) return -1;
+    return state.dir * d3.ascending(x, y);
+  });
+  $("tbody").innerHTML = rows.slice(0, state.rows).map((d) =>
+    `<tr data-s="${esc(d.species)}">` + COLS.map(([, , f, cls]) => `<td class="${cls ?? ""}">${f(d)}</td>`).join("") + "</tr>").join("");
+  $("more").hidden = rows.length <= 12;
+  $("more").textContent = state.rows < rows.length ? `Show all ${rows.length}` : "Show fewer";
+}
+
+function renderDetail() {
+  const d = species.find((s) => s.species === state.selected);
+  $("detail").hidden = !d;
+  if (!d) return;
+  const row = (k, v) => (v == null || v === "–" ? "" : `<dt>${k}</dt><dd>${esc(v)}</dd>`);
+  const flags = [
+    d.failed && `GenomeScope (${gb(d.rawGs)}) looks like a failed fit.`,
+    d.otherSpecimen && "GenomeScope data come from a different specimen of this species.",
+    d.comment && `Flow cytometry note: ${d.comment}.`,
+  ].filter(Boolean);
+  $("detail").innerHTML = `<button class="close" type="button" aria-label="Close">×</button>
+    <h3>${esc(d.species)}</h3><p>${esc([d.family, d.clade].filter(Boolean).join(" · "))}</p>
+    <dl>${row("Assembly", gb(d.asm))}${row("GenomeScope", gb(d.rawGs))}${row("1C", gb(d.c1))}
+    ${row("Ploidy (p)", d.p)}${row("Heterozygosity", d.het == null ? null : pct(d.het))}${row("Repeats", d.repeat == null ? null : pct(d.repeat))}
+    ${row("Model fit", d.fit == null ? null : pct(d.fit))}${row("Level", d.level)}${row("Measured by", d.measuredBy)}
+    ${d.haps.map((h) => row(h.name, gb(h.len))).join("")}</dl>
+    ${flags.map((f) => `<p class="flag">${esc(f)}</p>`).join("")}`;
+}
+
+function select(name) {
+  state.selected = state.selected === name ? null : name;
+  render();
+}
+
+// --- start ---
+
+const res = await fetch("./data/all_genome_size_data.tsv");
+if (!res.ok) throw new Error(res.status);
+const species = toSpecies(bestRows(d3.tsvParse(await res.text())));
+
+$("names").replaceChildren(...species.map((d) => Object.assign(document.createElement("option"), { value: d.species })).sort((a, b) => d3.ascending(a.value, b.value)));
+$("clades").replaceChildren(...Object.values(CLADES).map((c) => {
+  const b = document.createElement("button");
+  b.type = "button";
+  b.className = "chip";
+  b.textContent = c;
+  b.setAttribute("aria-pressed", "true");
+  b.addEventListener("click", () => {
+    const on = state.hidden.has(c);
+    if (on) state.hidden.delete(c); else state.hidden.add(c);
+    b.setAttribute("aria-pressed", String(on));
+    render();
+  });
+  return b;
+}));
+$("colorBy").addEventListener("change", (e) => { state.colorBy = e.target.value; render(); });
+$("search").addEventListener("change", (e) => {
+  const q = e.target.value.trim().toLowerCase();
+  const hit = species.find((d) => d.species.toLowerCase() === q) || species.find((d) => d.species.toLowerCase().startsWith(q));
+  if (q && hit) { state.selected = hit.species; render(); }
+});
+$("thead").addEventListener("click", (e) => {
+  const k = e.target.closest("button")?.dataset.k;
+  if (!k) return;
+  state.dir = state.sort === k ? -state.dir : k === "species" || k === "clade" ? 1 : -1;
+  state.sort = k;
+  renderTable(current());
+});
+$("tbody").addEventListener("click", (e) => {
+  const s = e.target.closest("tr")?.dataset.s;
+  if (s) select(s);
+});
+$("more").addEventListener("click", () => {
+  state.rows = state.rows === 12 ? Infinity : 12;
+  renderTable(current());
+});
+$("detail").addEventListener("click", (e) => {
+  if (e.target.closest(".close")) select(state.selected);
+});
+addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && state.selected) select(state.selected);
+});
+dark.addEventListener("change", render);
+
+$("status").remove();
+$("app").hidden = false;
+render();
+let width = innerWidth, timer;
+addEventListener("resize", () => {
+  if (innerWidth === width) return;
+  width = innerWidth;
+  clearTimeout(timer);
+  timer = setTimeout(render, 150);
+});
 </script>
 </body>
 </html>
