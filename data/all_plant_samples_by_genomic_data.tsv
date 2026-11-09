@@ -55,6 +55,7 @@ dicots 	 Alchemilla_glomerulans 	 genomic_data 	 drAlcGlom1 	 hic-arima2
 dicots 	 Alchemilla_glomerulans 	 genomic_data 	 drAlcGlom1 	 pacbio
 dicots 	 Alchemilla_mollis 	 genomic_data 	 drAlcMoll1 	 hic-arima2
 dicots 	 Alchemilla_mollis 	 genomic_data 	 drAlcMoll1 	 pacbio
+dicots 	 Alchemilla_sciura 	 genomic_data 	 drAlcSciu1 	 hic-arima2
 dicots 	 Alchemilla_sciura 	 genomic_data 	 drAlcSciu1 	 pacbio
 dicots 	 Alkekengi_officinarum 	 genomic_data 	 daAlkOffi1 	 hic-arima2
 dicots 	 Alkekengi_officinarum 	 genomic_data 	 daAlkOffi1 	 pacbio
@@ -1163,6 +1164,7 @@ dicots 	 Nicandra_physalodes 	 genomic_data 	 daNicPhys1 	 pacbio
 dicots 	 Nicotiana_alata 	 genomic_data 	 daNicAlat1 	 hic-arima2
 dicots 	 Nicotiana_alata 	 genomic_data 	 daNicAlat1 	 pacbio
 dicots 	 Nicotiana_excelsior 	 genomic_data 	 daNicExce1 	 pacbio
+dicots 	 Nicotiana_gossei 	 genomic_data 	 daNicGoss1 	 hic-arima2
 dicots 	 Nicotiana_gossei 	 genomic_data 	 daNicGoss1 	 pacbio
 dicots 	 Nigella_damascena 	 genomic_data 	 dmNigDama1 	 hic-arima2
 dicots 	 Nigella_damascena 	 genomic_data 	 dmNigDama1 	 pacbio
@@ -1271,6 +1273,7 @@ dicots 	 Petrosedum_forsterianum 	 genomic_data 	 drPetFors3 	 pacbio
 dicots 	 Peucedanum_ostruthium 	 genomic_data 	 drPeuOstr1 	 pacbio
 dicots 	 Phacelia_tanacetifolia 	 genomic_data 	 daPhaTana1 	 hic-arima2
 dicots 	 Phacelia_tanacetifolia 	 genomic_data 	 daPhaTana1 	 pacbio
+dicots 	 Physalis_ixocarpa 	 genomic_data 	 daPhyIxoc1 	 hic-arima2
 dicots 	 Phyteuma_orbiculare 	 genomic_data 	 daPhyOrbi1 	 hic-arima2
 dicots 	 Phyteuma_orbiculare 	 genomic_data 	 daPhyOrbi1 	 pacbio
 dicots 	 Phyteuma_spicatum 	 genomic_data 	 daPhySpic1 	 hic-arima2
@@ -1296,6 +1299,7 @@ dicots 	 Plantago_major 	 genomic_data 	 daPlaMajo1 	 hic-arima2
 dicots 	 Plantago_major 	 genomic_data 	 daPlaMajo1 	 pacbio
 dicots 	 Plantago_maritima 	 genomic_data 	 daPlaMari1 	 hic-arima2
 dicots 	 Plantago_maritima 	 genomic_data 	 daPlaMari1 	 pacbio
+dicots 	 Plantago_media 	 genomic_data 	 daPlaMedi3 	 hic-arima2
 dicots 	 Platanus_orientalis 	 genomic_data 	 drPlaOrie1 	 hic-arima2
 dicots 	 Platanus_orientalis 	 genomic_data 	 drPlaOrie1 	 pacbio
 dicots 	 Platanus_x_hispanica 	 genomic_data 	 drPlaXhis1 	 hic-arima2

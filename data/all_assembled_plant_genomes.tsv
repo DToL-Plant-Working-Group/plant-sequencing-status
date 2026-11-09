@@ -14,6 +14,7 @@ dicots 	 Ajuga_chamaepitys 	 released
 dicots 	 Ajuga_reptans 	 released
 dicots 	 Alchemilla_alpina 	 released
 dicots 	 Alchemilla_mollis 	 released
+dicots 	 Alliaria_petiolata 	 released
 dicots 	 Alnus_cordata 	 released
 dicots 	 Alnus_glutinosa 	 released
 dicots 	 Alnus_incana 	 released
@@ -72,6 +73,7 @@ dicots 	 Centaurium_intermedium 	 released
 dicots 	 Cerastium_alpinum 	 released
 dicots 	 Ceratocapnos_claviculata 	 released
 dicots 	 Chamaenerion_angustifolium 	 released
+dicots 	 Chelidonium_majus 	 released
 dicots 	 Chenopodium_album 	 released
 dicots 	 Chrysosplenium_oppositifolium 	 released
 dicots 	 Cicerbita_muralis 	 released
@@ -99,6 +101,7 @@ dicots 	 Daucus_carota 	 released
 dicots 	 Descurainia_sophia 	 released
 dicots 	 Diapensia_lapponica 	 released
 dicots 	 Dipsacus_fullonum 	 released
+dicots 	 Doronicum_pardalianches 	 released
 dicots 	 Draba_incana 	 released
 dicots 	 Draba_verna 	 released
 dicots 	 Dryas_octopetala 	 released
@@ -252,7 +255,9 @@ dicots 	 Myriophyllum_spicatum 	 released
 dicots 	 Myriophyllum_verticillatum 	 released
 dicots 	 Myrrhis_odorata 	 released
 dicots 	 Nasturtium_officinale 	 released
+dicots 	 Nicandra_physalodes 	 released
 dicots 	 Nicotiana_alata 	 released
+dicots 	 Noccaea_caerulescens 	 released
 dicots 	 Nuphar_lutea 	 released
 dicots 	 Nuphar_pumila 	 released
 dicots 	 Nymphoides_peltata 	 released
@@ -353,6 +358,7 @@ dicots 	 Saxifraga_aizoides 	 released
 dicots 	 Saxifraga_cespitosa 	 released
 dicots 	 Saxifraga_oppositifolia 	 released
 dicots 	 Scleranthus_annuus 	 released
+dicots 	 Scleranthus_perennis 	 released
 dicots 	 Scrophularia_umbrosa 	 released
 dicots 	 Scutellaria_galericulata 	 released
 dicots 	 Scutellaria_minor 	 released
@@ -406,6 +412,7 @@ dicots 	 Trifolium_dubium 	 released
 dicots 	 Trifolium_fragiferum 	 released
 dicots 	 Trifolium_occidentale 	 released
 dicots 	 Trifolium_repens 	 released
+dicots 	 Trifolium_squamosum 	 released
 dicots 	 Trifolium_striatum 	 released
 dicots 	 Trifolium_subterraneum 	 released
 dicots 	 Tripolium_pannonicum 	 released
@@ -840,6 +847,7 @@ dicots 	 Dryas_octopetala 	 curated
 dicots 	 Empetrum_nigrum 	 curated
 dicots 	 Epilobium_ciliatum 	 curated
 dicots 	 Epilobium_hirsutum 	 curated
+dicots 	 Epilobium_obscurum 	 curated
 dicots 	 Erica_ciliaris 	 curated
 dicots 	 Erica_cinerea 	 curated
 dicots 	 Erica_tetralix 	 curated
@@ -927,6 +935,7 @@ dicots 	 Juglans_regia 	 curated
 dicots 	 Koelreuteria_paniculata 	 curated
 dicots 	 Laburnum_anagyroides 	 curated
 dicots 	 Lactuca_saligna 	 curated
+dicots 	 Lactuca_serriola 	 curated
 dicots 	 Lamium_amplexicaule 	 curated
 dicots 	 Lamium_maculatum 	 curated
 dicots 	 Lamium_purpureum 	 curated
@@ -1080,6 +1089,7 @@ dicots 	 Salix_euxina 	 curated
 dicots 	 Salix_herbacea 	 curated
 dicots 	 Salix_lanata 	 curated
 dicots 	 Salix_myrsinifolia 	 curated
+dicots 	 Salix_myrsinites 	 curated
 dicots 	 Salix_pentandra 	 curated
 dicots 	 Salix_phylicifolia 	 curated
 dicots 	 Salix_purpurea 	 curated
@@ -1460,6 +1470,7 @@ non-vascular-plants 	 Sphagnum_teres 	 curated
 non-vascular-plants 	 Splachnum_sphaericum 	 curated
 non-vascular-plants 	 Stereodon_callichrous 	 curated
 non-vascular-plants 	 Straminergon_stramineum 	 curated
+non-vascular-plants 	 Syntrichia_papillosa 	 curated
 non-vascular-plants 	 Syntrichia_ruraliformis 	 curated
 non-vascular-plants 	 Tetraplodon_mnioides 	 curated
 non-vascular-plants 	 Thuidium_delicatulum 	 curated
