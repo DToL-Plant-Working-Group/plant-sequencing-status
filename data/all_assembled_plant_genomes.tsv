@@ -357,6 +357,7 @@ dicots 	 Samolus_valerandi 	 released
 dicots 	 Saxifraga_aizoides 	 released
 dicots 	 Saxifraga_cespitosa 	 released
 dicots 	 Saxifraga_oppositifolia 	 released
+dicots 	 Scabiosa_columbaria 	 released
 dicots 	 Scleranthus_annuus 	 released
 dicots 	 Scleranthus_perennis 	 released
 dicots 	 Scrophularia_umbrosa 	 released
@@ -861,6 +862,7 @@ dicots 	 Euphorbia_amygdaloides 	 curated
 dicots 	 Euphorbia_helioscopia 	 curated
 dicots 	 Euphorbia_lathyris 	 curated
 dicots 	 Euphorbia_maculata 	 curated
+dicots 	 Euphorbia_paralias 	 curated
 dicots 	 Euphorbia_peplus 	 curated
 dicots 	 Euphrasia_confusa 	 curated
 dicots 	 Euphrasia_nemorosa 	 curated
@@ -1328,6 +1330,7 @@ non-vascular-plants 	 Ceratodon_purpureus 	 curated
 non-vascular-plants 	 Climacium_dendroides 	 curated
 non-vascular-plants 	 Codriophorus_aciculare 	 curated
 non-vascular-plants 	 Conocephalum_conicum 	 curated
+non-vascular-plants 	 Conocephalum_salebrosum 	 curated
 non-vascular-plants 	 Cratoneuron_filicinum 	 curated
 non-vascular-plants 	 Cryphaea_heteromalla 	 curated
 non-vascular-plants 	 Cynodontium_bruntonii 	 curated
@@ -2032,6 +2035,7 @@ monocots 	 Potamogeton_lucens 	 draft
 monocots 	 Potamogeton_natans 	 draft
 monocots 	 Potamogeton_nodosus 	 draft
 monocots 	 Potamogeton_perfoliatus 	 draft
+monocots 	 Potamogeton_praelongus 	 draft
 monocots 	 Potamogeton_pusillus 	 draft
 monocots 	 Potamogeton_trichoides 	 draft
 monocots 	 Scheuchzeria_palustris 	 draft

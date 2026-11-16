@@ -381,6 +381,7 @@ dicots 	 Cirsium_eriophorum 	 genomic_data 	 daCirErio1 	 pacbio
 dicots 	 Cirsium_heterophyllum 	 genomic_data 	 daCirHete1 	 hic-arima2
 dicots 	 Cirsium_heterophyllum 	 genomic_data 	 daCirHete1 	 pacbio
 dicots 	 Cirsium_palustre 	 genomic_data 	 daCirPalu1 	 pacbio
+dicots 	 Cirsium_vulgare 	 genomic_data 	 daCirVulg1 	 hic-arima2
 dicots 	 Cirsium_vulgare 	 genomic_data 	 daCirVulg1 	 pacbio
 dicots 	 Claytonia_perfoliata 	 genomic_data 	 dcClaPerf1 	 hic-arima2
 dicots 	 Claytonia_perfoliata 	 genomic_data 	 dcClaPerf1 	 pacbio
@@ -702,6 +703,7 @@ dicots 	 Geranium_phaeum 	 genomic_data 	 drGerPhae1 	 pacbio
 dicots 	 Geranium_pratense 	 genomic_data 	 drGerPrat1 	 hic-arima2
 dicots 	 Geranium_pratense 	 genomic_data 	 drGerPrat1 	 pacbio
 dicots 	 Geranium_purpureum 	 genomic_data 	 drGerPurp1 	 pacbio
+dicots 	 Geranium_pusillum 	 genomic_data 	 drGerPusi1 	 hic-arima2
 dicots 	 Geranium_pusillum 	 genomic_data 	 drGerPusi1 	 pacbio
 dicots 	 Geranium_pyrenaicum 	 genomic_data 	 drGerPyre1 	 hic-arima2
 dicots 	 Geranium_pyrenaicum 	 genomic_data 	 drGerPyre1 	 pacbio
@@ -1111,8 +1113,10 @@ dicots 	 Mercurialis_perennis 	 genomic_data 	 ddMerPere1 	 hic-arima2
 dicots 	 Mercurialis_perennis 	 genomic_data 	 ddMerPere1 	 pacbio
 dicots 	 Mercurialis_perennis 	 genomic_data 	 ddMerPere2 	 hic-arima2
 dicots 	 Mercurialis_perennis 	 genomic_data 	 ddMerPere2 	 pacbio
+dicots 	 Mertensia_maritima 	 genomic_data 	 daMerMari1 	 hic-arima2
 dicots 	 Mertensia_maritima 	 genomic_data 	 daMerMari1 	 pacbio
 dicots 	 Mespilus_germanica 	 genomic_data 	 drMesGerm1 	 hic-arima2
+dicots 	 Mespilus_germanica 	 genomic_data 	 drMesGerm1 	 pacbio
 dicots 	 Meum_athamanticum 	 genomic_data 	 drMeuAtha1 	 pacbio
 dicots 	 Micranthes_nivalis 	 genomic_data 	 drMicNiva3 	 pacbio
 dicots 	 Micranthes_stellaris 	 genomic_data 	 drMicStea2 	 hic-arima2
@@ -1163,6 +1167,7 @@ dicots 	 Nicandra_physalodes 	 genomic_data 	 daNicPhys1 	 hic-arima2
 dicots 	 Nicandra_physalodes 	 genomic_data 	 daNicPhys1 	 pacbio
 dicots 	 Nicotiana_alata 	 genomic_data 	 daNicAlat1 	 hic-arima2
 dicots 	 Nicotiana_alata 	 genomic_data 	 daNicAlat1 	 pacbio
+dicots 	 Nicotiana_excelsior 	 genomic_data 	 daNicExce1 	 hic-arima2
 dicots 	 Nicotiana_excelsior 	 genomic_data 	 daNicExce1 	 pacbio
 dicots 	 Nicotiana_gossei 	 genomic_data 	 daNicGoss1 	 hic-arima2
 dicots 	 Nicotiana_gossei 	 genomic_data 	 daNicGoss1 	 pacbio
@@ -3143,6 +3148,7 @@ non-vascular-plants 	 Thuidium_tamariscinum 	 genomic_data 	 cbThuTama2 	 pacbio
 non-vascular-plants 	 Thuidium_tamariscinum 	 genomic_data 	 cbThuTama6 	 hic-arima2
 non-vascular-plants 	 Tortella_tortuosa 	 genomic_data 	 cbTorTort1 	 pacbio
 non-vascular-plants 	 Tortella_tortuosa 	 genomic_data 	 cbTorTort2 	 hic-arima2
+non-vascular-plants 	 Tortula_truncata 	 genomic_data 	 cbTorTrun1 	 pacbio
 non-vascular-plants 	 Trichodon_cylindricus 	 genomic_data 	 cbTriCyli3 	 hic-arima2
 non-vascular-plants 	 Trichodon_cylindricus 	 genomic_data 	 cbTriCyli9 	 pacbio
 non-vascular-plants 	 Tricholepidozia_tetradactyla 	 genomic_data 	 cjTriTetr1 	 pacbio
