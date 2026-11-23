@@ -15,7 +15,7 @@ Two summary tables are presented here. The first is the number of assemblies in 
 | non-vascular-plants | curated | 197 |
 | vascular-plants | curated | 3 |
 | dicots | draft | 476 |
-| monocots | draft | 88 |
+| monocots | draft | 91 |
 | non-vascular-plants | draft | 199 |
 | vascular-plants | draft | 4 |
 
@@ -24,7 +24,7 @@ The second is the number of data types per species.
 | Data type | Number |
 | --- | --- |
 | hic-arima2 | 1446 |
-| pacbio | 1552 |
+| pacbio | 1557 |
 | 10x | 105 |
 | pacbio-cifi-arima | 4 |
 | pacbio-cifi-dennis | 4 |

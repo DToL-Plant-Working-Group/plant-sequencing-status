@@ -459,6 +459,7 @@ dicots 	 Cydonia_oblonga 	 genomic_data 	 drCydOblo1 	 hic-arima2
 dicots 	 Cydonia_oblonga 	 genomic_data 	 drCydOblo1 	 pacbio
 dicots 	 Cymbalaria_muralis 	 genomic_data 	 daCymMura1 	 hic-arima2
 dicots 	 Cymbalaria_muralis 	 genomic_data 	 daCymMura1 	 pacbio
+dicots 	 Cynoglossum_germanicum 	 genomic_data 	 daCynGerm1 	 pacbio
 dicots 	 Cynoglossum_officinale 	 genomic_data 	 daCynOffi1 	 hic-arima2
 dicots 	 Cynoglossum_officinale 	 genomic_data 	 daCynOffi1 	 pacbio
 dicots 	 Cytisus_scoparius 	 genomic_data 	 drCytScop1 	 hic-arima2
@@ -2358,6 +2359,7 @@ monocots 	 Leersia_oryzoides 	 genomic_data 	 lpLeeOryz1 	 hic-arima2
 monocots 	 Leersia_oryzoides 	 genomic_data 	 lpLeeOryz1 	 pacbio
 monocots 	 Lemna_japonica 	 genomic_data 	 laLemJapo1 	 hic-arima2
 monocots 	 Lemna_japonica 	 genomic_data 	 laLemJapo1 	 pacbio
+monocots 	 Lemna_minor 	 genomic_data 	 laLemMino1 	 pacbio
 monocots 	 Lemna_minuta 	 genomic_data 	 laLemMinu1 	 hic-arima2
 monocots 	 Lemna_minuta 	 genomic_data 	 laLemMinu1 	 pacbio
 monocots 	 Lemna_trisulca 	 genomic_data 	 laLemTris1 	 hic-arima2
@@ -2575,6 +2577,7 @@ non-vascular-plants 	 Amphidium_mougeotii 	 genomic_data 	 cbAmpMoug5 	 pacbio
 non-vascular-plants 	 Amphidium_mougeotii 	 genomic_data 	 cbAmpMoug6 	 hic-arima2
 non-vascular-plants 	 Anastrepta_orcadensis 	 genomic_data 	 cjAnaOrca3 	 hic-arima2
 non-vascular-plants 	 Anastrepta_orcadensis 	 genomic_data 	 cjAnaOrca4 	 pacbio
+non-vascular-plants 	 Anastrophyllum_alpinum 	 genomic_data 	 cjAnaAlpi2 	 pacbio
 non-vascular-plants 	 Anastrophyllum_donnianum 	 genomic_data 	 cjAnaDonn1 	 hic-arima2
 non-vascular-plants 	 Anastrophyllum_donnianum 	 genomic_data 	 cjAnaDonn2 	 pacbio
 non-vascular-plants 	 Andreaea_frigida 	 genomic_data 	 caAndFrig1 	 hic-arima2
@@ -2838,12 +2841,14 @@ non-vascular-plants 	 Isothecium_holtii 	 genomic_data 	 cbIsoHolt2 	 hic-arima2
 non-vascular-plants 	 Isothecium_myosuroides 	 genomic_data 	 cbIsoMyos1 	 10x
 non-vascular-plants 	 Isothecium_myosuroides 	 genomic_data 	 cbIsoMyos1 	 pacbio
 non-vascular-plants 	 Isothecium_myosuroides 	 genomic_data 	 cbIsoMyos2 	 hic-arima2
+non-vascular-plants 	 Jubula_hutchinsiae 	 genomic_data 	 cjJubHutc1 	 pacbio
 non-vascular-plants 	 Jungermannia_exsertifolia 	 genomic_data 	 cjJunExse2 	 hic-arima2
 non-vascular-plants 	 Jungermannia_exsertifolia 	 genomic_data 	 cjJunExse3 	 pacbio
 non-vascular-plants 	 Kiaeria_blyttii 	 genomic_data 	 cbKiaBlyt4 	 hic-arima2
 non-vascular-plants 	 Kiaeria_blyttii 	 genomic_data 	 cbKiaBlyt5 	 pacbio
 non-vascular-plants 	 Kurzia_trichoclados 	 genomic_data 	 cjKurTric3 	 hic-arima2
 non-vascular-plants 	 Kurzia_trichoclados 	 genomic_data 	 cjKurTric4 	 pacbio
+non-vascular-plants 	 Lejeunea_cavifolia 	 genomic_data 	 cjLejCavi2 	 pacbio
 non-vascular-plants 	 Lepidozia_cupressina 	 genomic_data 	 cjLepCupr1 	 pacbio
 non-vascular-plants 	 Lepidozia_cupressina 	 genomic_data 	 cjLepCupr2 	 hic-arima2
 non-vascular-plants 	 Lepidozia_reptans 	 genomic_data 	 cjLepRept1 	 hic-arima2
